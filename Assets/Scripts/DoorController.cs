@@ -53,6 +53,7 @@ public class DoorController : MonoBehaviour
             myDoor.Play("DoorClose", 0, 0.0f);
             doorOpen = false;
         }
+        //Hi is this working?
     }
 
 }
