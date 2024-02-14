@@ -8,13 +8,17 @@ public class ElementManager : MonoBehaviour
 
     public Color earthColor;
     public Color airColor;
+    public Color iceColor;
+    public Color electricityColor;
     public Color noneColor; 
     [SerializeField] private Image filter;
 
     public enum Element{
         None,
         Earth,
-        Air
+        Air,
+        Ice,
+        Electricity,
     }
     [SerializeField] private Element state;
     
@@ -37,6 +41,16 @@ public class ElementManager : MonoBehaviour
         {
             ChangeState(Element.Earth);
         }
+        //Ice is 3
+        else if(Input.GetKeyDown(KeyCode.Alpha3) && state != Element.Ice)
+        {
+            ChangeState(Element.Ice);
+        }
+        //Electricity is 4
+        else if(Input.GetKeyDown(KeyCode.Alpha4) && state != Element.Electricity)
+        {
+            ChangeState(Element.Electricity);
+        }
         //None is Q
         else if(Input.GetKeyDown(KeyCode.Q) && state != Element.None) 
         {
@@ -55,6 +69,12 @@ public class ElementManager : MonoBehaviour
             case Element.Earth:
                 UndoEarth();
                 break;
+            case Element.Ice:
+                UndoIce();
+                break;
+            case Element.Electricity:
+                UndoElectrcity();
+                break;
             case Element.None:
                 UndoNone();
                 break;
@@ -68,6 +88,12 @@ public class ElementManager : MonoBehaviour
                 break;
             case Element.Earth:
                 StartEarth();
+                break;
+            case Element.Ice:
+                StartIce();
+                break;
+            case Element.Electricity:
+                StartElectrcity();
                 break;
             case Element.None:
                 StartNone();
@@ -124,6 +150,25 @@ public class ElementManager : MonoBehaviour
         Physics.gravity = new Vector3(0f, -19.62f, 0f);
     }
 
+    private void UndoIce()
+    {
+        return;
+    }
+
+    private void StartIce()
+    {
+        filter.color = iceColor;
+    }
+
+    private void UndoElectrcity()
+    {
+        return;
+    }
+
+    private void StartElectrcity()
+    {
+        filter.color = electricityColor;
+    }
     private void UndoNone()
     {
         return;
