@@ -105,12 +105,20 @@ public class ElementManager : MonoBehaviour
     private void UndoAir()
     {
         Physics.gravity = new Vector3(0f, -9.81f, 0f);
+        foreach (GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
+        {
+            platform.EndAir();
+        }
     }
 
     private void StartAir()
     {
         filter.color = airColor;
         Physics.gravity = new Vector3(0f, 1f, 0f);
+        foreach (GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
+        {
+            platform.ActivateAir();
+        }
     }
 
     private void UndoEarth()
@@ -120,16 +128,24 @@ public class ElementManager : MonoBehaviour
             button.EndEarth();
             button.UpdateLogic();
         }
+        foreach (GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
+        {
+            platform.EndEarth();
+        }
         Physics.gravity = new Vector3(0f, -9.81f, 0f);
     }
 
     private void StartEarth()
     {
         filter.color = earthColor;
-        foreach(FloorButton button in FindObjectsOfType<FloorButton>())
+        foreach (FloorButton button in FindObjectsOfType<FloorButton>())
         {
             button.ActivateEarth();
             button.UpdateLogic();
+        }
+        foreach (GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
+        {
+            platform.ActivateEarth();
         }
         Physics.gravity = new Vector3(0f, -19.62f, 0f);
     }
