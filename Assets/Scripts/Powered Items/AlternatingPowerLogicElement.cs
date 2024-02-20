@@ -5,21 +5,22 @@ using UnityEngine;
 public class AlternatingPowerLogicElement : MonoBehaviour
 {
 
-    [SerializeField] private float timer = 5.0f;
+    private float timer = 5.0f;
+    [SerializeField] private float timerDuration = 5.0f;
 
     [SerializeField] private LogicElement logic;
 
     [SerializeField] private MeshRenderer meshColor;
 
     public Color offColor;
-    public Color OnColor;
+    public Color onColor;
 
-    private bool signal = true;
+    private bool signal = false;
 
     // Start is called before the first frame update
     void Start()
     {
-          meshColor.material.SetColor("_Color", OnColor);
+          meshColor.material.SetColor("_Color", offColor);
     }
 
     // Update is called once per frame
@@ -35,15 +36,15 @@ public class AlternatingPowerLogicElement : MonoBehaviour
         
         else {
 
-            Debug.Log("Timer has switch states");
-            timer = 5.0f;
+            // Debug.Log("Timer has switch states");
+            timer = timerDuration;
             
             signal = !signal;
 
             if(signal){
 
                 logic.SetActive();
-                meshColor.material.SetColor("_Color", OnColor);
+                meshColor.material.SetColor("_Color", onColor);
 
             } else {
 

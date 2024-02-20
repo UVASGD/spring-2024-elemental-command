@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3627322415001886581}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.9, z: 6.78}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5157162, y: -0.51937824, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8cf66eb8dde414b93e9ce10f4e269e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 5
+  timerDuration: 5
   logic: {fileID: 1987755649047479187}
   meshColor: {fileID: 7985956689518952187}
   offColor: {r: 1, g: 0, b: 0, a: 0}
-  OnColor: {r: 0.04062321, g: 0.116284326, b: 0.99371064, a: 0}
+  onColor: {r: 0.0110804355, g: 0.0110804355, b: 0.7830189, a: 1}
 --- !u!23 &7985956689518952187
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -146,4 +146,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a6e8efa0cce6045b2a50a074297874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
+  receiverGameObject: {fileID: 0}

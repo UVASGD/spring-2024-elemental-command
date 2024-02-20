@@ -222,6 +222,8 @@ MonoBehaviour:
   playerHeight: 1.1
   grounded: 0
   orientation: {fileID: 5553521146193428743}
+  em: {fileID: 0}
+  airGravity: 5
 --- !u!1 &3733438857302212576
 GameObject:
   m_ObjectHideFlags: 0

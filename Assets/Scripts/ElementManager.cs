@@ -20,7 +20,7 @@ public class ElementManager : MonoBehaviour
         Ice,
         Electricity,
     }
-    [SerializeField] private Element state;
+    public Element state;
     
     // Start is called before the first frame update
     void Start()
