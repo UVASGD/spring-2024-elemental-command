@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   earthColor: {r: 0.9622642, g: 0.42939398, b: 0, a: 0.5294118}
-  airColor: {r: 0.284336, g: 0.6626186, b: 0.9245283, a: 0.56078434}
-  iceColor: {r: 0, g: 0, b: 0, a: 0}
-  electricityColor: {r: 0, g: 0, b: 0, a: 0}
+  airColor: {r: 0.2862745, g: 0.8583797, b: 0.9254902, a: 0.56078434}
+  iceColor: {r: 0.15552156, g: 0, b: 0.8490566, a: 0.54509807}
+  electricityColor: {r: 0.9060799, g: 0.9622642, b: 0.099857494, a: 0.5529412}
   noneColor: {r: 0, g: 0, b: 0, a: 0}
   filter: {fileID: 0}
   state: 0
