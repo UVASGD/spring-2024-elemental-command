@@ -8,6 +8,7 @@ public class FloorButton : MonoBehaviour
     [SerializeField] private LogicElement logic;
     private float objectsRequired;
     public float baseObjectsRequired = 1.0f;
+    private bool frozen = false;
     private int objectsOn;
     [SerializeField] private float powerDelay;
     [SerializeField] Animator anim;
@@ -29,6 +30,7 @@ public class FloorButton : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         objectsOn += 1;
         UpdateLogic();
+
     }
     private void OnCollisionExit(Collision other) {
         objectsOn -= 1;
@@ -36,20 +38,23 @@ public class FloorButton : MonoBehaviour
         if(objectsOn < 0)
         {
             objectsOn = 0;
-        }       
+        }
         UpdateLogic();
     }
 
     //This weird delay stuff keeps it from jittering on button presses
     public void UpdateLogic()
     {
-        if(objectsOn >= objectsRequired && !logic.GetCondition())
+        if (!frozen)
         {
-            Invoke("PowerOn", powerDelay);
-        }
-        else if(objectsOn < objectsRequired && logic.GetCondition())
-        {
-            Invoke("PowerOff", powerDelay);
+            if (objectsOn >= objectsRequired && !logic.GetCondition())
+            {
+                Invoke("PowerOn", powerDelay);
+            }
+            else if (objectsOn < objectsRequired && logic.GetCondition())
+            {
+                Invoke("PowerOff", powerDelay);
+            }
         }
         
     }
@@ -83,4 +88,13 @@ public class FloorButton : MonoBehaviour
         objectsRequired = baseObjectsRequired;
     }
 
+    public void ActivateIce()
+    {
+        frozen = true;
+    }
+
+    public void EndIce()
+    {
+        frozen = false;
+    }
 }

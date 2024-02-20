@@ -73,7 +73,7 @@ public class ElementManager : MonoBehaviour
                 UndoIce();
                 break;
             case Element.Electricity:
-                UndoElectrcity();
+                UndoElectricity();
                 break;
             case Element.None:
                 UndoNone();
@@ -93,7 +93,7 @@ public class ElementManager : MonoBehaviour
                 StartIce();
                 break;
             case Element.Electricity:
-                StartElectrcity();
+                StartElectricity();
                 break;
             case Element.None:
                 StartNone();
@@ -160,6 +160,14 @@ public class ElementManager : MonoBehaviour
                 toFreeze.constraints &= ~RigidbodyConstraints.FreezePosition & ~RigidbodyConstraints.FreezeRotation;
             }
         }
+        foreach(AlternatingPowerLogicElement alt in FindObjectsOfType<AlternatingPowerLogicElement>())
+        {
+            alt.EndIce();
+        }
+        foreach (FloorButton button in FindObjectsOfType<FloorButton>())
+        {
+            button.EndIce();
+        }
     }
 
     private void StartIce()
@@ -172,16 +180,32 @@ public class ElementManager : MonoBehaviour
                 toFreeze.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
             }
         }
+        foreach (AlternatingPowerLogicElement alt in FindObjectsOfType<AlternatingPowerLogicElement>())
+        {
+            alt.ActivateIce();
+        }
+        foreach (FloorButton button in FindObjectsOfType<FloorButton>())
+        {
+            button.ActivateIce();
+        }
     }
 
-    private void UndoElectrcity()
+    private void UndoElectricity()
     {
+        foreach (AlternatingPowerLogicElement alt in FindObjectsOfType<AlternatingPowerLogicElement>())
+        {
+            alt.EndElectricity();
+        }
         return;
     }
 
-    private void StartElectrcity()
+    private void StartElectricity()
     {
         filter.color = electricityColor;
+        foreach(AlternatingPowerLogicElement alt in FindObjectsOfType<AlternatingPowerLogicElement>())
+        {
+            alt.ActivateElectricity();
+        }
     }
     private void UndoNone()
     {
