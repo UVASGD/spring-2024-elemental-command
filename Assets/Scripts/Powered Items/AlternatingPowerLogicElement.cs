@@ -28,7 +28,6 @@ public class AlternatingPowerLogicElement : MonoBehaviour
     {
 
 
-
         if (timer > 0){
 
             timer -= Time.deltaTime;

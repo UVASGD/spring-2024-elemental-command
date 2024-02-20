@@ -152,12 +152,26 @@ public class ElementManager : MonoBehaviour
 
     private void UndoIce()
     {
-        return;
+        foreach (Rigidbody toFreeze in FindObjectsOfType<Rigidbody>())
+        {
+            if (toFreeze.tag != "Player")
+            {
+                //don't tell me why this unlocks it some crazy bitwise stuff
+                toFreeze.constraints &= ~RigidbodyConstraints.FreezePosition & ~RigidbodyConstraints.FreezeRotation;
+            }
+        }
     }
 
     private void StartIce()
     {
         filter.color = iceColor;
+        foreach (Rigidbody toFreeze in FindObjectsOfType<Rigidbody>())
+        {
+            if (toFreeze.tag != "Player")
+            {
+                toFreeze.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+            }
+        }
     }
 
     private void UndoElectrcity()
