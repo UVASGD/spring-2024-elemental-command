@@ -30,12 +30,16 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    [SerializeField] private ElementManager em;
+    [SerializeField] private float airGravity;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         readyToJump = true;
+        em = FindObjectOfType<ElementManager>();
     }
 
     // Update is called once per frame
@@ -60,6 +64,12 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         MovePlayer();
+
+        if (em.state == ElementManager.Element.Air)
+        {
+            // rb.useGravity = false;
+            rb.AddForce(new Vector3(0, -1.0f, 0) * rb.mass * airGravity);  
+        }
     }
 
     private void MyInput()

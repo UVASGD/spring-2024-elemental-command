@@ -18,10 +18,12 @@ public class PickupController : MonoBehaviour
     [SerializeField] private float pickupForce = 150.0f;
     [SerializeField] private float sharpness = 20;
 
+    private ElementManager em;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        em = FindObjectOfType<ElementManager>();
     }
 
     // Update is called once per frame
@@ -68,7 +70,12 @@ public class PickupController : MonoBehaviour
 
         heldObjRB.useGravity = true;
         heldObjRB.drag = 1;
+
         heldObjRB.constraints = RigidbodyConstraints.None;
+        if(em.state == ElementManager.Element.Ice)
+        {
+            heldObjRB.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+        }
 
         heldObjRB.transform.parent = null;
         heldObj = null;
