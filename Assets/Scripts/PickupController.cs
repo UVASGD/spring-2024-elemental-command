@@ -51,6 +51,11 @@ public class PickupController : MonoBehaviour
 
     void PickupObject(GameObject pickObj)
     {
+
+        if(pickObj.GetComponent<TimerButtonLogic>())
+        {
+            pickObj.GetComponent<TimerButtonLogic>().PressButton();
+        }
         if(pickObj.GetComponent<Rigidbody>())
         {
             //this is where you adjust for what held objects look like
@@ -62,6 +67,8 @@ public class PickupController : MonoBehaviour
             heldObjRB.transform.parent = holdArea;
             heldObj = pickObj;
         }
+
+        
     }
 
     void DropObject()

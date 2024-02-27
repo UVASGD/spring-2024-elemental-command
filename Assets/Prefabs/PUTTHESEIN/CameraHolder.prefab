@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdArea: {fileID: 2967375301817161224}
-  pickupRange: 5
+  pickupRange: 2.5
   pickupForce: 100
   sharpness: 100
 --- !u!1 &8340594817823611291

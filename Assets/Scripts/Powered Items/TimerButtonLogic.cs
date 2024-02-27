@@ -7,11 +7,12 @@ public class TimerButtonLogic : MonoBehaviour
 
 {
     [SerializeField] private LogicElement logic;
-    [SerializeField] private float pickupRange = 5.0f;
     [SerializeField] private float timerDuration = 5.0f;
+    [SerializeField] private Animator anim;
     private bool timer_is_pressable = true;
     private bool has_been_pressed = false;
     private float timer = 5.0f;
+    [SerializeField] private Transform playerTransform;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,24 +21,24 @@ public class TimerButtonLogic : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    
-
     {
-
         if(timer_is_pressable){
 
-            if(Input.GetKeyDown(KeyCode.E)){
+            // if(Input.GetKeyDown(KeyCode.E)){
             
-                RaycastHit hit;
-                if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
-                {
-                    timer_is_pressable = false;
-                    has_been_pressed = true;
-                    logic.SetActive();
-                    timer -= Time.deltaTime;
-                }
+            //     RaycastHit hit;
+            //     if(Physics.Raycast(playerTransform.position, playerTransform.TransformDirection(Vector3.forward), out hit, pickupRange))
+            //     {
+            //         Debug.Log("ButtonPressed!");
+            //         timer_is_pressable = false;
+            //         has_been_pressed = true;
+            //         logic.SetActive();
+            //         timer -= Time.deltaTime;
+            //         anim.Play("TimerButtonPress", 0, 0.0f);
+            //     }
 
-            } 
+            // }
+             
         } else {
             if(has_been_pressed){
                 timer -= Time.deltaTime; 
@@ -49,10 +50,22 @@ public class TimerButtonLogic : MonoBehaviour
             timer_is_pressable = true;
             timer = timerDuration;
             has_been_pressed = false;
+            anim.Play("TimerButtonRelease", 0, 0.0f);
             logic.SetInactive();
         }
 
     }
-        
-    }
 
+    public void PressButton()
+    {
+        if(timer_is_pressable){            
+            Debug.Log("ButtonPressed!");
+            timer_is_pressable = false;
+            has_been_pressed = true;
+            logic.SetActive();
+            timer -= Time.deltaTime;
+            anim.Play("TimerButtonPress", 0, 0.0f);
+        }
+
+    } 
+    }   
