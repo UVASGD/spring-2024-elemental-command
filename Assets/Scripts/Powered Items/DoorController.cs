@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.iOS;
 
-public class DoorController : MonoBehaviour
+public class DoorController : MonoBehaviour, ILogicReceiver
 {
     [SerializeField] private Animator myDoor = null;
 
@@ -29,7 +29,7 @@ public class DoorController : MonoBehaviour
     }
 
     //Logic elements call this to update the door and open or close it if required
-    public void UpdateDoorLogic(){
+    public void UpdateLogic(){
 
         bool conditionsMet = true;
         foreach (LogicElement element in logicElements)
