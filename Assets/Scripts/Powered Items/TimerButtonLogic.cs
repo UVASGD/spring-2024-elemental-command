@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,6 @@ public class TimerButtonLogic : MonoBehaviour
     private bool timer_is_pressable = true;
     private bool has_been_pressed = false;
     private float timer = 5.0f;
-    private GameObject heldObj;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,10 @@ public class TimerButtonLogic : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    
+
     {
+
         if(timer_is_pressable){
 
             if(Input.GetKeyDown(KeyCode.E)){
