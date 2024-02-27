@@ -3168,6 +3168,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 934286218050048160, guid: 113aab9faa404d1418deb97a499811c8, type: 3}
+      propertyPath: unfreezeTimer
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3291627059640466097, guid: 113aab9faa404d1418deb97a499811c8, type: 3}
       propertyPath: cameraPosition
       value: 
@@ -3613,6 +3617,10 @@ PrefabInstance:
     - target: {fileID: 4106490632530086559, guid: 41a7cdba2e3b94f48962e4cb9651b888, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427023084127145385, guid: 41a7cdba2e3b94f48962e4cb9651b888, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6332343481849407731, guid: 41a7cdba2e3b94f48962e4cb9651b888, type: 3}
       propertyPath: m_Name
