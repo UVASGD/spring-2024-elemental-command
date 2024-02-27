@@ -164,6 +164,10 @@ public class ElementManager : MonoBehaviour
         {
             alt.EndIce();
         }
+        foreach(FloorButton button in FindObjectsOfType<FloorButton>())
+        {
+            button.EndIce();
+        }
     }
 
     private void StartIce()
