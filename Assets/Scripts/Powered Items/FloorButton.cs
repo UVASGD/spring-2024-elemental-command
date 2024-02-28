@@ -7,7 +7,6 @@ public class FloorButton : MonoBehaviour
 {
     [SerializeField] private LogicElement logic;
     private ElementManager em;
-    [SerializeField] private ElementManager.Element stateElement;
     private float objectsRequired;
     public float baseObjectsRequired = 1.0f;
     private int objectsOn;
@@ -58,8 +57,7 @@ public class FloorButton : MonoBehaviour
     }
     private void PowerOn()
     {
-        stateElement = em.state;
-        if (stateElement != ElementManager.Element.Ice)
+        if (em.state != ElementManager.Element.Ice)
         {
             if (objectsOn >= objectsRequired)
             {
@@ -73,8 +71,7 @@ public class FloorButton : MonoBehaviour
 
     private void PowerOff()
     {
-        stateElement = em.state;
-        if (stateElement != ElementManager.Element.Ice)
+        if (em.state != ElementManager.Element.Ice)
         {
             if (objectsOn < objectsRequired)
             {
@@ -98,7 +95,6 @@ public class FloorButton : MonoBehaviour
 
     public void EndIce()
     {
-        stateElement = ElementManager.Element.None;
         UpdateLogic();
     }
 
