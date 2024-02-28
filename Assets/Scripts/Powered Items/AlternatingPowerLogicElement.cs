@@ -72,15 +72,4 @@ public class AlternatingPowerLogicElement : MonoBehaviour
         timerOn = true;
     }
 
-    public void ActivateElectricity()
-    {
-        timerDuration /= 2;
-        timer /= 2; // in case the timer is still ongoing
-    }
-
-    public void EndElectricity()
-    {
-        timerDuration *= 2;
-        timer *= 2;
-    }
 }
