@@ -72,9 +72,6 @@ public class ElementManager : MonoBehaviour
             case Element.Ice:
                 UndoIce();
                 break;
-            case Element.Electricity:
-                UndoElectricity();
-                break;
             case Element.None:
                 UndoNone();
                 break;
@@ -91,9 +88,6 @@ public class ElementManager : MonoBehaviour
                 break;
             case Element.Ice:
                 StartIce();
-                break;
-            case Element.Electricity:
-                StartElectricity();
                 break;
             case Element.None:
                 StartNone();
@@ -182,23 +176,8 @@ public class ElementManager : MonoBehaviour
         }
     }
 
-    private void UndoElectricity()
-    {
-        foreach (AlternatingPowerLogicElement alt in FindObjectsOfType<AlternatingPowerLogicElement>())
-        {
-            alt.EndElectricity();
-        }
-        return;
-    }
 
-    private void StartElectricity()
-    {
-        filter.color = electricityColor;
-        foreach(AlternatingPowerLogicElement alt in FindObjectsOfType<AlternatingPowerLogicElement>())
-        {
-            alt.ActivateElectricity();
-        }
-    }
+    
     private void UndoNone()
     {
         return;
