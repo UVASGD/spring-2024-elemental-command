@@ -22,31 +22,17 @@ public class TimerButtonLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer_is_pressable){
-
-            // if(Input.GetKeyDown(KeyCode.E)){
-            
-            //     RaycastHit hit;
-            //     if(Physics.Raycast(playerTransform.position, playerTransform.TransformDirection(Vector3.forward), out hit, pickupRange))
-            //     {
-            //         Debug.Log("ButtonPressed!");
-            //         timer_is_pressable = false;
-            //         has_been_pressed = true;
-            //         logic.SetActive();
-            //         timer -= Time.deltaTime;
-            //         anim.Play("TimerButtonPress", 0, 0.0f);
-            //     }
-
-            // }
-             
-        } else {
-            if(has_been_pressed){
+        if(!timer_is_pressable) 
+        {
+            if(has_been_pressed)
+            {
                 timer -= Time.deltaTime; 
             }
         
         }
 
-        if (timer < 0){
+        if (timer < 0)
+        {
             timer_is_pressable = true;
             timer = timerDuration;
             has_been_pressed = false;
