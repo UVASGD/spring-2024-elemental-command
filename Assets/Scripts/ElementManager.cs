@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class ElementManager : MonoBehaviour
 {
-
+    public AudioSource AirStateChange;
+    public AudioSource EarthStateChange;
+    public AudioSource IceStateChange;
     public Color earthColor;
     public Color airColor;
     public Color iceColor;
@@ -109,6 +111,7 @@ public class ElementManager : MonoBehaviour
     {
         filter.color = airColor;
         Physics.gravity = new Vector3(0f, 1f, 0f);
+        AirStateChange.Play();
         foreach (GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
         {
             platform.ActivateAir();
@@ -167,6 +170,7 @@ public class ElementManager : MonoBehaviour
     private void StartIce()
     {
         filter.color = iceColor;
+        IceStateChange.Play();
         foreach (Rigidbody toFreeze in FindObjectsOfType<Rigidbody>())
         {
             if (toFreeze.tag != "Player")
