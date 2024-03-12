@@ -72,9 +72,6 @@ public class ElementManager : MonoBehaviour
             case Element.Ice:
                 UndoIce();
                 break;
-            case Element.Electricity:
-                UndoElectrcity();
-                break;
             case Element.None:
                 UndoNone();
                 break;
@@ -91,9 +88,6 @@ public class ElementManager : MonoBehaviour
                 break;
             case Element.Ice:
                 StartIce();
-                break;
-            case Element.Electricity:
-                StartElectrcity();
                 break;
             case Element.None:
                 StartNone();
@@ -160,6 +154,14 @@ public class ElementManager : MonoBehaviour
                 toFreeze.constraints &= ~RigidbodyConstraints.FreezePosition & ~RigidbodyConstraints.FreezeRotation;
             }
         }
+        foreach(AlternatingPowerLogicElement alt in FindObjectsOfType<AlternatingPowerLogicElement>())
+        {
+            alt.EndIce();
+        }
+        foreach(FloorButton button in FindObjectsOfType<FloorButton>())
+        {
+            button.EndIce();
+        }
     }
 
     private void StartIce()
@@ -172,17 +174,14 @@ public class ElementManager : MonoBehaviour
                 toFreeze.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
             }
         }
+        foreach (AlternatingPowerLogicElement alt in FindObjectsOfType<AlternatingPowerLogicElement>())
+        {
+            alt.ActivateIce();
+        }
     }
 
-    private void UndoElectrcity()
-    {
-        return;
-    }
 
-    private void StartElectrcity()
-    {
-        filter.color = electricityColor;
-    }
+    
     private void UndoNone()
     {
         return;

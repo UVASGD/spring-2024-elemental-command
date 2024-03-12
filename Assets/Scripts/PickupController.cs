@@ -18,6 +18,8 @@ public class PickupController : MonoBehaviour
     [SerializeField] private float pickupForce = 150.0f;
     [SerializeField] private float sharpness = 20;
 
+    [SerializeField] private float unfreezeTimer = 1.0f;
+
     private ElementManager em;
 
     // Start is called before the first frame update
@@ -51,6 +53,11 @@ public class PickupController : MonoBehaviour
 
     void PickupObject(GameObject pickObj)
     {
+
+        if(pickObj.GetComponent<TimerButtonLogic>())
+        {
+            pickObj.GetComponent<TimerButtonLogic>().PressButton();
+        }
         if(pickObj.GetComponent<Rigidbody>())
         {
             //this is where you adjust for what held objects look like
@@ -62,6 +69,8 @@ public class PickupController : MonoBehaviour
             heldObjRB.transform.parent = holdArea;
             heldObj = pickObj;
         }
+
+        
     }
 
     void DropObject()
@@ -74,12 +83,17 @@ public class PickupController : MonoBehaviour
         heldObjRB.constraints = RigidbodyConstraints.None;
         if(em.state == ElementManager.Element.Ice)
         {
-            heldObjRB.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+            Invoke("DropFrozenObject", unfreezeTimer);
         }
 
         heldObjRB.transform.parent = null;
         heldObj = null;
 
+    }
+
+    void DropFrozenObject()
+    {
+        heldObjRB.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
     }
 
     void MoveObject()
