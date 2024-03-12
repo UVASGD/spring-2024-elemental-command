@@ -48,11 +48,11 @@ public class ElementManager : MonoBehaviour
         {
             ChangeState(Element.Ice);
         }
-        //Electricity is 4
-        else if(Input.GetKeyDown(KeyCode.Alpha4) && state != Element.Electricity)
-        {
-            ChangeState(Element.Electricity);
-        }
+        //Electricity is 4 (and not active)
+        // else if(Input.GetKeyDown(KeyCode.Alpha4) && state != Element.Electricity)
+        // {
+        //     ChangeState(Element.Electricity);
+        // }
         //None is Q
         else if(Input.GetKeyDown(KeyCode.Q) && state != Element.None) 
         {
