@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Pause.isPaused == false){ //locks player inputs when paused
         // check if on ground
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f);
 
@@ -58,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             rb.drag = 0;
+        }
         }
     }
 
@@ -74,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void MyInput()
     {
+        if (Pause.isPaused == false){ //locks jump input while paused
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
@@ -82,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
             readyToJump = false;
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
+        }
         }
     }
 
