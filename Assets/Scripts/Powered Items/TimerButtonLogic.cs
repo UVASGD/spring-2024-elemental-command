@@ -45,7 +45,6 @@ public class TimerButtonLogic : MonoBehaviour
     public void PressButton()
     {
         if(timer_is_pressable){            
-            Debug.Log("ButtonPressed!");
             timer_is_pressable = false;
             has_been_pressed = true;
             logic.SetActive();
