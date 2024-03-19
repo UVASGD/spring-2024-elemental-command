@@ -32,6 +32,8 @@ public static bool isPaused = false;
 
     public void PauseGame(){
 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
@@ -42,6 +44,8 @@ public static bool isPaused = false;
 
     public void ResumeGame(){
 
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         pauseMenu.SetActive(false);
         Debug.Log("game resumed");
         Time.timeScale = 1f;
