@@ -23,6 +23,7 @@ public class ElementManager : MonoBehaviour
         Electricity,
     }
     public Element state;
+
     
     // Start is called before the first frame update
     void Start()
@@ -33,20 +34,27 @@ public class ElementManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ElementAvailability elementAvailability = GetComponent<ElementAvailability>();
         //Air is 1
         if(Input.GetKeyDown(KeyCode.Alpha1) && state != Element.Air)
         {
-            ChangeState(Element.Air);
+            if(elementAvailability.Air_Available){
+                ChangeState(Element.Air);
+            }
         }
         //Earth is 2
         else if(Input.GetKeyDown(KeyCode.Alpha2) && state != Element.Earth)
         {
-            ChangeState(Element.Earth);
+            if (elementAvailability.Earth_Available){
+                ChangeState(Element.Earth);
+            }
         }
         //Ice is 3
         else if(Input.GetKeyDown(KeyCode.Alpha3) && state != Element.Ice)
         {
-            ChangeState(Element.Ice);
+            if (elementAvailability.Ice_Available){
+                ChangeState(Element.Ice);
+            }
         }
         //Electricity is 4 (and not active)
         // else if(Input.GetKeyDown(KeyCode.Alpha4) && state != Element.Electricity)
@@ -56,7 +64,9 @@ public class ElementManager : MonoBehaviour
         //None is Q
         else if(Input.GetKeyDown(KeyCode.Q) && state != Element.None) 
         {
-            ChangeState(Element.None);
+            if (elementAvailability.PlayerCanCancel){
+                ChangeState(Element.None);
+            }
         }
     }
 
