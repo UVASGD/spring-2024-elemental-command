@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameplayBar : MonoBehaviour
 {
@@ -21,12 +22,17 @@ public class GameplayBar : MonoBehaviour
 
     [SerializeField] RectTransform ToCancelText;
 
+    private ElementManager em;
+
+    private ElementAvailability elementAvailability;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        em = FindObjectOfType<ElementManager>();
 
-        ElementAvailability elementAvailability = GetComponent<ElementAvailability>();
+        elementAvailability = GetComponent<ElementAvailability>();
 
         if (ElementAvailability.count == 3){ //If three elements are available, draw them like this
 
@@ -150,6 +156,29 @@ public class GameplayBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (em.state == ElementManager.Element.Earth){
+            EarthImage.transform.localScale = new UnityEngine.Vector3(1.5f, 1.5f, 1f);
+
+            IceImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            AirImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+        }
+
+        if (em.state == ElementManager.Element.Ice){
+            IceImage.transform.localScale = new UnityEngine.Vector3(1.5f, 1.5f, 1f);
+            
+            EarthImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            AirImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+        }
+
+        if (em.state == ElementManager.Element.Air){
+            AirImage.transform.localScale = new UnityEngine.Vector3(1.5f, 1.5f, 1f);
+            
+            IceImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            EarthImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+        }
+
+
 
 
         
