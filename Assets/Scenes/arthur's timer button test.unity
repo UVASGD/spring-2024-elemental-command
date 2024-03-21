@@ -3635,11 +3635,11 @@ PrefabInstance:
       objectReference: {fileID: 289949595}
     - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: Air_Available
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: Ice_Available
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: PlayerCanCancel
@@ -3839,10 +3839,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2360557448687339824, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2544731275871610833, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 653781484}
+    - target: {fileID: 4440305136163446708, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440305136163446708, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
     - target: {fileID: 7669823476320571520, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: m_Name
       value: Canvas

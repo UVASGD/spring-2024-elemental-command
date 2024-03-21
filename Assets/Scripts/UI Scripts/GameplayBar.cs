@@ -174,30 +174,51 @@ public class GameplayBar : MonoBehaviour
             Earth_Highlighted = true;
             Ice_Highlighted = false;
             Air_Highlighted = false;
-            EarthImage.transform.localScale = new UnityEngine.Vector3(1.5f, 1.5f, 1f);
+            //Make Earth symbol bigger
+            EarthImage.transform.localScale = new UnityEngine.Vector3(1.3f, 1.3f, 1f);
 
+            //Others go back to nomral
+            //Ice
             IceImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            IceText.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+
+            //Air
             AirImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            AirText.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
         }
 
         if (em.state == ElementManager.Element.Ice && !Ice_Highlighted){
             Ice_Highlighted = true;
             Air_Highlighted = false;
             Earth_Highlighted = false;
-            IceImage.transform.localScale = new UnityEngine.Vector3(1.5f, 1.5f, 1f);
+            //Ice image get bigger
+            IceImage.transform.localScale = new UnityEngine.Vector3(1.3f, 1.3f, 1f);
             
+            //Others go back to normal
+            //Earth
             EarthImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            EarthText.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+
+            //Air
             AirImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            AirText.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
         }
 
         if (em.state == ElementManager.Element.Air && !Air_Highlighted){
             Air_Highlighted = true;
             Ice_Highlighted = false;
             Earth_Highlighted = false;
-            AirImage.transform.localScale = new UnityEngine.Vector3(1.5f, 1.5f, 1f);
+            //Air Image get bigger
+            AirImage.transform.localScale = new UnityEngine.Vector3(1.3f, 1.3f, 1f);
             
+            //All other symbols and texts go back to normal
+            //Ice
             IceImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            IceText.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+
+            //Earth
             EarthImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            EarthText.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
         }
 
 
