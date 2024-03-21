@@ -200,6 +200,15 @@ public class GameplayBar : MonoBehaviour
             EarthImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
         }
 
+        if (em.state == ElementManager.Element.None){
+            Air_Highlighted = false;
+            Ice_Highlighted = false;
+            Earth_Highlighted = false;
+            AirImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            IceImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+            EarthImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
+        }
+
 
 
 
