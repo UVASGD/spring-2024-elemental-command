@@ -26,10 +26,22 @@ public class GameplayBar : MonoBehaviour
 
     private ElementAvailability elementAvailability;
 
+    private bool Earth_Highlighted;
+
+    private bool Air_Highlighted;
+
+    private bool Ice_Highlighted;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        Earth_Highlighted = false;
+
+        Air_Highlighted = false;
+
+        Ice_Highlighted = false;
+
         em = FindObjectOfType<ElementManager>();
 
         elementAvailability = GetComponent<ElementAvailability>();
@@ -157,21 +169,31 @@ public class GameplayBar : MonoBehaviour
     void Update()
     {
 
-        if (em.state == ElementManager.Element.Earth){
+        if (em.state == ElementManager.Element.Earth && !Earth_Highlighted){
+
+            Earth_Highlighted = true;
+            Ice_Highlighted = false;
+            Air_Highlighted = false;
             EarthImage.transform.localScale = new UnityEngine.Vector3(1.5f, 1.5f, 1f);
 
             IceImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
             AirImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
         }
 
-        if (em.state == ElementManager.Element.Ice){
+        if (em.state == ElementManager.Element.Ice && !Ice_Highlighted){
+            Ice_Highlighted = true;
+            Air_Highlighted = false;
+            Earth_Highlighted = false;
             IceImage.transform.localScale = new UnityEngine.Vector3(1.5f, 1.5f, 1f);
             
             EarthImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
             AirImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);
         }
 
-        if (em.state == ElementManager.Element.Air){
+        if (em.state == ElementManager.Element.Air && !Air_Highlighted){
+            Air_Highlighted = true;
+            Ice_Highlighted = false;
+            Earth_Highlighted = false;
             AirImage.transform.localScale = new UnityEngine.Vector3(1.5f, 1.5f, 1f);
             
             IceImage.transform.localScale = new UnityEngine.Vector3(1f, 1f, 1f);

@@ -3633,6 +3633,18 @@ PrefabInstance:
       propertyPath: ToCancelText
       value: 
       objectReference: {fileID: 289949595}
+    - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: Air_Available
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: Ice_Available
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: PlayerCanCancel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3515581574121070706, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: m_Name
       value: GameManager
