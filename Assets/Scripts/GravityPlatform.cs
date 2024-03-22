@@ -16,7 +16,7 @@ public class GravityPlatform : MonoBehaviour
     // Sets values for the three heights that the platform rises or falls to based on the element used.
     public float initialHeight = 1.5f;
     public float highHeight = 2.8f;
-    public float lowHeight = 0.2f;
+    public float lowHeight = 0.5f;
 
     void Start()
     {
@@ -37,12 +37,18 @@ public class GravityPlatform : MonoBehaviour
             rest();
             setPosition(targetHeight);
         }
+        rb.freezeRotation = true;
+        rb.velocity = new Vector3(0, rb.velocity.y, 0);
     }
 
     // Sets the high height of the platform as its destination.
     public void ActivateAir()
     {
         targetHeight = highHeight;
+        if (forceFactor > 1.0)
+        {
+            rise();
+        }
     }
 
     // Sets the initial height of the platform as its destination.

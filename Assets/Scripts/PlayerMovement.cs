@@ -59,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.drag = 0;
         }
+        rb.freezeRotation = true;
     }
 
     void FixedUpdate()
