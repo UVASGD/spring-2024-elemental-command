@@ -44,7 +44,7 @@ public class GameplayBar : MonoBehaviour
 
         em = FindObjectOfType<ElementManager>();
 
-        elementAvailability = GetComponent<ElementAvailability>();
+        elementAvailability = FindObjectOfType<ElementAvailability>();
 
         if (ElementAvailability.count == 3){ //If three elements are available, draw them like this
 
