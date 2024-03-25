@@ -47,7 +47,6 @@ public static bool isPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         pauseMenu.SetActive(false);
-        Debug.Log("game resumed");
         Time.timeScale = 1f;
         isPaused = false;
         crosshair.SetActive(true);
@@ -57,6 +56,5 @@ public static bool isPaused = false;
 
     public void QuitApp(){
         Application.Quit();
-        Debug.Log("Quitter!");
     }
 }
