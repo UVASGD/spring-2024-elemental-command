@@ -2,16 +2,21 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UIScript : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
+    public LevelLoader levelLoader;
 
-    public void GoToScene(string SceneName){
-        SceneManager.LoadScene(SceneName);
+   void Start()
+{
+    levelLoader = FindObjectOfType<LevelLoader>();
+}
+
+    public void GoToNextScene(){
+        levelLoader.LoadNextLevel();
     }
 
     public void QuitApp(){
         Application.Quit();
-        Debug.Log("Quitter!");
     }
 
 }
