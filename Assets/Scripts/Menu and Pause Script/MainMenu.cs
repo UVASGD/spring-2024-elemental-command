@@ -4,11 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public LevelLoader levelLoader;
+    public NextLevelLoader levelLoader;
+
+    public SelectLevelLoader levelSelector;
 
    void Start()
 {
-    levelLoader = FindObjectOfType<LevelLoader>();
+    levelLoader = FindObjectOfType<NextLevelLoader>();
+    levelSelector = FindObjectOfType<SelectLevelLoader>();
 }
 
     public void GoToNextScene(){
@@ -17,6 +20,11 @@ public class MainMenu : MonoBehaviour
 
     public void QuitApp(){
         Application.Quit();
+    }
+
+    public void GoToLevelSelect()
+    {
+        levelSelector.LoadSelectedLevel(3);
     }
 
 }

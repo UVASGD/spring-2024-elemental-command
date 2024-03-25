@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
-public class LevelLoader : MonoBehaviour
+public class NextLevelLoader : MonoBehaviour
 {
 
-    public bool readyForNextLevel = false;
+    private bool readyForNextLevel = false;
 
     public Animator transition;
 
