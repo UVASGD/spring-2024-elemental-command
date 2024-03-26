@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 2162893801947128182}
   - component: {fileID: 8079502233121941752}
   - component: {fileID: 6347891906322255069}
+  - component: {fileID: 3353924668467194677}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -506,3 +507,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3353924668467194677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3515581574121070706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115d70d5b00815942bbcd7a36b3cf2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ice_Available: 1
+  Earth_Available: 1
+  Air_Available: 1
+  PlayerCanCancel: 1
