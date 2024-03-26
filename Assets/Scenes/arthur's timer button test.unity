@@ -3923,10 +3923,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2544731275871610833, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+      propertyPath: selectLevelLoader
+      value: 
+      objectReference: {fileID: 263193661}
     - target: {fileID: 6516076648476981580, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 263193661}
+    - target: {fileID: 6516076648476981580, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7669823476320571520, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: m_Name
       value: Canvas
