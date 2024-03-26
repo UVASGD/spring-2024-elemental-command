@@ -1,3 +1,4 @@
+using UnityEditor.SearchService;
 using UnityEngine;
 
 
@@ -8,20 +9,20 @@ public GameObject pauseMenu;
 public GameObject crosshair; //to turn off crosshair when paused
 public static bool isPaused = false;
 
-public SelectLevelLoader selectLevelLoader;
+public SceneReloader sceneReloader;
     // Start is called before the first frame update
     void Start()
     {
     pauseMenu.SetActive(false);
     crosshair.SetActive(true);
-    selectLevelLoader = FindAnyObjectByType<SelectLevelLoader>();
+    sceneReloader = FindAnyObjectByType<SceneReloader>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Escape) && !selectLevelLoader.sceneTransitioning)
+        if (Input.GetKeyDown(KeyCode.Escape) && !sceneReloader.sceneTransitioning)
         {
             if(isPaused){
                 ResumeGame();
