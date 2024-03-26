@@ -35,6 +35,8 @@ public class SelectLevelLoader : MonoBehaviour
             pause.ResumeGame();
         }
 
+        Debug.Log("process initiated");
+
         transition.SetTrigger("Start");
 
         yield return new WaitForSeconds(transitionTime);
