@@ -7,18 +7,21 @@ public class Pause : MonoBehaviour
 public GameObject pauseMenu;
 public GameObject crosshair; //to turn off crosshair when paused
 public static bool isPaused = false;
+
+public SelectLevelLoader selectLevelLoader;
     // Start is called before the first frame update
     void Start()
     {
     pauseMenu.SetActive(false);
     crosshair.SetActive(true);
+    selectLevelLoader = FindAnyObjectByType<SelectLevelLoader>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !selectLevelLoader.sceneTransitioning)
         {
             if(isPaused){
                 ResumeGame();
