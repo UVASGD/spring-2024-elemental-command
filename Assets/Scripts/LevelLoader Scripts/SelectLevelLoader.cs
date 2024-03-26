@@ -18,7 +18,7 @@ public class SelectLevelLoader : MonoBehaviour
     {
         pause = FindObjectOfType<Pause>();
         Debug.Log("Remember to put me in restart buttons and main menu buttons!");
-        Debug.Log("Drag me into the OnClick() in the respective buttons, and in the int field, put what build index you want to go to");
+        Debug.Log("Drag me (the object) into the OnClick() in the respective buttons, and in the int field, put what build index you want to go to");
         Debug.Log("0 for mainmenu and x for Level x");
     }
 
