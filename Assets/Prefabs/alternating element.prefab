@@ -49,6 +49,7 @@ MonoBehaviour:
   timerDuration: 5
   logic: {fileID: 1987755649047479187}
   meshColor: {fileID: 7985956689518952187}
+  iceImmune: 1
   offColor: {r: 1, g: 0, b: 0, a: 0}
   onColor: {r: 0.0110804355, g: 0.0110804355, b: 0.7830189, a: 1}
 --- !u!23 &7985956689518952187

@@ -13,6 +13,8 @@ public class AlternatingPowerLogicElement : MonoBehaviour
 
     [SerializeField] private MeshRenderer meshColor;
 
+    [SerializeField] private bool iceImmune = true;
+
     public Color offColor;
     public Color onColor;
 
@@ -32,7 +34,6 @@ public class AlternatingPowerLogicElement : MonoBehaviour
         {
             if (timer > 0)
             {
-
                 timer -= Time.deltaTime;
             }
 
@@ -65,7 +66,11 @@ public class AlternatingPowerLogicElement : MonoBehaviour
 
     public void ActivateIce()
     {
-        timerOn = false;
+        if (!iceImmune)
+        {
+            timerOn = false;
+        }
+        
     }
     public void EndIce()
     {

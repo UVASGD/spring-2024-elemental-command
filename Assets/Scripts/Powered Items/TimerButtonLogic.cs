@@ -11,6 +11,7 @@ public class TimerButtonLogic : MonoBehaviour
     [SerializeField] private Animator anim;
     private bool timer_is_pressable = true;
     private bool has_been_pressed = false;
+    private bool notIce = true;
     private float timer = 5.0f;
     [SerializeField] private Transform playerTransform;
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class TimerButtonLogic : MonoBehaviour
     {
         if(!timer_is_pressable) 
         {
-            if(has_been_pressed)
+            if(has_been_pressed && notIce)
             {
                 timer -= Time.deltaTime; 
             }
@@ -33,6 +34,7 @@ public class TimerButtonLogic : MonoBehaviour
 
         if (timer < 0)
         {
+            Debug.Log("timer depressed");
             timer_is_pressable = true;
             timer = timerDuration;
             has_been_pressed = false;
@@ -53,4 +55,17 @@ public class TimerButtonLogic : MonoBehaviour
         }
 
     } 
+
+    public void ActivateIce()
+    {
+        notIce = false;
+        timer_is_pressable = false;
+    }
+
+    public void EndIce()
+    {
+        notIce = true;
+        timer_is_pressable = !has_been_pressed;
+    }
+
     }   

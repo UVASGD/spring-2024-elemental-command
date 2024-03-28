@@ -175,6 +175,10 @@ public class ElementManager : MonoBehaviour
         {
             button.EndIce();
         }
+        foreach(TimerButtonLogic timerButton in FindObjectsOfType<TimerButtonLogic>())
+        {
+            timerButton.EndIce();
+        }
     }
 
     private void StartIce()
@@ -191,6 +195,10 @@ public class ElementManager : MonoBehaviour
         foreach (AlternatingPowerLogicElement alt in FindObjectsOfType<AlternatingPowerLogicElement>())
         {
             alt.ActivateIce();
+        }
+        foreach (TimerButtonLogic timerButton in FindObjectsOfType<TimerButtonLogic>())
+        {
+            timerButton.ActivateIce();
         }
     }
 
