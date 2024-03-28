@@ -1369,6 +1369,22 @@ PrefabInstance:
       propertyPath: filter
       value: 
       objectReference: {fileID: 766907228}
+    - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: Air_Available
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: Ice_Available
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: Earth_Available
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: PlayerCanCancel
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3515581574121070706, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -4631,7 +4647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5596200896903486408, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_SelectedEdges.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5596200896903486408, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_Tangents.Array.data[4].z
@@ -4923,7 +4939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5596200896903486408, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_SelectedVertices.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5596200896903486408, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_SelectedEdges.Array.data[0].a
@@ -5076,7 +5092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5252781735212702383, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5252781735212702383, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5092,7 +5108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5596200896903486408, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_SelectedEdges.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5596200896903486408, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_Tangents.Array.data[4].z
@@ -5368,7 +5384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5596200896903486408, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_SelectedVertices.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5596200896903486408, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_SelectedEdges.Array.data[0].a
@@ -5392,7 +5408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5834485418195195674, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: 4.75
       objectReference: {fileID: 0}
     - target: {fileID: 5834485418195195674, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_LocalPosition.z
