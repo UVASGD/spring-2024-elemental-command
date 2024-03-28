@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingPlatformPowered
       objectReference: {fileID: 0}
+    - target: {fileID: 7025566325982871651, guid: d6255f0f11fe06942a4e650cc3e91d11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 8848585445718898496, guid: d6255f0f11fe06942a4e650cc3e91d11, type: 3}
       propertyPath: logicElements.Array.data[0]
       value: 
