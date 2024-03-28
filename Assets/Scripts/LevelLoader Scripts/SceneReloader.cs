@@ -26,7 +26,6 @@ public class SceneReloader : MonoBehaviour
 
     public void LoadCurrentLevel()
     {
-        //Loads next level in build index
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
 
     }

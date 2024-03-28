@@ -2443,6 +2443,17 @@ LightingSettings:
   m_PVRTiledBaking: 0
   m_NumRaysToShootPerTexel: -1
   m_RespectSceneVisibilityWhenBakingGI: 0
+--- !u!114 &439141412 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2544731275871610833, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+  m_PrefabInstance: {fileID: 5075430163108766549}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b50d3d7ed675840b58a7dd4bfac4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &497249185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7925369430595016640, guid: 217c32be2b5eda548bd304d2595a4041, type: 3}
@@ -3637,6 +3648,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: Earth_Available
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: PlayerCanCancel
       value: 1
       objectReference: {fileID: 0}
@@ -3834,9 +3849,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1489314471657774437, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 439141412}
     - target: {fileID: 7669823476320571520, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874236945208210927, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

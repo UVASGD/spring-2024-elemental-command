@@ -35,7 +35,7 @@ public SceneReloader sceneReloader;
     }
 
     public void PauseGame(){
-
+        
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         pauseMenu.SetActive(true);
