@@ -66,22 +66,8 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 44df4aa2ce20fd478edc935827615e8d
     GuidInternal: 
-    m_lastTime: -8584899493941138273
-    List:
-    - name: Main
-      guid: a831f0609d2cf2408208d11821af5e2b
-      id: 3161908922
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 44df4aa2ce20fd478edc935827615e8d
-      - ElementName: Main
-        ObjectType: 7
-        guid: a831f0609d2cf2408208d11821af5e2b
-      Path: SoundBanks\Default Work Unit\Main
+    m_lastTime: -8584899543512085568
+    List: []
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -94,25 +80,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2b064aaa89008f4db8c88554933ab30c
     GuidInternal: 
-    m_lastTime: -8584899493941195832
-    List:
-    - name: Button_Press
-      guid: 78d10778f197e84bb0e30e60b4c6ed7b
-      id: 2698747613
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 2b064aaa89008f4db8c88554933ab30c
-      - ElementName: Button_Press
-        ObjectType: 3
-        guid: 78d10778f197e84bb0e30e60b4c6ed7b
-      Path: Events\Default Work Unit\Button_Press
-      maxAttenuation: 0
-      maxDuration: 0.12777159
-      minDuration: 0.12777159
+    m_lastTime: -8584899543512045316
+    List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +139,7 @@ MonoBehaviour:
     m_lastTime: -8584899543511586306
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 030000000400000006000000070000000b0000000c00000014000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

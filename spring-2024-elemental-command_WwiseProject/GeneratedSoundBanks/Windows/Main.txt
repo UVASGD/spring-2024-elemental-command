@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2698747613	Button_Press			\Default Work Unit\Button_Press	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	453579196	Button_Click	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Windows\SFX\Button_Click_50801A8A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Button_Click		22632
-
