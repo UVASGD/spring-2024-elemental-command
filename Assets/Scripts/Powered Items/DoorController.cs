@@ -20,7 +20,6 @@ public class DoorController : MonoBehaviour, ILogicReceiver
         {
             Debug.LogWarning(gameObject + " does not have any logic connected to it. Make sure to set it in DoorController");
         }
-        UpdateLogic();
     }
 
     // Update is called once per frame

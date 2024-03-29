@@ -14,10 +14,6 @@ public class ElementPowerer : MonoBehaviour, ILogicReceiver
     void Start()
     {
         em = FindObjectOfType<ElementManager>();
-        if(logicElements.Length == 0 || !logicElements[0])
-        {
-            Debug.LogWarning(gameObject + " does not have any logic connected to it. Make sure to set it in ElementPowerer");
-        }
         UpdateLogic();
     }
 
