@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Button_Click" ID="{B5149CCF-FF74-4559-AE5B-5CD1EBC2E883}" ShortID="854525528">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Button_Click" ID="{E33CAA02-30F1-417C-B592-02E8CA3A17A0}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0110849861071189"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0157767413952981"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.143548324255246"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Button_Click.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="453579196"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Button_Click" ID="{E33CAA02-30F1-417C-B592-02E8CA3A17A0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
