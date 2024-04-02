@@ -6,6 +6,7 @@ using UnityEngine;
 public class FloorButton : MonoBehaviour
 {
     [SerializeField] private LogicElement logic;
+    private ElementManager em;
     private float objectsRequired;
     public float baseObjectsRequired = 1.0f;
     private int objectsOn;
@@ -14,7 +15,8 @@ public class FloorButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(!logic)
+        em = FindObjectOfType<ElementManager>();
+        if (!logic)
             logic = gameObject.GetComponent<LogicElement>();
         objectsOn = 0;
         objectsRequired = baseObjectsRequired;
@@ -43,34 +45,42 @@ public class FloorButton : MonoBehaviour
     //This weird delay stuff keeps it from jittering on button presses
     public void UpdateLogic()
     {
-        if(objectsOn >= objectsRequired && !logic.GetCondition())
+        if (objectsOn >= objectsRequired && !logic.GetCondition())
         {
             Invoke("PowerOn", powerDelay);
         }
-        else if(objectsOn < objectsRequired && logic.GetCondition())
+        else if (objectsOn < objectsRequired && logic.GetCondition())
         {
             Invoke("PowerOff", powerDelay);
         }
-        
+
     }
     private void PowerOn()
     {
-        if(objectsOn >= objectsRequired)
+        if (em.state != ElementManager.Element.Ice)
         {
-            logic.SetActive();
-            anim.Play("ButtonPressed", 0, 0.0f);
-            CancelInvoke();
+            if (objectsOn >= objectsRequired)
+            {
+                logic.SetActive();
+                anim.Play("ButtonPressed", 0, 0.0f);
+                CancelInvoke();
+            }
         }
+        
     }
 
     private void PowerOff()
     {
-        if(objectsOn < objectsRequired)
+        if (em.state != ElementManager.Element.Ice)
         {
-            logic.SetInactive();
-            anim.Play("ButtonDepressed", 0, 0.0f);
-            CancelInvoke();
+            if (objectsOn < objectsRequired)
+            {
+                logic.SetInactive();
+                anim.Play("ButtonDepressed", 0, 0.0f);
+                CancelInvoke();
+            }
         }
+        
     }
 
     public void ActivateEarth()
@@ -81,6 +91,11 @@ public class FloorButton : MonoBehaviour
     public void EndEarth()
     {
         objectsRequired = baseObjectsRequired;
+    }
+
+    public void EndIce()
+    {
+        UpdateLogic();
     }
 
 }
