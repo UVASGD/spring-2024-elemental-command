@@ -36,6 +36,7 @@ public class GameplayBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         Earth_Highlighted = false;
 
         Air_Highlighted = false;
@@ -46,7 +47,10 @@ public class GameplayBar : MonoBehaviour
 
         elementAvailability = FindObjectOfType<ElementAvailability>();
 
-        if (ElementAvailability.count == 3){ //If three elements are available, draw them like this
+        Debug.Log("count in gamplay bar" + elementAvailability.NumberOfAvailableElements());
+        Debug.Log("is is available" + elementAvailability.Ice_Available);
+
+        if (elementAvailability.NumberOfAvailableElements() == 3){ //If three elements are available, draw them like this
 
             AirImage.anchoredPosition = new UnityEngine.Vector2(-350, 70);
             AirText.anchoredPosition = new UnityEngine.Vector2(-190, 90);
@@ -60,7 +64,7 @@ public class GameplayBar : MonoBehaviour
             QText.anchoredPosition = new UnityEngine.Vector2(300, 90);
             ToCancelText.anchoredPosition = new UnityEngine.Vector2(340, 55);
 
-        } else if (ElementAvailability.count == 2){
+        } else if (elementAvailability.NumberOfAvailableElements() == 2){
 
             if (elementAvailability.Air_Available && elementAvailability.Earth_Available){
                 //if air and earth are availible
@@ -109,7 +113,7 @@ public class GameplayBar : MonoBehaviour
         
 
 
-        } else if (ElementAvailability.count == 1){
+        } else if (elementAvailability.NumberOfAvailableElements() == 1){
 
             if (elementAvailability.Air_Available){
             
@@ -140,6 +144,8 @@ public class GameplayBar : MonoBehaviour
             IceText.anchoredPosition = new UnityEngine.Vector2(210, -300);
 
             } else if (elementAvailability.Ice_Available){
+
+                Debug.Log("entered Ice solo");
 
             IceImage.anchoredPosition = new UnityEngine.Vector2(0, 70);
             IceText.anchoredPosition = new UnityEngine.Vector2(160, 90);

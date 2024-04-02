@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TimerButtonLogic : MonoBehaviour
@@ -13,9 +14,13 @@ public class TimerButtonLogic : MonoBehaviour
     private bool has_been_pressed = false;
     private float timer = 5.0f;
     [SerializeField] private Transform playerTransform;
+
+    ElementManager em;
     // Start is called before the first frame update
     void Start()
     {
+
+        em = FindObjectOfType<ElementManager>();
         
     }
 
@@ -26,6 +31,13 @@ public class TimerButtonLogic : MonoBehaviour
         {
             if(has_been_pressed)
             {
+
+                if (em.state == ElementManager.Element.Ice)
+                {   //timer stays the same if button pressed and in ice
+                    Debug.Log("timer = " + timer);
+                    return;
+                }
+
                 timer -= Time.deltaTime; 
             }
         
@@ -40,11 +52,12 @@ public class TimerButtonLogic : MonoBehaviour
             logic.SetInactive();
         }
 
+
     }
 
     public void PressButton()
     {
-        if(timer_is_pressable){            
+        if(timer_is_pressable && !(em.state == ElementManager.Element.Ice)){            
             timer_is_pressable = false;
             has_been_pressed = true;
             logic.SetActive();

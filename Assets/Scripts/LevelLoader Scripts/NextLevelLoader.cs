@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
-public class NextLevelLoader : MonoBehaviour
+public class NextLevelLoader : MonoBehaviour, ILogicReceiver
 {
 
     private bool readyForNextLevel = false;
@@ -13,8 +13,11 @@ public class NextLevelLoader : MonoBehaviour
 
     public float transitionTime;
 
+    [SerializeField] LogicElement logicElement;
+
     void Start()
     {
+        
         readyForNextLevel = false;
     }
 
@@ -26,8 +29,19 @@ public class NextLevelLoader : MonoBehaviour
         {
             LoadNextLevel();
         }
+
+        
         
     }
+
+    public void UpdateLogic()
+    {
+        if (logicElement.GetCondition())
+        {
+            LoadNextLevel();
+        }
+    }
+
 
     public void LoadNextLevel()
     {
