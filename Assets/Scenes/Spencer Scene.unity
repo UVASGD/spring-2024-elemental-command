@@ -20173,11 +20173,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1799102714346847452, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.137
+      value: -2.11
       objectReference: {fileID: 0}
     - target: {fileID: 1799102714346847452, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.086
+      value: 1.626
+      objectReference: {fileID: 0}
+    - target: {fileID: 2445766425088711469, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2763886394515933085, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_Name
@@ -20246,6 +20250,14 @@ PrefabInstance:
     - target: {fileID: 8686700321317422676, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_SelectedEditorRenderState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123269037474083022, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
+      propertyPath: m_Center.x
+      value: -2.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123269037474083022, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
+      propertyPath: m_Center.z
+      value: 1.626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
