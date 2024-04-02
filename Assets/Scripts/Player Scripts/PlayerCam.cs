@@ -10,8 +10,8 @@ public class NewBehaviourScript : MonoBehaviour
 
     public Transform orientation;
     
-    float xRotation;
-    float yRotation;
+    [SerializeField] float xRotation;
+    [SerializeField] float yRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -25,16 +25,16 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         if (Pause.isPaused == false){ //locks looking around when paused
-        float mouseX = Input.GetAxisRaw("Mouse X") * sensX;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * sensY;
+            float mouseX = Input.GetAxisRaw("Mouse X") * sensX;
+            float mouseY = Input.GetAxisRaw("Mouse Y") * sensY;
 
-        yRotation += mouseX;
+            yRotation += mouseX;
 
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            xRotation -= mouseY;
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+            transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+            orientation.rotation = Quaternion.Euler(0, yRotation, 0);
         }
     }
 
