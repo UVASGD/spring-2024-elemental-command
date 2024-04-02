@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A24ADF44-20CE-47FD-8EDC-935827615E8D}" SchemaVersion="119">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{A24ADF44-20CE-47FD-8EDC-935827615E8D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A24ADF44-20CE-47FD-8EDC-935827615E8D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{4FEDAEED-E8BB-4D57-BA77-DD1614E4D16A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Ice_Freeze" ID="{0ACE13F1-12E5-48CE-93E7-B212C0C9C104}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Air_Sound" ID="{290CB520-EE9A-4A35-B9EB-C4C1BF1B744C}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Button_Click_Start" ID="{D6869103-0C33-4AC9-A434-6E693220A33C}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps_Dirt" ID="{D20CF094-08CD-4AD5-8F36-5B1179C4A016}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Earth_Sound" ID="{21201C30-31C8-4ED3-A119-CC601FD5E13E}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

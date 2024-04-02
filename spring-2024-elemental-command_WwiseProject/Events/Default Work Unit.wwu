@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Button_Click_Start" ID="{D6869103-0C33-4AC9-A434-6E693220A33C}">
+					<ChildrenList>
+						<Action Name="" ID="{57FA0356-8EF3-455F-923D-5A3ED7683283}" ShortID="800050734">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button_Click_Start" ID="{DA646D82-B9B2-4F48-8875-072A1B92C66C}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Footsteps_Dirt" ID="{D20CF094-08CD-4AD5-8F36-5B1179C4A016}">
+					<ChildrenList>
+						<Action Name="" ID="{3C6E37BC-DC44-44C9-8AE1-C660691F547B}" ShortID="145979656">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Dirt" ID="{4AA46A7F-ECF5-4DB8-A689-E4DC0C30EC73}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Air_Sound" ID="{290CB520-EE9A-4A35-B9EB-C4C1BF1B744C}">
+					<ChildrenList>
+						<Action Name="" ID="{9E6182EA-A87A-4FD1-AEC5-BD44C7E68E7B}" ShortID="729373352">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Air_Sound" ID="{C0B791BE-3AE3-4FD2-B8DA-85B4D24E4019}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Earth_Sound" ID="{21201C30-31C8-4ED3-A119-CC601FD5E13E}">
+					<ChildrenList>
+						<Action Name="" ID="{66153496-048C-49D2-8020-8D95AA3C15A3}" ShortID="181406938">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Earth_Sound" ID="{76F8C7E1-8103-477C-8202-AFDA219FDAA5}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ice_Freeze" ID="{0ACE13F1-12E5-48CE-93E7-B212C0C9C104}">
+					<ChildrenList>
+						<Action Name="" ID="{C704C9D5-5D99-47B5-88C0-576FB2CA3139}" ShortID="818216838">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ice_Freeze" ID="{2CC80D31-DD19-4050-9829-2319D9804697}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

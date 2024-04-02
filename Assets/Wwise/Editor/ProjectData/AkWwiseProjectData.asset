@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 44df4aa2ce20fd478edc935827615e8d
     GuidInternal: 
-    m_lastTime: -8584899543512085568
-    List: []
+    m_lastTime: -8584896785896265884
+    List:
+    - name: Main
+      guid: edaeed4fbbe8574dba77dd1614e4d16a
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 44df4aa2ce20fd478edc935827615e8d
+      - ElementName: Main
+        ObjectType: 7
+        guid: edaeed4fbbe8574dba77dd1614e4d16a
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,93 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2b064aaa89008f4db8c88554933ab30c
     GuidInternal: 
-    m_lastTime: -8584899543512045316
-    List: []
+    m_lastTime: -8584896785896155645
+    List:
+    - name: Play_Air_Sound
+      guid: 20b50c299aee354ab9ebc4c1bf1b744c
+      id: 2894287546
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_Air_Sound
+        ObjectType: 3
+        guid: 20b50c299aee354ab9ebc4c1bf1b744c
+      Path: Events\Default Work Unit\Play_Air_Sound
+      maxAttenuation: 0
+      maxDuration: 2.4994104
+      minDuration: 2.4994104
+    - name: Play_Button_Click_Start
+      guid: 039186d6330cc94aa4346e693220a33c
+      id: 3861110338
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_Button_Click_Start
+        ObjectType: 3
+        guid: 039186d6330cc94aa4346e693220a33c
+      Path: Events\Default Work Unit\Play_Button_Click_Start
+      maxAttenuation: 0
+      maxDuration: 6.877188
+      minDuration: 6.877188
+    - name: Play_Earth_Sound
+      guid: 301c2021c831d34ea119cc601fd5e13e
+      id: 1714443690
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_Earth_Sound
+        ObjectType: 3
+        guid: 301c2021c831d34ea119cc601fd5e13e
+      Path: Events\Default Work Unit\Play_Earth_Sound
+      maxAttenuation: 0
+      maxDuration: 2.4994104
+      minDuration: 2.4994104
+    - name: Play_Footsteps_Dirt
+      guid: 94f00cd2cd08d54a8f365b1179c4a016
+      id: 3256576449
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_Footsteps_Dirt
+        ObjectType: 3
+        guid: 94f00cd2cd08d54a8f365b1179c4a016
+      Path: Events\Default Work Unit\Play_Footsteps_Dirt
+      maxAttenuation: 0
+      maxDuration: 0.6368282
+      minDuration: 0.3497273
+    - name: Play_Ice_Freeze
+      guid: f113ce0ae512ce4893e7b212c0c9c104
+      id: 1784315359
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_Ice_Freeze
+        ObjectType: 3
+        guid: f113ce0ae512ce4893e7b212c0c9c104
+      Path: Events\Default Work Unit\Play_Ice_Freeze
+      maxAttenuation: 0
+      maxDuration: 2.0814285
+      minDuration: 2.0814285
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +238,7 @@ MonoBehaviour:
     m_lastTime: -8584899543511586306
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000000e0000000f000000b0000000b10000000e0100000f0100004a0100004b0100008b0100008c0100007402000075020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

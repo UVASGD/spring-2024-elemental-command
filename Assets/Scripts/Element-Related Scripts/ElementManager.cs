@@ -40,6 +40,8 @@ public class ElementManager : MonoBehaviour
         {
             if(elementAvailability.Air_Available){
                 ChangeState(Element.Air);
+                // WWise air sound
+                AkSoundEngine.PostEvent("Play_Air_Sound", gameObject);
             }
         }
         //Earth is 2
@@ -47,6 +49,8 @@ public class ElementManager : MonoBehaviour
         {
             if (elementAvailability.Earth_Available){
                 ChangeState(Element.Earth);
+                // WWise earth sound
+                AkSoundEngine.PostEvent("Play_Earth_Sound", gameObject);
             }
         }
         //Ice is 3
@@ -54,6 +58,8 @@ public class ElementManager : MonoBehaviour
         {
             if (elementAvailability.Ice_Available){
                 ChangeState(Element.Ice);
+                // WWise ice sound
+                AkSoundEngine.PostEvent("Play_Ice_Freeze", gameObject);
             }
         }
         //Electricity is 4 (and not active)

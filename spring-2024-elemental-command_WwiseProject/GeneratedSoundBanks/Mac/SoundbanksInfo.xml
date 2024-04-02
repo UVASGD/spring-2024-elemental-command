@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AD4DAE7C-B46F-FDFB-6358-B7A16E084221}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FF43B2AD-C0EB-252F-6E81-D469E3850621}">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<Media>
+				<File Id="133473180" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PMSFX - STEPS Dry Grass &amp; Shrubs\PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav</ShortName>
+					<CachePath>SFX/PMSFX - STEPS Dry Grass &amp; Shrubs/PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow _9160538F.wem</CachePath>
+				</File>
+				<File Id="277213961" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PMSFX - STEPS Dry Grass &amp; Shrubs\PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav</ShortName>
+					<CachePath>SFX/PMSFX - STEPS Dry Grass &amp; Shrubs/PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow _818F3B66.wem</CachePath>
+				</File>
+				<File Id="355896217" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PMSFX - STEPS Dry Grass &amp; Shrubs\PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav</ShortName>
+					<CachePath>SFX/PMSFX - STEPS Dry Grass &amp; Shrubs/PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow _503AF69D.wem</CachePath>
+				</File>
+				<File Id="599626377" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Changeto_Earth.wav</ShortName>
+					<CachePath>SFX/Changeto_Earth_818F3B66.wem</CachePath>
+				</File>
+				<File Id="685939598" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Changeto_Ice02.wav</ShortName>
+					<CachePath>SFX/Changeto_Ice02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="934714878" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Changeto_Air.wav</ShortName>
+					<CachePath>SFX/Changeto_Air_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1003013864" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Timer_2.wav</ShortName>
+					<CachePath>SFX/Timer_2_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="665920579" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="2894287546" Name="Play_Air_Sound" DurationType="OneShot" DurationMin="2.4994104" DurationMax="2.4994104">
+					<MediaRefs>
+						<MediaRef Id="934714878"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3861110338" Name="Play_Button_Click_Start" DurationType="OneShot" DurationMin="6.877188" DurationMax="6.877188">
+					<MediaRefs>
+						<MediaRef Id="1003013864"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1714443690" Name="Play_Earth_Sound" DurationType="OneShot" DurationMin="2.4994104" DurationMax="2.4994104">
+					<MediaRefs>
+						<MediaRef Id="599626377"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3256576449" Name="Play_Footsteps_Dirt" DurationType="OneShot" DurationMin="0.3497273" DurationMax="0.6368282">
+					<MediaRefs>
+						<MediaRef Id="133473180"/>
+						<MediaRef Id="277213961"/>
+						<MediaRef Id="355896217"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="665920579"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="1784315359" Name="Play_Ice_Freeze" DurationType="OneShot" DurationMin="2.0814285" DurationMax="2.0814285">
+					<MediaRefs>
+						<MediaRef Id="685939598"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{E8361F75-DC9A-7064-7A96-AC1B0A6A7355}</FileHash>
+</SoundBanksInfo>

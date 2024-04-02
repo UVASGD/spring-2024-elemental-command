@@ -50,6 +50,9 @@ public class TimerButtonLogic : MonoBehaviour
             logic.SetActive();
             timer -= Time.deltaTime;
             anim.Play("TimerButtonPress", 0, 0.0f);
+            
+            // wwise play event (starts timer)
+            AkSoundEngine.PostEvent("Play_Button_Click_Start", gameObject);
         }
 
     } 

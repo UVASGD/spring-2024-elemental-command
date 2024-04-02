@@ -21,6 +21,14 @@ public class PlayerMovement : MonoBehaviour
     public float playerHeight;
     public bool grounded;
 
+    // Footsteps 
+    [Header("Wwise Events")]
+    public AK.Wwise.Event myFootstep;
+
+    // Wwise
+    private bool footstepIsPlaying = false;
+    private float lastFootstepTime = 0;
+
     public Transform orientation;
 
     float horizontalInput;
@@ -40,6 +48,9 @@ public class PlayerMovement : MonoBehaviour
         rb.freezeRotation = true;
         readyToJump = true;
         em = FindObjectOfType<ElementManager>();
+
+        // Wwise
+        lastFootstepTime = Time.time;
     }
 
     // Update is called once per frame
@@ -87,6 +98,7 @@ public class PlayerMovement : MonoBehaviour
             Invoke(nameof(ResetJump), jumpCooldown);
         }
         }
+
     }
 
     private void MovePlayer()
@@ -97,11 +109,29 @@ public class PlayerMovement : MonoBehaviour
         if(grounded)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10, ForceMode.Force);
+
+        // footstep sounds
+        if ((!footstepIsPlaying) && (horizontalInput != 0 || verticalInput != 0)) {
+            myFootstep.Post(gameObject);
+            lastFootstepTime = Time.time;
+            footstepIsPlaying = true;
+        }
+
+        else{
+            if (moveSpeed >1){
+                if (Time.time - lastFootstepTime > 75/moveSpeed*Time.deltaTime){
+                footstepIsPlaying = false;
+                }
+            }
+        }
+
         }else{
         //in air
             rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier * 10f, ForceMode.Force);
         }
-        
+
+  
+
     }
 
     private void SpeedControl()
