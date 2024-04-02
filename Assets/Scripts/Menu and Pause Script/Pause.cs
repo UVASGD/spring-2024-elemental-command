@@ -1,3 +1,4 @@
+using UnityEditor.SearchService;
 using UnityEngine;
 
 
@@ -7,18 +8,21 @@ public class Pause : MonoBehaviour
 public GameObject pauseMenu;
 public GameObject crosshair; //to turn off crosshair when paused
 public static bool isPaused = false;
+
+public SceneReloader sceneReloader;
     // Start is called before the first frame update
     void Start()
     {
     pauseMenu.SetActive(false);
     crosshair.SetActive(true);
+    sceneReloader = FindAnyObjectByType<SceneReloader>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !sceneReloader.sceneTransitioning)
         {
             if(isPaused){
                 ResumeGame();
@@ -31,7 +35,7 @@ public static bool isPaused = false;
     }
 
     public void PauseGame(){
-
+        
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         pauseMenu.SetActive(true);
