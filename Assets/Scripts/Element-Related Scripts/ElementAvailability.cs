@@ -15,14 +15,7 @@ public class ElementAvailability : MonoBehaviour
 
 [SerializeField] public bool PlayerCanCancel;
 
-public static int count = 0;
-
-
-void Start(){
-    NumberOfAvailableElements();
-
-}
-    public void NumberOfAvailableElements(){
+    public int NumberOfAvailableElements(){
 
         int counter = 0;
 
@@ -33,7 +26,7 @@ void Start(){
         if (Air_Available)
             counter++;
 
-        count = counter;
+       return counter;
     }
 
     public bool PlayerCanCancelState(){
