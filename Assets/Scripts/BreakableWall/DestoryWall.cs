@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DestroyOnCollision : MonoBehaviour
+public class DestroyWall : MonoBehaviour
 {
     public float collisionSpeedThreshold = 5f; // Define the collision speed threshold here
 
