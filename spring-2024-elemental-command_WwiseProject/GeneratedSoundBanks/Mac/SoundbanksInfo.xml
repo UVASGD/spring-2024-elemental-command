@@ -22,10 +22,14 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FF43B2AD-C0EB-252F-6E81-D469E3850621}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FA2143A5-90ED-642D-14DA-6D2B3F568FF5}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="24095102" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FloorButton_Down.wav</ShortName>
+					<CachePath>SFX/FloorButton_Down_2DF11738.wem</CachePath>
+				</File>
 				<File Id="133473180" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PMSFX - STEPS Dry Grass &amp; Shrubs\PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav</ShortName>
 					<CachePath>SFX/PMSFX - STEPS Dry Grass &amp; Shrubs/PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow _9160538F.wem</CachePath>
@@ -38,6 +42,14 @@
 					<ShortName>PMSFX - STEPS Dry Grass &amp; Shrubs\PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav</ShortName>
 					<CachePath>SFX/PMSFX - STEPS Dry Grass &amp; Shrubs/PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow _503AF69D.wem</CachePath>
 				</File>
+				<File Id="452033860" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Changeto_Normal02.wav</ShortName>
+					<CachePath>SFX/Changeto_Normal02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="464221344" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>FloorButton_Up.wav</ShortName>
+					<CachePath>SFX/FloorButton_Up_818F3B66.wem</CachePath>
+				</File>
 				<File Id="599626377" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Earth.wav</ShortName>
 					<CachePath>SFX/Changeto_Earth_818F3B66.wem</CachePath>
@@ -45,6 +57,18 @@
 				<File Id="685939598" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Ice02.wav</ShortName>
 					<CachePath>SFX/Changeto_Ice02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="861814258" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Holding_Synth.wav</ShortName>
+					<CachePath>SFX/Holding_Synth_818F3B66.wem</CachePath>
+				</File>
+				<File Id="870174411" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SlidingDoor_Close.wav</ShortName>
+					<CachePath>SFX/SlidingDoor_Close_818F3B66.wem</CachePath>
+				</File>
+				<File Id="918058645" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SlidingDoor_Open.wav</ShortName>
+					<CachePath>SFX/SlidingDoor_Open_818F3B66.wem</CachePath>
 				</File>
 				<File Id="934714878" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Air.wav</ShortName>
@@ -71,9 +95,24 @@
 						<MediaRef Id="1003013864"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="697093635" Name="Play_Changeto_Normal02" DurationType="OneShot" DurationMin="2.003356" DurationMax="2.003356">
+					<MediaRefs>
+						<MediaRef Id="452033860"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1714443690" Name="Play_Earth_Sound" DurationType="OneShot" DurationMin="2.4994104" DurationMax="2.4994104">
 					<MediaRefs>
 						<MediaRef Id="599626377"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3268058259" Name="Play_FloorButton_Down" DurationType="OneShot" DurationMin="1.0642385" DurationMax="1.0642385">
+					<MediaRefs>
+						<MediaRef Id="24095102"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2917586196" Name="Play_FloorButton_Up" DurationType="OneShot" DurationMin="1.7766893" DurationMax="1.7766893">
+					<MediaRefs>
+						<MediaRef Id="464221344"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3256576449" Name="Play_Footsteps_Dirt" DurationType="OneShot" DurationMin="0.3497273" DurationMax="0.6368282">
@@ -88,13 +127,28 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="81622924" Name="Play_Holding_Synth" DurationType="OneShot" DurationMin="6.877188" DurationMax="6.877188">
+					<MediaRefs>
+						<MediaRef Id="861814258"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1784315359" Name="Play_Ice_Freeze" DurationType="OneShot" DurationMin="2.0814285" DurationMax="2.0814285">
 					<MediaRefs>
 						<MediaRef Id="685939598"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="458327077" Name="Play_SlidingDoor_Close" DurationType="OneShot" DurationMin="1.46161" DurationMax="1.46161">
+					<MediaRefs>
+						<MediaRef Id="870174411"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1262405167" Name="Play_SlidingDoor_Open" DurationType="OneShot" DurationMin="1.232381" DurationMax="1.232381">
+					<MediaRefs>
+						<MediaRef Id="918058645"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E8361F75-DC9A-7064-7A96-AC1B0A6A7355}</FileHash>
+	<FileHash>{F58A89D9-C524-AAC6-0C84-E82CB90CCB70}</FileHash>
 </SoundBanksInfo>

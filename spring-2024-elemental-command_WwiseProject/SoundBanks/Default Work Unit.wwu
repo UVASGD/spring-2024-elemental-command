@@ -5,11 +5,21 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{4FEDAEED-E8BB-4D57-BA77-DD1614E4D16A}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_BoxDrop_Normal" ID="{56C94C25-671A-408A-9CC4-8315DC3B2D94}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FloorButton_Up" ID="{26C6B51F-B8E1-419F-AF78-E0D9F747CDBD}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Holding_Synth" ID="{9795EC22-B721-4665-849D-D15470D7BA74}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TimerButton_End" ID="{96E2C656-9CAD-4681-9C19-DC855263027F}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ice_Freeze" ID="{0ACE13F1-12E5-48CE-93E7-B212C0C9C104}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Air_Sound" ID="{290CB520-EE9A-4A35-B9EB-C4C1BF1B744C}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Button_Click_Start" ID="{D6869103-0C33-4AC9-A434-6E693220A33C}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TimerButton_Start" ID="{D6869103-0C33-4AC9-A434-6E693220A33C}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps_Dirt" ID="{D20CF094-08CD-4AD5-8F36-5B1179C4A016}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_BoxDrop_Earth" ID="{0917CDBE-6880-4BE1-92CA-8A51BDADAF93}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SlidingDoor_Open" ID="{6FFF35BA-6823-4D35-942F-FA0176E75C88}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TimerButton_Ticking" ID="{36EB3DA4-8E33-4E6A-8C72-0DCD690598B8}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Normal_Sound" ID="{C285E950-2804-4E8E-BA59-2A650168BD9E}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FloorButton_Down" ID="{0BDA0463-2F9D-4EA6-80EF-E8619F42CD1A}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Earth_Sound" ID="{21201C30-31C8-4ED3-A119-CC601FD5E13E}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SlidingDoor_Close" ID="{ED4D1581-5913-4EDD-87A1-9CC66B378C75}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

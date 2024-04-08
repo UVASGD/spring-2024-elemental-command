@@ -38,6 +38,17 @@ public class ElementPowerer : MonoBehaviour, ILogicReceiver
         {
             powered = true;
             em.ChangeState(poweredElement);
+
+            // wwise sound element changes
+            if (poweredElement == ElementManager.Element.Air){
+                AkSoundEngine.PostEvent("Play_Air_Sound", gameObject);
+            }
+            if (poweredElement == ElementManager.Element.Earth){
+                AkSoundEngine.PostEvent("Play_Earth_Sound", gameObject);
+            }
+            if (poweredElement == ElementManager.Element.Ice){
+                AkSoundEngine.PostEvent("Play_Ice_Freeze", gameObject);
+            }
         }
         //Close the door if conditions are not met and its open
         else if(!conditionsMet && powered)

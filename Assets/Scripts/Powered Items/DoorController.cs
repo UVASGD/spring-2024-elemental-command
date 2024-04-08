@@ -47,11 +47,13 @@ public class DoorController : MonoBehaviour, ILogicReceiver
         {
             doorOpen = true;
             myDoor.Play("DoorOpen", 0, 0.0f);
+            AkSoundEngine.PostEvent("Play_SlidingDoor_Open", gameObject);
         }
         //Close the door if conditions are not met and its open
         else if(!conditionsMet && doorOpen)
         {
             myDoor.Play("DoorClose", 0, 0.0f);
+            AkSoundEngine.PostEvent("Play_SlidingDoor_Close", gameObject);
             doorOpen = false;
         }
     }

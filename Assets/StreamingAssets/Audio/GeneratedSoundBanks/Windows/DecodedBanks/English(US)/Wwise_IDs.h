@@ -15,9 +15,15 @@ namespace AK
     {
         static const AkUniqueID PLAY_AIR_SOUND = 2894287546U;
         static const AkUniqueID PLAY_BUTTON_CLICK_START = 3861110338U;
+        static const AkUniqueID PLAY_CHANGETO_NORMAL02 = 697093635U;
         static const AkUniqueID PLAY_EARTH_SOUND = 1714443690U;
+        static const AkUniqueID PLAY_FLOORBUTTON_DOWN = 3268058259U;
+        static const AkUniqueID PLAY_FLOORBUTTON_UP = 2917586196U;
         static const AkUniqueID PLAY_FOOTSTEPS_DIRT = 3256576449U;
+        static const AkUniqueID PLAY_HOLDING_SYNTH = 81622924U;
         static const AkUniqueID PLAY_ICE_FREEZE = 1784315359U;
+        static const AkUniqueID PLAY_SLIDINGDOOR_CLOSE = 458327077U;
+        static const AkUniqueID PLAY_SLIDINGDOOR_OPEN = 1262405167U;
     } // namespace EVENTS
 
     namespace BANKS

@@ -1,19 +1,31 @@
 Event	ID	Name			Wwise Object Path	Notes
+	81622924	Play_Holding_Synth			\Default Work Unit\Play_Holding_Synth	
+	458327077	Play_SlidingDoor_Close			\Default Work Unit\Play_SlidingDoor_Close	
+	697093635	Play_Changeto_Normal02			\Default Work Unit\Play_Changeto_Normal02	
+	1262405167	Play_SlidingDoor_Open			\Default Work Unit\Play_SlidingDoor_Open	
 	1714443690	Play_Earth_Sound			\Default Work Unit\Play_Earth_Sound	
 	1784315359	Play_Ice_Freeze			\Default Work Unit\Play_Ice_Freeze	
 	2894287546	Play_Air_Sound			\Default Work Unit\Play_Air_Sound	
+	2917586196	Play_FloorButton_Up			\Default Work Unit\Play_FloorButton_Up	
 	3256576449	Play_Footsteps_Dirt			\Default Work Unit\Play_Footsteps_Dirt	
+	3268058259	Play_FloorButton_Down			\Default Work Unit\Play_FloorButton_Down	
 	3861110338	Play_Button_Click_Start			\Default Work Unit\Play_Button_Click_Start	
 
 Effect plug-ins	ID	Name	Type				Notes
 	665920579	Parametric EQ (Custom)	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	24095102	FloorButton_Down	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\FloorButton_Down_2DF11738.wem		\Actor-Mixer Hierarchy\Default Work Unit\FloorButton_Down		187828
 	133473180	PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\PMSFX - STEPS Dry Grass & Shrubs\PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow _9160538F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Dirt\PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow		38884
 	277213961	PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\PMSFX - STEPS Dry Grass & Shrubs\PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow _818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Dirt\PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow		42988
 	355896217	PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\PMSFX - STEPS Dry Grass & Shrubs\PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow _503AF69D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Dirt\PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow		53316
+	452033860	Normal_Sound	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\Changeto_Normal02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Normal_Sound		353488
+	464221344	FloorButton_Up	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\FloorButton_Up_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\FloorButton_Up		313504
 	599626377	Earth_Sound	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\Changeto_Earth_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Earth_Sound		440992
 	685939598	Ice_Freeze	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\Changeto_Ice02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ice_Freeze		367260
+	861814258	Holding_Synth	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\Holding_Synth_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Holding_Synth		1213232
+	870174411	SlidingDoor_Close	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\SlidingDoor_Close_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SlidingDoor_Close		257924
+	918058645	SlidingDoor_Open	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\SlidingDoor_Open_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SlidingDoor_Open		217488
 	934714878	Air_Sound	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\Changeto_Air_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Air_Sound		440992
 	1003013864	Button_Click_Start	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\Timer_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Button_Click_Start		1213232
 

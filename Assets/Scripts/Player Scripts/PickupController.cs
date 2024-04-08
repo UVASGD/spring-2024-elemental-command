@@ -13,6 +13,9 @@ public class PickupController : MonoBehaviour
     private GameObject heldObj;
     private Rigidbody heldObjRB;
 
+    //wwise variable
+    public uint BoxHold;
+
     [Header("Physics Parameters")]
     [SerializeField] private float pickupRange = 5.0f;
     [SerializeField] private float pickupForce = 150.0f;
@@ -39,15 +42,20 @@ public class PickupController : MonoBehaviour
                 if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
                 {
                     PickupObject(hit.transform.gameObject);
-
+                    // wwise start looping synth sound
+                    // BoxHold = AkSoundEngine.PostEvent("Play_Holding_Synth", gameObject);
+                  
                 }
             }else{
                 DropObject();
+                // stop sound here 
+                // AkSoundEngine.StopPlayingID(BoxHold);
             }
         }
         if(heldObj != null)
         {
             MoveObject();
+            
         }
     }
 

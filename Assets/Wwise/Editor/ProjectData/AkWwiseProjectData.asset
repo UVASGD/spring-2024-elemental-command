@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 44df4aa2ce20fd478edc935827615e8d
     GuidInternal: 
-    m_lastTime: -8584896785896265884
+    m_lastTime: -8584892414717411327
     List:
     - name: Main
       guid: edaeed4fbbe8574dba77dd1614e4d16a
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2b064aaa89008f4db8c88554933ab30c
     GuidInternal: 
-    m_lastTime: -8584896785896155645
+    m_lastTime: -8584892414717461446
     List:
     - name: Play_Air_Sound
       guid: 20b50c299aee354ab9ebc4c1bf1b744c
@@ -111,11 +111,11 @@ MonoBehaviour:
         guid: 20b50c299aee354ab9ebc4c1bf1b744c
       Path: Events\Default Work Unit\Play_Air_Sound
       maxAttenuation: 0
-      maxDuration: 2.4994104
-      minDuration: 2.4994104
-    - name: Play_Button_Click_Start
-      guid: 039186d6330cc94aa4346e693220a33c
-      id: 3861110338
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_BoxDrop_Earth
+      guid: becd17098068e14b92ca8a51bdadaf93
+      id: 2442221123
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -123,13 +123,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 2b064aaa89008f4db8c88554933ab30c
-      - ElementName: Play_Button_Click_Start
+      - ElementName: Play_BoxDrop_Earth
         ObjectType: 3
-        guid: 039186d6330cc94aa4346e693220a33c
-      Path: Events\Default Work Unit\Play_Button_Click_Start
+        guid: becd17098068e14b92ca8a51bdadaf93
+      Path: Events\Default Work Unit\Play_BoxDrop_Earth
       maxAttenuation: 0
-      maxDuration: 6.877188
-      minDuration: 6.877188
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_BoxDrop_Normal
+      guid: 254cc9561a678a409cc48315dc3b2d94
+      id: 3111826680
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_BoxDrop_Normal
+        ObjectType: 3
+        guid: 254cc9561a678a409cc48315dc3b2d94
+      Path: Events\Default Work Unit\Play_BoxDrop_Normal
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Earth_Sound
       guid: 301c2021c831d34ea119cc601fd5e13e
       id: 1714443690
@@ -145,8 +162,42 @@ MonoBehaviour:
         guid: 301c2021c831d34ea119cc601fd5e13e
       Path: Events\Default Work Unit\Play_Earth_Sound
       maxAttenuation: 0
-      maxDuration: 2.4994104
-      minDuration: 2.4994104
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_FloorButton_Down
+      guid: 6304da0b9d2fa64e80efe8619f42cd1a
+      id: 3268058259
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_FloorButton_Down
+        ObjectType: 3
+        guid: 6304da0b9d2fa64e80efe8619f42cd1a
+      Path: Events\Default Work Unit\Play_FloorButton_Down
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_FloorButton_Up
+      guid: 1fb5c626e1b89f41af78e0d9f747cdbd
+      id: 2917586196
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_FloorButton_Up
+        ObjectType: 3
+        guid: 1fb5c626e1b89f41af78e0d9f747cdbd
+      Path: Events\Default Work Unit\Play_FloorButton_Up
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Footsteps_Dirt
       guid: 94f00cd2cd08d54a8f365b1179c4a016
       id: 3256576449
@@ -162,8 +213,25 @@ MonoBehaviour:
         guid: 94f00cd2cd08d54a8f365b1179c4a016
       Path: Events\Default Work Unit\Play_Footsteps_Dirt
       maxAttenuation: 0
-      maxDuration: 0.6368282
-      minDuration: 0.3497273
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Holding_Synth
+      guid: 22ec959721b76546849dd15470d7ba74
+      id: 81622924
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_Holding_Synth
+        ObjectType: 3
+        guid: 22ec959721b76546849dd15470d7ba74
+      Path: Events\Default Work Unit\Play_Holding_Synth
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Ice_Freeze
       guid: f113ce0ae512ce4893e7b212c0c9c104
       id: 1784315359
@@ -179,8 +247,110 @@ MonoBehaviour:
         guid: f113ce0ae512ce4893e7b212c0c9c104
       Path: Events\Default Work Unit\Play_Ice_Freeze
       maxAttenuation: 0
-      maxDuration: 2.0814285
-      minDuration: 2.0814285
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Normal_Sound
+      guid: 50e985c204288e4eba592a650168bd9e
+      id: 2867775487
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_Normal_Sound
+        ObjectType: 3
+        guid: 50e985c204288e4eba592a650168bd9e
+      Path: Events\Default Work Unit\Play_Normal_Sound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SlidingDoor_Close
+      guid: 81154ded1359dd4e87a19cc66b378c75
+      id: 458327077
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_SlidingDoor_Close
+        ObjectType: 3
+        guid: 81154ded1359dd4e87a19cc66b378c75
+      Path: Events\Default Work Unit\Play_SlidingDoor_Close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SlidingDoor_Open
+      guid: ba35ff6f2368354d942ffa0176e75c88
+      id: 1262405167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_SlidingDoor_Open
+        ObjectType: 3
+        guid: ba35ff6f2368354d942ffa0176e75c88
+      Path: Events\Default Work Unit\Play_SlidingDoor_Open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_TimerButton_End
+      guid: 56c6e296ad9c81469c19dc855263027f
+      id: 2210476175
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_TimerButton_End
+        ObjectType: 3
+        guid: 56c6e296ad9c81469c19dc855263027f
+      Path: Events\Default Work Unit\Play_TimerButton_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_TimerButton_Start
+      guid: 039186d6330cc94aa4346e693220a33c
+      id: 3125288428
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_TimerButton_Start
+        ObjectType: 3
+        guid: 039186d6330cc94aa4346e693220a33c
+      Path: Events\Default Work Unit\Play_TimerButton_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_TimerButton_Ticking
+      guid: a43deb36338e6a4e8c720dcd690598b8
+      id: 3669692073
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2b064aaa89008f4db8c88554933ab30c
+      - ElementName: Play_TimerButton_Ticking
+        ObjectType: 3
+        guid: a43deb36338e6a4e8c720dcd690598b8
+      Path: Events\Default Work Unit\Play_TimerButton_Ticking
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -221,7 +391,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: af4254816c77ad42b401034372df397c
     GuidInternal: 
-    m_lastTime: -8584899543512190840
+    m_lastTime: -8584892432373339595
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -238,7 +408,7 @@ MonoBehaviour:
     m_lastTime: -8584899543511586306
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000e0000000f000000b0000000b10000000e0100000f0100004a0100004b0100008b0100008c0100007402000075020000
+  ExpandedWaapiItemIds: 0500000006000000070000000e0000000f0000001000000014000000150000001800000019000000b0000000b10000000e0100000f0100004a0100004b0100008b0100008c0100007402000075020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

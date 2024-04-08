@@ -3,7 +3,15 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Button_Click_Start" ID="{DA646D82-B9B2-4F48-8875-072A1B92C66C}" ShortID="334359001">
+				<Sound Name="TimerButton_Start" ID="{DA646D82-B9B2-4F48-8875-072A1B92C66C}" ShortID="334359001">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
@@ -43,12 +51,56 @@
 								<MediaID ID="1003013864"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="TimerButton_StartDing" ID="{4498FE44-1651-4082-8B7E-B71CFA6AD23E}">
+							<Language>SFX</Language>
+							<AudioFile>TimerButton_StartDing.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="275936070"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{35B8BE59-5D1D-401D-94CF-F9753F547838}" ShortID="726027005">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Parametric EQ (Custom)" ID="{BC688483-444F-444D-A6E1-24A8C0C00F63}" ShortID="6325304" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<PropertyList>
+															<Property Name="FilterTypeBand2" Type="int32" Value="3"/>
+															<Property Name="FrequencyBand2" Type="Real32" Value="12105"/>
+															<Property Name="FrequencyBand3" Type="Real32" Value="4804"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 					<ActiveSourceList>
-						<ActiveSource Name="Timer_2" ID="{3B17968E-78D2-447B-B5E8-B73BF133EC11}" Platform="Linked"/>
+						<ActiveSource Name="TimerButton_StartDing" ID="{4498FE44-1651-4082-8B7E-B71CFA6AD23E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="Footsteps_Dirt" ID="{4AA46A7F-ECF5-4DB8-A689-E4DC0C30EC73}" ShortID="490260251">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4BC49655-FFD5-435B-99B6-679F441DB5CD}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
@@ -60,6 +112,31 @@
 					<ChildrenList>
 						<Sound Name="PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow" ID="{D2DEB646-9B51-447C-A4D7-B513B2439874}" ShortID="363836653">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BF38E8AF-4676-4C26-B64C-2938EB25A79E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+													<Property Name="Min" Type="Real64" Value="-14"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DAA9F361-1169-4078-8B8E-4454194B966F}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="13"/>
+													<Property Name="Min" Type="Real64" Value="-14"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -72,6 +149,11 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -94,17 +176,42 @@
 										<MediaID ID="355896217"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="170503__splicesound__footsteps-tile-male-sneakers-medium-pace" ID="{61DEA7E3-F309-4978-9513-E1AD15D44450}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.81740572598485"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.0105228559375"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="809239805"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow" ID="{32237782-E37D-4D16-A1CD-6F1B9E7F67BB}" Platform="Linked"/>
+								<ActiveSource Name="170503__splicesound__footsteps-tile-male-sneakers-medium-pace" ID="{61DEA7E3-F309-4978-9513-E1AD15D44450}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow" ID="{2CD5D360-C45F-4586-A270-FF917365461A}" ShortID="137666529">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1D77DC09-C351-425E-8A11-214B047138DE}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{9E2F5EDE-DDED-4E42-A834-DB12F46D1C9F}"/>
+											<Modifier Name="" ID="{9E2F5EDE-DDED-4E42-A834-DB12F46D1C9F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
@@ -124,7 +231,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -147,6 +254,18 @@
 									<AudioFile>PMSFX - STEPS Dry Grass &amp; Shrubs\PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav</AudioFile>
 									<MediaIDList>
 										<MediaID ID="133473180"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="170503__splicesound__footsteps-tile-male-sneakers-medium-pace" ID="{093F0B62-7328-4A9A-B504-42183B12F197}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.290883375452496"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.512985369282616"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="849212488"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -173,23 +292,41 @@
 								</ObjectList>
 							</ObjectLists>
 							<ActiveSourceList>
-								<ActiveSource Name="PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow" ID="{938CBCD7-7628-42D4-91A6-06383BD66957}" Platform="Linked"/>
+								<ActiveSource Name="170503__splicesound__footsteps-tile-male-sneakers-medium-pace" ID="{093F0B62-7328-4A9A-B504-42183B12F197}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow" ID="{E1BA7B45-1AD1-4E71-95FB-A19CDA97D953}" ShortID="163171441">
+						<Sound Name="170503__splicesound__footsteps-tile-male-sneakers-medium-pace" ID="{530A71E0-1CB8-4FD3-84C1-AF466A82E534}" ShortID="341755492">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
+								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
 										<ModifierInfo>
-											<Modifier Name="" ID="{A55C8362-3D69-47F8-9112-EA0E29A8D18B}">
+											<Modifier Name="" ID="{094F71C8-B00A-4773-B5BC-229DAF9A03D5}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="190"/>
-													<Property Name="Min" Type="Real64" Value="-256"/>
+													<Property Name="Max" Type="Real64" Value="9"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{80467E31-F8A4-40CE-B2A9-3B235023CC9A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="250"/>
+													<Property Name="Min" Type="Real64" Value="-250"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -201,16 +338,21 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow" ID="{83B8910C-0D2B-4028-8BCC-7B14FF944D05}">
+								<AudioFileSource Name="170503__splicesound__footsteps-tile-male-sneakers-medium-pace" ID="{368944B2-4024-43DE-9443-C10CC289A5A6}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.4663030579072"/>
+										<Property Name="TrimEnd" Type="Real64" Value="4.68545443503788"/>
+									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>PMSFX - STEPS Dry Grass &amp; Shrubs\PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav</AudioFile>
+									<AudioFile>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="277213961"/>
+										<MediaID ID="881000979"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow" ID="{83B8910C-0D2B-4028-8BCC-7B14FF944D05}" Platform="Linked"/>
+								<ActiveSource Name="170503__splicesound__footsteps-tile-male-sneakers-medium-pace" ID="{368944B2-4024-43DE-9443-C10CC289A5A6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -219,7 +361,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>1</Value>
+								<Value>3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -257,13 +399,6 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Air_Sound" ID="{C0B791BE-3AE3-4FD2-B8DA-85B4D24E4019}" ShortID="982938422">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-4</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
@@ -338,6 +473,380 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Changeto_Ice02" ID="{AA5AA5B6-520E-4E02-B02E-2BF7DAA66D96}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Normal_Sound" ID="{E7C702DC-4DA2-4576-8E58-CFE17AA39F3C}" ShortID="402363773">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Changeto_Normal02" ID="{45DB8E6E-37C0-439D-9739-568249221F9C}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0.0545030678938242"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0545030678938242"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Changeto_Normal02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="452033860"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Changeto_Normal02" ID="{45DB8E6E-37C0-439D-9739-568249221F9C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="FloorButton_Down" ID="{F7C6492A-ED70-4718-A056-A6F770EF2EE8}" ShortID="606911158">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="FloorButton_Down" ID="{74D70325-3020-4DB9-A7CD-0576D8A74E71}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.230508553421369"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.677763955582233"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>FloorButton_Down.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="24095102"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{4BEC4F51-FB27-4EF6-B6EB-640014F0B7E0}"/>
+					</PositioningInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="FloorButton_Down" ID="{74D70325-3020-4DB9-A7CD-0576D8A74E71}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="FloorButton_Up" ID="{D7BE6837-1215-440B-B980-67B09E1B56A5}" ShortID="190629150">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="FloorButton_Up" ID="{67F08ED7-186D-4CCE-AFB1-649FDFA29E30}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.152847539015606"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.529087635054022"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>FloorButton_Up.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="464221344"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="FloorButton_Up" ID="{67F08ED7-186D-4CCE-AFB1-649FDFA29E30}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Holding_Synth" ID="{CED66922-8505-4CFD-923F-F036FA915204}" ShortID="454748132">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Holding_Synth" ID="{1ACEAC0F-EDA9-4141-821B-960992DA0F41}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.55118640789649"/>
+								<Property Name="TrimEnd" Type="Real64" Value="6.6041233826864"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Holding_Synth.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="861814258"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Holding_Synth2" ID="{2F7B868A-79DA-4A0D-A5E3-62B3EC39BFC0}">
+							<PropertyList>
+								<Property Name="FadeOutShape" Type="int16" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.687718820861678"/>
+								<Property Name="TrimEnd" Type="Real64" Value="6.64963418700814"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Holding_Synth2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="392437400"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Holding_Synth2" ID="{2F7B868A-79DA-4A0D-A5E3-62B3EC39BFC0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SlidingDoor_Open" ID="{FCA91EF7-7900-423F-87E1-2E90CB44A6B4}" ShortID="201718502">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SlidingDoor_Open" ID="{C370AFE0-A6B2-42BC-AF67-2507B41C4A15}">
+							<Language>SFX</Language>
+							<AudioFile>SlidingDoor_Open.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="918058645"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SlidingDoor_Open" ID="{C370AFE0-A6B2-42BC-AF67-2507B41C4A15}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SlidingDoor_Close" ID="{1B3853D2-F83A-4004-827E-53104F08D7E3}" ShortID="616165174">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SlidingDoor_Close" ID="{6A4FE3A9-06CA-44CF-9330-866F3DC14E98}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.146160997732426"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>SlidingDoor_Close.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="870174411"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SlidingDoor_Close" ID="{6A4FE3A9-06CA-44CF-9330-866F3DC14E98}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="BoxDrop_Normal" ID="{6AB95C9F-8BB5-4F57-8ED8-FA66A975F434}" ShortID="723543583">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>42</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BoxDrop_Normal" ID="{25FE293E-F6EE-428C-8569-9CBB68D27BC3}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.139155662264906"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>BoxDrop_Normal.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="582961723"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{0C8708BF-07C6-4767-8C0D-A3A6AFE36AA8}" ShortID="53279322">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="iZotope Hybrid Reverb (Custom)" ID="{92C500BF-726F-42B5-815E-EEAB69AB11D2}" ShortID="795193340" PluginName="iZotope Hybrid Reverb" CompanyID="259" PluginID="2" PluginType="3">
+														<PropertyList>
+															<Property Name="FrontWet" Type="Real32" Value="4.8"/>
+															<Property Name="RearWet" Type="Real32" Value="2.1"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="BoxDrop_Normal" ID="{25FE293E-F6EE-428C-8569-9CBB68D27BC3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="BoxDrop_Earth" ID="{642BE1AF-ABED-4281-B083-BD2A9C4466B9}" ShortID="617164606">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BoxDrop_Earth" ID="{40CB9F85-F971-47EC-AE69-401E29495D1D}">
+							<Language>SFX</Language>
+							<AudioFile>BoxDrop_Earth.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="4601092"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BoxDrop_Earth" ID="{40CB9F85-F971-47EC-AE69-401E29495D1D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TimerButton_Ticking" ID="{EE1C1DC6-C004-4652-87A2-65C2A0CBF560}" ShortID="749085731">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>25</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TimerButton_ticking" ID="{01FF8113-27E6-46CB-A006-4035A534F701}">
+							<Language>SFX</Language>
+							<AudioFile>TimerButton_ticking.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="414895239"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TimerButton_ticking" ID="{01FF8113-27E6-46CB-A006-4035A534F701}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TimerButton_End" ID="{35D56203-B7DE-46E1-B03E-8B602D822D37}" ShortID="1033845685">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TimerButton_EndDing" ID="{9594A7BF-F2CF-44C5-A823-AFFD363BD904}">
+							<Language>SFX</Language>
+							<AudioFile>TimerButton_EndDing.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="75412017"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TimerButton_EndDing" ID="{9594A7BF-F2CF-44C5-A823-AFFD363BD904}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
