@@ -4,7 +4,8 @@ public class DestroyWall : MonoBehaviour
 {
     public float collisionSpeedThreshold = 5f; // Define the collision speed threshold here
 
-        private ElementManager em;
+    private ElementManager em;
+    
 
     void Start()
     {
