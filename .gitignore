@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Uu]ser[Ss]ettings/
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
@@ -59,11 +60,7 @@ sysinfo.txt
 crashlytics-build.properties
 .vscode/launch.json
 .vscode/settings.json
-UserSettings/Layouts/default-2022.dwlt
 ProjectSettings/Packages/com.unity.probuilder/Settings.json
-UserSettings/Layouts/default-2022.dwlt
-UserSettings/Layouts/default-2022.dwlt
-UserSettings/Layouts/default-2022.dwlt
 .vsconfig
-UserSettings/EditorUserSettings.asset
+ProjectSettings/Packages/com.unity.probuilder/Settings.json
 ProjectSettings/Packages/com.unity.probuilder/Settings.json

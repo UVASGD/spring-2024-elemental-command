@@ -10,15 +10,19 @@ public class MainMenu : MonoBehaviour
 
    void Start()
 {
+    Cursor.lockState = CursorLockMode.None;
+    Cursor.visible = true;
     levelLoader = FindObjectOfType<NextLevelLoader>();
     levelSelector = FindObjectOfType<SelectLevelLoader>();
 }
 
     public void GoToNextScene(){
+        Debug.Log("Went to next level");
         levelLoader.LoadNextLevel();
     }
 
     public void QuitApp(){
+        Debug.Log("Game Quit");
         Application.Quit();
     }
 

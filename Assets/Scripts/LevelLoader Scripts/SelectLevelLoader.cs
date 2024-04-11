@@ -12,14 +12,17 @@ public class SelectLevelLoader : MonoBehaviour
 
     public float transitionTime;
 
+
+    public bool sceneTransitioning = false;
+
     public Pause pause;
+
 
     void Start()
     {
         pause = FindObjectOfType<Pause>();
+        sceneTransitioning = false;
     }
-
-
 
     public void LoadSelectedLevel(int buildIndex)
     {
@@ -30,15 +33,21 @@ public class SelectLevelLoader : MonoBehaviour
     IEnumerator LoadLevel(int buildIndex)
     {
 
-        if (pause != null)
+            if (pause != null)
         {
             pause.ResumeGame();
         }
 
+
+        Debug.Log("restart process initiated");
+
         transition.SetTrigger("Start");
+
+        sceneTransitioning = true;
 
         yield return new WaitForSeconds(transitionTime);
 
+        sceneTransitioning = false;
 
         SceneManager.LoadScene(buildIndex);
     }
