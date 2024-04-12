@@ -368,9 +368,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0856e053d59324649adc4001c8b872db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHeight: 1.5
-  highHeight: 2.8
-  lowHeight: 0.2
+  normalHeight: {fileID: 161504249764011368, guid: 18ff6b03d60e5cf4eba8438e8bc77ab3, type: 3}
+  airHeight: {fileID: 4361550030858251718, guid: baf72f1a061ae264db36991db039b172, type: 3}
+  earthHeight: {fileID: 6893385962227705169, guid: cbdf8b4f87cf20f4a95cebf11165e0d5, type: 3}
 --- !u!65 &6144194570504213593
 BoxCollider:
   m_ObjectHideFlags: 0

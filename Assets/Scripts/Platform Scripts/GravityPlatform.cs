@@ -5,12 +5,16 @@ using UnityEngine;
 public class GravityPlatform : MonoBehaviour
 {
     Rigidbody rb;
+
+    public Transform normalHeight;
+    public Transform airHeight;
+    public Transform earthHeight;
     
-    public float initialHeight = 1.5f;
-    public float highHeight = 2.8f;
-    public float lowHeight = 0.5f;
+    private float initialHeight;
+    private float highHeight;
+    private float lowHeight;
     
-    private float targetHeight = 1.5f;
+    private float targetHeight;
     private float forceFactor = 1.0f;
 
     private Vector3 accumulatedForce;
@@ -18,6 +22,12 @@ public class GravityPlatform : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        initialHeight = normalHeight.position.y;
+        highHeight = airHeight.position.y;
+        lowHeight = earthHeight.position.y;
+
+        targetHeight = initialHeight;
         setPosition(targetHeight);
     }
 
@@ -60,15 +70,17 @@ public class GravityPlatform : MonoBehaviour
     public void EndEarth()
     {
         targetHeight = initialHeight;
-        if (transform.position.y <= lowHeight) {
+        /* if (transform.position.y <= lowHeight) {
             rise(1.0f);
-        }  
+        }  */
+        rise(1.0f);
     }
 
     public void EndIce()
     {
         rb.freezeRotation = true;
-        if (transform.position.y <= lowHeight) {
+        targetHeight = initialHeight;
+        if (transform.position.y < initialHeight) {
             EndEarth();
         }
     } 
@@ -88,7 +100,6 @@ public class GravityPlatform : MonoBehaviour
     {
         rb.AddForce(transform.up * forceFactor * adjustment * 9.81f, ForceMode.Impulse); 
         accumulatedForce = rb.GetAccumulatedForce();
-        Debug.Log(accumulatedForce);
     }
     
 

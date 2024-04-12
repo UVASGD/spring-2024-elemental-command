@@ -82,7 +82,7 @@ public class ElementManager : MonoBehaviour
                 UndoEarth(newState);
                 break;
             case Element.Ice:
-                UndoIce();
+                UndoIce(newState);
                 break;
             case Element.None:
                 UndoNone();
@@ -159,7 +159,7 @@ public class ElementManager : MonoBehaviour
         Physics.gravity = new Vector3(0f, -19.62f, 0f);
     }
 
-    private void UndoIce()
+    private void UndoIce(Element newState)
     {
         foreach (Rigidbody toFreeze in FindObjectsOfType<Rigidbody>())
         {
@@ -177,9 +177,11 @@ public class ElementManager : MonoBehaviour
         {
             button.EndIce();
         }
-        foreach(GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
-        {
-            platform.EndIce();
+        if (newState != Element.Earth) {
+            foreach(GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
+            {
+                platform.EndIce();
+            }
         }
     }
 
