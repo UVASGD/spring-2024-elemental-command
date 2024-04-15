@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class PlayerCam : MonoBehaviour
 {
 
     public float sensX;
@@ -10,14 +10,16 @@ public class NewBehaviourScript : MonoBehaviour
 
     public Transform orientation;
     
-    [SerializeField] float xRotation;
-    [SerializeField] float yRotation;
+    float xRotation;
+    float yRotation;
 
     // Start is called before the first frame update
     void Start()
     {
 
         LockCursor();
+        xRotation = transform.rotation.eulerAngles.x;
+        yRotation = transform.rotation.eulerAngles.y;
 
     }
 

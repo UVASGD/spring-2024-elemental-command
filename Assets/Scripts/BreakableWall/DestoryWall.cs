@@ -14,7 +14,6 @@ public class DestroyWall : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("impact was made");
         if (collision.gameObject.CompareTag("Player") && em.state == ElementManager.Element.Earth)
         {
             // Check if the collision velocity magnitude is greater than the threshold
