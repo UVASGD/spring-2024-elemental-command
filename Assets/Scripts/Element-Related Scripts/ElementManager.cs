@@ -177,9 +177,10 @@ public class ElementManager : MonoBehaviour
         {
             button.EndIce();
         }
-        if (newState != Element.Earth) {
-            foreach(GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
-            {
+        foreach(GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
+        {
+            platform.rb.constraints = ~RigidbodyConstraints.FreezePositionY;
+            if (newState != Element.Earth) {
                 platform.EndIce();
             }
         }

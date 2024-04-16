@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GravityPlatform : MonoBehaviour
 {
-    Rigidbody rb;
+    public Rigidbody rb;
 
     public Transform normalHeight;
     public Transform airHeight;
@@ -78,7 +78,6 @@ public class GravityPlatform : MonoBehaviour
 
     public void EndIce()
     {
-        rb.freezeRotation = true;
         targetHeight = initialHeight;
         if (transform.position.y < initialHeight) {
             EndEarth();
