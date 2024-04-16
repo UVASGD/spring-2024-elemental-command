@@ -47,8 +47,8 @@ public class GameplayBar : MonoBehaviour
 
         elementAvailability = FindObjectOfType<ElementAvailability>();
 
-        Debug.Log("count in gamplay bar" + elementAvailability.NumberOfAvailableElements());
-        Debug.Log("is is available" + elementAvailability.Ice_Available);
+        // Debug.Log("count in gamplay bar" + elementAvailability.NumberOfAvailableElements());
+        // Debug.Log("is is available" + elementAvailability.Ice_Available);
 
         if (elementAvailability.NumberOfAvailableElements() == 3){ //If three elements are available, draw them like this
 
@@ -145,7 +145,7 @@ public class GameplayBar : MonoBehaviour
 
             } else if (elementAvailability.Ice_Available){
 
-                Debug.Log("entered Ice solo");
+                // Debug.Log("entered Ice solo");
 
             IceImage.anchoredPosition = new UnityEngine.Vector2(0, 70);
             IceText.anchoredPosition = new UnityEngine.Vector2(160, 90);

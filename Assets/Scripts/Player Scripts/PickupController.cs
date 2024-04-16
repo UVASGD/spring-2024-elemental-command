@@ -13,9 +13,6 @@ public class PickupController : MonoBehaviour
     private GameObject heldObj;
     private Rigidbody heldObjRB;
 
-    //wwise variable
-    public uint BoxHold;
-
     [Header("Physics Parameters")]
     [SerializeField] private float pickupRange = 5.0f;
     [SerializeField] private float pickupForce = 150.0f;
@@ -42,20 +39,15 @@ public class PickupController : MonoBehaviour
                 if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
                 {
                     PickupObject(hit.transform.gameObject);
-                   
-                    // don't let box sound be played here (blacklist the box dropping sound)
-                  
+
                 }
             }else{
                 DropObject();
-                // stop sound here 
-                AkSoundEngine.StopPlayingID(BoxHold);
             }
         }
         if(heldObj != null)
         {
             MoveObject();
-            
         }
     }
 
@@ -68,19 +60,16 @@ public class PickupController : MonoBehaviour
         }
         if(pickObj.GetComponent<Rigidbody>())
         {
-            //this is where you adjust for what held objects look like
-            heldObjRB = pickObj.GetComponent<Rigidbody>();
-            heldObjRB.useGravity = false;
-            heldObjRB.drag = 10;
-            heldObjRB.constraints = RigidbodyConstraints.FreezeRotation;
+            if(!pickObj.GetComponent<GravityPlatform>()) {
+                //this is where you adjust for what held objects look like
+                heldObjRB = pickObj.GetComponent<Rigidbody>();
+                heldObjRB.useGravity = false;
+                heldObjRB.drag = 10;
+                heldObjRB.constraints = RigidbodyConstraints.FreezeRotation;
 
-            heldObjRB.transform.parent = holdArea;
-            heldObj = pickObj;
-
-
-            // wwise start looping synth sound
-            pickObj.GetComponent<InteractableBox>().SetBeingHeld(true);
-            BoxHold = AkSoundEngine.PostEvent("Play_Holding_Synth", gameObject);
+                heldObjRB.transform.parent = holdArea;
+                heldObj = pickObj;
+            }
         }
 
         
@@ -90,14 +79,8 @@ public class PickupController : MonoBehaviour
     {
         //Resets rb to "Defaults"
 
-        // wwise stuff
-        if (heldObj != null)
-    {
-        heldObj.GetComponent<InteractableBox>().SetBeingHeld(false);
-    }
-
         heldObjRB.useGravity = true;
-        heldObjRB.drag = 1;
+        heldObjRB.drag = 0;
 
         heldObjRB.constraints = RigidbodyConstraints.None;
         if(em.state == ElementManager.Element.Ice)
