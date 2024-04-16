@@ -22,33 +22,41 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FA2143A5-90ED-642D-14DA-6D2B3F568FF5}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{131EE158-2C9C-0F86-D8CD-E4233BBD60A1}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="4601092" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BoxDrop_Earth.wav</ShortName>
+					<CachePath>SFX/BoxDrop_Earth_818F3B66.wem</CachePath>
+				</File>
 				<File Id="24095102" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FloorButton_Down.wav</ShortName>
-					<CachePath>SFX/FloorButton_Down_2DF11738.wem</CachePath>
+					<CachePath>SFX/FloorButton_Down_8373F5B7.wem</CachePath>
 				</File>
-				<File Id="133473180" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PMSFX - STEPS Dry Grass &amp; Shrubs\PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav</ShortName>
-					<CachePath>SFX/PMSFX - STEPS Dry Grass &amp; Shrubs/PM_SDGS_14 Footstep Step Dry Grass Shrubs Pine Needles Meadow _9160538F.wem</CachePath>
+				<File Id="75412017" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TimerButton_EndDing.wav</ShortName>
+					<CachePath>SFX/TimerButton_EndDing_818F3B66.wem</CachePath>
 				</File>
-				<File Id="277213961" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PMSFX - STEPS Dry Grass &amp; Shrubs\PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav</ShortName>
-					<CachePath>SFX/PMSFX - STEPS Dry Grass &amp; Shrubs/PM_SDGS_186 Footstep Step Dry Grass Shrubs Pine Needles Meadow _818F3B66.wem</CachePath>
+				<File Id="267210196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BoxDrop_Normal2.wav</ShortName>
+					<CachePath>SFX/BoxDrop_Normal2_818F3B66.wem</CachePath>
 				</File>
-				<File Id="355896217" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PMSFX - STEPS Dry Grass &amp; Shrubs\PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow .wav</ShortName>
-					<CachePath>SFX/PMSFX - STEPS Dry Grass &amp; Shrubs/PM_SDGS_113 Footstep Step Dry Grass Shrubs Pine Needles Meadow _503AF69D.wem</CachePath>
+				<File Id="275936070" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TimerButton_StartDing.wav</ShortName>
+					<CachePath>SFX/TimerButton_StartDing_818F3B66.wem</CachePath>
+				</File>
+				<File Id="414895239" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>TimerButton_ticking.wav</ShortName>
+					<CachePath>SFX/TimerButton_ticking_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="452033860" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Normal02.wav</ShortName>
-					<CachePath>SFX/Changeto_Normal02_818F3B66.wem</CachePath>
+					<CachePath>SFX/Changeto_Normal02_9BF02A19.wem</CachePath>
 				</File>
 				<File Id="464221344" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FloorButton_Up.wav</ShortName>
-					<CachePath>SFX/FloorButton_Up_818F3B66.wem</CachePath>
+					<CachePath>SFX/FloorButton_Up_9E7BFC65.wem</CachePath>
 				</File>
 				<File Id="599626377" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Earth.wav</ShortName>
@@ -58,13 +66,25 @@
 					<ShortName>Changeto_Ice02.wav</ShortName>
 					<CachePath>SFX/Changeto_Ice02_818F3B66.wem</CachePath>
 				</File>
-				<File Id="861814258" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Holding_Synth.wav</ShortName>
-					<CachePath>SFX/Holding_Synth_818F3B66.wem</CachePath>
+				<File Id="731225410" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BoxHold.wav</ShortName>
+					<CachePath>SFX/BoxHold_61972E61.wem</CachePath>
+				</File>
+				<File Id="809239805" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_5FD8226D.wem</CachePath>
+				</File>
+				<File Id="849212488" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_CF892E21.wem</CachePath>
 				</File>
 				<File Id="870174411" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SlidingDoor_Close.wav</ShortName>
-					<CachePath>SFX/SlidingDoor_Close_818F3B66.wem</CachePath>
+					<CachePath>SFX/SlidingDoor_Close_CC9B122D.wem</CachePath>
+				</File>
+				<File Id="881000979" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_315767F9.wem</CachePath>
 				</File>
 				<File Id="918058645" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SlidingDoor_Open.wav</ShortName>
@@ -74,13 +94,10 @@
 					<ShortName>Changeto_Air.wav</ShortName>
 					<CachePath>SFX/Changeto_Air_818F3B66.wem</CachePath>
 				</File>
-				<File Id="1003013864" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Timer_2.wav</ShortName>
-					<CachePath>SFX/Timer_2_818F3B66.wem</CachePath>
-				</File>
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="6325304" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="665920579" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</Custom>
 			</Plugins>
@@ -90,14 +107,14 @@
 						<MediaRef Id="934714878"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3861110338" Name="Play_Button_Click_Start" DurationType="OneShot" DurationMin="6.877188" DurationMax="6.877188">
+				<Event Id="2442221123" Name="Play_BoxDrop_Earth" DurationType="OneShot" DurationMin="0.78854877" DurationMax="0.78854877">
 					<MediaRefs>
-						<MediaRef Id="1003013864"/>
+						<MediaRef Id="4601092"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="697093635" Name="Play_Changeto_Normal02" DurationType="OneShot" DurationMin="2.003356" DurationMax="2.003356">
+				<Event Id="3111826680" Name="Play_BoxDrop_Normal" DurationType="OneShot" DurationMin="0.8561231" DurationMax="0.8561231">
 					<MediaRefs>
-						<MediaRef Id="452033860"/>
+						<MediaRef Id="267210196"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1714443690" Name="Play_Earth_Sound" DurationType="OneShot" DurationMin="2.4994104" DurationMax="2.4994104">
@@ -105,21 +122,21 @@
 						<MediaRef Id="599626377"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3268058259" Name="Play_FloorButton_Down" DurationType="OneShot" DurationMin="1.0642385" DurationMax="1.0642385">
+				<Event Id="3268058259" Name="Play_FloorButton_Down" DurationType="OneShot" DurationMin="0.25688514" DurationMax="0.25688514">
 					<MediaRefs>
 						<MediaRef Id="24095102"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2917586196" Name="Play_FloorButton_Up" DurationType="OneShot" DurationMin="1.7766893" DurationMax="1.7766893">
+				<Event Id="2917586196" Name="Play_FloorButton_Up" DurationType="OneShot" DurationMin="0.16591144" DurationMax="0.16591144">
 					<MediaRefs>
 						<MediaRef Id="464221344"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3256576449" Name="Play_Footsteps_Dirt" DurationType="OneShot" DurationMin="0.3497273" DurationMax="0.6368282">
+				<Event Id="3256576449" Name="Play_Footsteps_Dirt" DurationType="OneShot" DurationMin="0.16811822" DurationMax="0.25660613">
 					<MediaRefs>
-						<MediaRef Id="133473180"/>
-						<MediaRef Id="277213961"/>
-						<MediaRef Id="355896217"/>
+						<MediaRef Id="809239805"/>
+						<MediaRef Id="849212488"/>
+						<MediaRef Id="881000979"/>
 					</MediaRefs>
 					<PluginRefs>
 						<Custom>
@@ -127,9 +144,9 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="81622924" Name="Play_Holding_Synth" DurationType="OneShot" DurationMin="6.877188" DurationMax="6.877188">
+				<Event Id="81622924" Name="Play_Holding_Synth" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="861814258"/>
+						<MediaRef Id="731225410"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1784315359" Name="Play_Ice_Freeze" DurationType="OneShot" DurationMin="2.0814285" DurationMax="2.0814285">
@@ -137,7 +154,12 @@
 						<MediaRef Id="685939598"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="458327077" Name="Play_SlidingDoor_Close" DurationType="OneShot" DurationMin="1.46161" DurationMax="1.46161">
+				<Event Id="2867775487" Name="Play_Normal_Sound" DurationType="OneShot" DurationMin="1.9488529" DurationMax="1.9488529">
+					<MediaRefs>
+						<MediaRef Id="452033860"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="458327077" Name="Play_SlidingDoor_Close" DurationType="OneShot" DurationMin="1.315449" DurationMax="1.315449">
 					<MediaRefs>
 						<MediaRef Id="870174411"/>
 					</MediaRefs>
@@ -147,8 +169,28 @@
 						<MediaRef Id="918058645"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2210476175" Name="Play_TimerButton_End" DurationType="OneShot" DurationMin="1.3859184" DurationMax="1.3859184">
+					<MediaRefs>
+						<MediaRef Id="75412017"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3125288428" Name="Play_TimerButton_Start" DurationType="OneShot" DurationMin="1.2509071" DurationMax="1.2509071">
+					<MediaRefs>
+						<MediaRef Id="275936070"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="6325304"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="3669692073" Name="Play_TimerButton_Ticking" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="414895239"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F58A89D9-C524-AAC6-0C84-E82CB90CCB70}</FileHash>
+	<FileHash>{79B5B029-CE8A-D578-F762-67DD967C78D3}</FileHash>
 </SoundBanksInfo>

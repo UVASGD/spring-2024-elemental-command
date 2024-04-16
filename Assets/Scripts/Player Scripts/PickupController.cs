@@ -42,14 +42,14 @@ public class PickupController : MonoBehaviour
                 if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickupRange))
                 {
                     PickupObject(hit.transform.gameObject);
-                    // wwise start looping synth sound
-                    // BoxHold = AkSoundEngine.PostEvent("Play_Holding_Synth", gameObject);
+                   
+                    // don't let box sound be played here (blacklist the box dropping sound)
                   
                 }
             }else{
                 DropObject();
                 // stop sound here 
-                // AkSoundEngine.StopPlayingID(BoxHold);
+                AkSoundEngine.StopPlayingID(BoxHold);
             }
         }
         if(heldObj != null)
@@ -76,6 +76,11 @@ public class PickupController : MonoBehaviour
 
             heldObjRB.transform.parent = holdArea;
             heldObj = pickObj;
+
+
+            // wwise start looping synth sound
+            pickObj.GetComponent<InteractableBox>().SetBeingHeld(true);
+            BoxHold = AkSoundEngine.PostEvent("Play_Holding_Synth", gameObject);
         }
 
         
@@ -84,6 +89,12 @@ public class PickupController : MonoBehaviour
     void DropObject()
     {
         //Resets rb to "Defaults"
+
+        // wwise stuff
+        if (heldObj != null)
+    {
+        heldObj.GetComponent<InteractableBox>().SetBeingHeld(false);
+    }
 
         heldObjRB.useGravity = true;
         heldObjRB.drag = 1;

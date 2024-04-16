@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D84B66A8-1764-AE46-25A4-8112C45F7E12}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FBE10DD2-6EE8-A21E-AF8C-2B693AB78844}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -32,19 +32,19 @@
 				</File>
 				<File Id="24095102" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FloorButton_Down.wav</ShortName>
-					<CachePath>SFX/FloorButton_Down_C7DBDAC9.wem</CachePath>
+					<CachePath>SFX/FloorButton_Down_8373F5B7.wem</CachePath>
 				</File>
 				<File Id="75412017" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TimerButton_EndDing.wav</ShortName>
 					<CachePath>SFX/TimerButton_EndDing_818F3B66.wem</CachePath>
 				</File>
+				<File Id="267210196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BoxDrop_Normal2.wav</ShortName>
+					<CachePath>SFX/BoxDrop_Normal2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="275936070" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TimerButton_StartDing.wav</ShortName>
 					<CachePath>SFX/TimerButton_StartDing_818F3B66.wem</CachePath>
-				</File>
-				<File Id="392437400" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Holding_Synth2.wav</ShortName>
-					<CachePath>SFX/Holding_Synth2_03564098.wem</CachePath>
 				</File>
 				<File Id="414895239" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TimerButton_ticking.wav</ShortName>
@@ -56,11 +56,11 @@
 				</File>
 				<File Id="464221344" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>FloorButton_Up.wav</ShortName>
-					<CachePath>SFX/FloorButton_Up_72E0C2C9.wem</CachePath>
+					<CachePath>SFX/FloorButton_Up_9E7BFC65.wem</CachePath>
 				</File>
-				<File Id="582961723" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>BoxDrop_Normal.wav</ShortName>
-					<CachePath>SFX/BoxDrop_Normal_F3750A42.wem</CachePath>
+				<File Id="481122938" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DoorOpen02.wav</ShortName>
+					<CachePath>SFX/DoorOpen02_93142D93.wem</CachePath>
 				</File>
 				<File Id="599626377" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Earth.wav</ShortName>
@@ -70,6 +70,10 @@
 					<ShortName>Changeto_Ice02.wav</ShortName>
 					<CachePath>SFX/Changeto_Ice02_818F3B66.wem</CachePath>
 				</File>
+				<File Id="731225410" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BoxHold.wav</ShortName>
+					<CachePath>SFX/BoxHold_8E13EFE4.wem</CachePath>
+				</File>
 				<File Id="809239805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
 					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_5FD8226D.wem</CachePath>
@@ -78,21 +82,17 @@
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
 					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_CF892E21.wem</CachePath>
 				</File>
-				<File Id="870174411" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SlidingDoor_Close.wav</ShortName>
-					<CachePath>SFX/SlidingDoor_Close_CC9B122D.wem</CachePath>
-				</File>
 				<File Id="881000979" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
 					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_315767F9.wem</CachePath>
 				</File>
-				<File Id="918058645" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SlidingDoor_Open.wav</ShortName>
-					<CachePath>SFX/SlidingDoor_Open_818F3B66.wem</CachePath>
-				</File>
 				<File Id="934714878" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Air.wav</ShortName>
 					<CachePath>SFX/Changeto_Air_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1019028031" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DoorClose02.wav</ShortName>
+					<CachePath>SFX/DoorClose02_EB4F9553.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -114,7 +114,7 @@
 				</Event>
 				<Event Id="3111826680" Name="Play_BoxDrop_Normal">
 					<MediaRefs>
-						<MediaRef Id="582961723"/>
+						<MediaRef Id="267210196"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1714443690" Name="Play_Earth_Sound">
@@ -146,7 +146,7 @@
 				</Event>
 				<Event Id="81622924" Name="Play_Holding_Synth">
 					<MediaRefs>
-						<MediaRef Id="392437400"/>
+						<MediaRef Id="731225410"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1784315359" Name="Play_Ice_Freeze">
@@ -161,12 +161,12 @@
 				</Event>
 				<Event Id="458327077" Name="Play_SlidingDoor_Close">
 					<MediaRefs>
-						<MediaRef Id="870174411"/>
+						<MediaRef Id="1019028031"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1262405167" Name="Play_SlidingDoor_Open">
 					<MediaRefs>
-						<MediaRef Id="918058645"/>
+						<MediaRef Id="481122938"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2210476175" Name="Play_TimerButton_End">
@@ -192,5 +192,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8A74A909-169D-C0A6-4E14-AD33727F9D1A}</FileHash>
+	<FileHash>{51D1DF3D-4EBB-0D27-D509-EA60B11027F2}</FileHash>
 </SoundBanksInfo>

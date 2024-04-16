@@ -523,7 +523,7 @@
 						<AudioFileSource Name="FloorButton_Down" ID="{74D70325-3020-4DB9-A7CD-0576D8A74E71}">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.230508553421369"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.420878801520609"/>
 								<Property Name="TrimEnd" Type="Real64" Value="0.677763955582233"/>
 							</PropertyList>
 							<Language>SFX</Language>
@@ -561,7 +561,7 @@
 						<AudioFileSource Name="FloorButton_Up" ID="{67F08ED7-186D-4CCE-AFB1-649FDFA29E30}">
 							<PropertyList>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.152847539015606"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.363176203814859"/>
 								<Property Name="TrimEnd" Type="Real64" Value="0.529087635054022"/>
 							</PropertyList>
 							<Language>SFX</Language>
@@ -578,11 +578,6 @@
 				<Sound Name="Holding_Synth" ID="{CED66922-8505-4CFD-923F-F036FA915204}" ShortID="454748132">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>4</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -618,9 +613,23 @@
 								<MediaID ID="392437400"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="BoxHold" ID="{85F9EAF9-A00E-4717-9223-174E984328CD}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0558069894624516"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0279034947312251"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.385068227290917"/>
+								<Property Name="TrimEnd" Type="Real64" Value="6.78054921968788"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>BoxHold.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="731225410"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="Holding_Synth2" ID="{2F7B868A-79DA-4A0D-A5E3-62B3EC39BFC0}" Platform="Linked"/>
+						<ActiveSource Name="BoxHold" ID="{85F9EAF9-A00E-4717-9223-174E984328CD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="SlidingDoor_Open" ID="{FCA91EF7-7900-423F-87E1-2E90CB44A6B4}" ShortID="201718502">
@@ -628,7 +637,7 @@
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>7</Value>
+								<Value>4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -648,9 +657,21 @@
 								<MediaID ID="918058645"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="DoorOpen02" ID="{8B7E9939-79BA-4F1C-88E5-E3D21FD6BC74}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0.238891239829265"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.238891239829265"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>DoorOpen02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="481122938"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="SlidingDoor_Open" ID="{C370AFE0-A6B2-42BC-AF67-2507B41C4A15}" Platform="Linked"/>
+						<ActiveSource Name="DoorOpen02" ID="{8B7E9939-79BA-4F1C-88E5-E3D21FD6BC74}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="SlidingDoor_Close" ID="{1B3853D2-F83A-4004-827E-53104F08D7E3}" ShortID="616165174">
@@ -658,7 +679,7 @@
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>7</Value>
+								<Value>2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -682,9 +703,20 @@
 								<MediaID ID="870174411"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="DoorClose02" ID="{1415DC11-8E1F-4F24-B326-E96896E1CBC4}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.195677937841804"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>DoorClose02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1019028031"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="SlidingDoor_Close" ID="{6A4FE3A9-06CA-44CF-9330-866F3DC14E98}" Platform="Linked"/>
+						<ActiveSource Name="DoorClose02" ID="{1415DC11-8E1F-4F24-B326-E96896E1CBC4}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="BoxDrop_Normal" ID="{6AB95C9F-8BB5-4F57-8ED8-FA66A975F434}" ShortID="723543583">
@@ -692,7 +724,7 @@
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
-								<Value>42</Value>
+								<Value>23</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Pitch" Type="int32">
@@ -702,7 +734,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>2</Value>
+								<Value>-1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -724,6 +756,13 @@
 							<AudioFile>BoxDrop_Normal.wav</AudioFile>
 							<MediaIDList>
 								<MediaID ID="582961723"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="BoxDrop_Normal2" ID="{303DEC20-8FAB-4B74-B62D-0BDA618DFAB4}">
+							<Language>SFX</Language>
+							<AudioFile>BoxDrop_Normal2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="267210196"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
@@ -750,7 +789,7 @@
 						</ObjectList>
 					</ObjectLists>
 					<ActiveSourceList>
-						<ActiveSource Name="BoxDrop_Normal" ID="{25FE293E-F6EE-428C-8569-9CBB68D27BC3}" Platform="Linked"/>
+						<ActiveSource Name="BoxDrop_Normal2" ID="{303DEC20-8FAB-4B74-B62D-0BDA618DFAB4}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="BoxDrop_Earth" ID="{642BE1AF-ABED-4281-B083-BD2A9C4466B9}" ShortID="617164606">
