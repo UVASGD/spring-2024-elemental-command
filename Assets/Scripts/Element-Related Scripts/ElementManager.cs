@@ -79,10 +79,10 @@ public class ElementManager : MonoBehaviour
                 UndoAir();
                 break;
             case Element.Earth:
-                UndoEarth();
+                UndoEarth(newState);
                 break;
             case Element.Ice:
-                UndoIce();
+                UndoIce(newState);
                 break;
             case Element.None:
                 UndoNone();
@@ -128,16 +128,18 @@ public class ElementManager : MonoBehaviour
         }
     }
 
-    private void UndoEarth()
+    private void UndoEarth(Element newState)
     {
         foreach(FloorButton button in FindObjectsOfType<FloorButton>())
         {
             button.EndEarth();
             button.UpdateLogic();
         }
-        foreach (GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
-        {
-            platform.EndEarth();
+        if (newState != Element.Ice) {
+            foreach (GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
+            {
+                platform.EndEarth();
+            }
         }
         Physics.gravity = new Vector3(0f, -9.81f, 0f);
     }
@@ -157,7 +159,7 @@ public class ElementManager : MonoBehaviour
         Physics.gravity = new Vector3(0f, -19.62f, 0f);
     }
 
-    private void UndoIce()
+    private void UndoIce(Element newState)
     {
         foreach (Rigidbody toFreeze in FindObjectsOfType<Rigidbody>())
         {
@@ -174,6 +176,13 @@ public class ElementManager : MonoBehaviour
         foreach(FloorButton button in FindObjectsOfType<FloorButton>())
         {
             button.EndIce();
+        }
+        foreach(GravityPlatform platform in FindObjectsOfType<GravityPlatform>())
+        {
+            platform.rb.constraints = ~RigidbodyConstraints.FreezePositionY;
+            if (newState != Element.Earth) {
+                platform.EndIce();
+            }
         }
     }
 
