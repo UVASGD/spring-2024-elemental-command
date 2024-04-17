@@ -78,7 +78,7 @@ public class PickupController : MonoBehaviour
         //Resets rb to "Defaults"
 
         heldObjRB.useGravity = true;
-        heldObjRB.drag = 1;
+        heldObjRB.drag = 0;
 
         heldObjRB.constraints = RigidbodyConstraints.None;
         if(em.state == ElementManager.Element.Ice)
