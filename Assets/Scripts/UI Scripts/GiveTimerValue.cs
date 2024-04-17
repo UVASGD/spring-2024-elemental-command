@@ -9,11 +9,11 @@ public class GiveTimerValue : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI timerText;
 
-    TimerController timerController;
+    public TimerController timerController;
     // Start is called before the first frame update
     void Start()
     {
-        timerController = GetComponent<TimerController>();
+        timerController = FindObjectOfType<TimerController>();
         float newTime = TimerData.timerData;
         timerController.currentTime = newTime;
         
