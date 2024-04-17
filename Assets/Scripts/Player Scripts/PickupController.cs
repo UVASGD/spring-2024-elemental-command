@@ -60,14 +60,16 @@ public class PickupController : MonoBehaviour
         }
         if(pickObj.GetComponent<Rigidbody>())
         {
-            //this is where you adjust for what held objects look like
-            heldObjRB = pickObj.GetComponent<Rigidbody>();
-            heldObjRB.useGravity = false;
-            heldObjRB.drag = 10;
-            heldObjRB.constraints = RigidbodyConstraints.FreezeRotation;
+            if(!pickObj.GetComponent<GravityPlatform>()) {
+                //this is where you adjust for what held objects look like
+                heldObjRB = pickObj.GetComponent<Rigidbody>();
+                heldObjRB.useGravity = false;
+                heldObjRB.drag = 10;
+                heldObjRB.constraints = RigidbodyConstraints.FreezeRotation;
 
-            heldObjRB.transform.parent = holdArea;
-            heldObj = pickObj;
+                heldObjRB.transform.parent = holdArea;
+                heldObj = pickObj;
+            }
         }
 
         
