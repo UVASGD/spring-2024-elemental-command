@@ -34,7 +34,7 @@ public class TimerButtonLogic : MonoBehaviour
 
                 if (em.state == ElementManager.Element.Ice)
                 {   //timer stays the same if button pressed and in ice
-                    Debug.Log("timer = " + timer);
+                    // Debug.Log("timer = " + timer);
                     return;
                 }
 

@@ -60,14 +60,16 @@ public class PickupController : MonoBehaviour
         }
         if(pickObj.GetComponent<Rigidbody>())
         {
-            //this is where you adjust for what held objects look like
-            heldObjRB = pickObj.GetComponent<Rigidbody>();
-            heldObjRB.useGravity = false;
-            heldObjRB.drag = 10;
-            heldObjRB.constraints = RigidbodyConstraints.FreezeRotation;
+            if(!pickObj.GetComponent<GravityPlatform>()) {
+                //this is where you adjust for what held objects look like
+                heldObjRB = pickObj.GetComponent<Rigidbody>();
+                heldObjRB.useGravity = false;
+                heldObjRB.drag = 10;
+                heldObjRB.constraints = RigidbodyConstraints.FreezeRotation;
 
-            heldObjRB.transform.parent = holdArea;
-            heldObj = pickObj;
+                heldObjRB.transform.parent = holdArea;
+                heldObj = pickObj;
+            }
         }
 
         
@@ -78,7 +80,7 @@ public class PickupController : MonoBehaviour
         //Resets rb to "Defaults"
 
         heldObjRB.useGravity = true;
-        heldObjRB.drag = 1;
+        heldObjRB.drag = 0;
 
         heldObjRB.constraints = RigidbodyConstraints.None;
         if(em.state == ElementManager.Element.Ice)
@@ -93,7 +95,10 @@ public class PickupController : MonoBehaviour
 
     void DropFrozenObject()
     {
-        heldObjRB.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+        if(em.state == ElementManager.Element.Ice)
+        {
+            heldObjRB.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+        }
     }
 
     void MoveObject()
