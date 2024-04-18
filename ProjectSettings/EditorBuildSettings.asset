@@ -30,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Final levels/EarthTutorial.unity
     guid: a972546571e03b24e915864a021ac47d
   - enabled: 1
-    path: Assets/Scenes/AirEarth2.unity
+    path: Assets/Scenes/Final levels/AirEarth2.unity
     guid: 72776abdee20f374f9297317f6924613
   m_configObjects: {}
