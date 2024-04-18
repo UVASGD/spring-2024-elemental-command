@@ -105,7 +105,6 @@ public class GravityPlatform : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         forceFactor += 1.0f;
-        Debug.Log("CollisionEnter");
     }
 
     private void OnCollisionExit(Collision other)
