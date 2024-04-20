@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/Main Menu.unity
     guid: 9ae3224649a3cde41a5d381dd14d0438
   - enabled: 1
+    path: Assets/Scenes/Final levels/Intro Level.unity
+    guid: 9e4bf91911af95449b32f90f1eefa960
+  - enabled: 1
     path: Assets/Scenes/sandbox testing levels/arthur's timer button test.unity
     guid: f71a86a98164aa545903409f2d336969
   - enabled: 1
     path: Assets/Scenes/Menus/Leaderboard.unity
     guid: af901fd992984da4aa0b9dab4ba6b288
-  - enabled: 1
-    path: Assets/Scenes/Final levels/Intro Level.unity
-    guid: 9e4bf91911af95449b32f90f1eefa960
   - enabled: 1
     path: Assets/Scenes/Menus/End Screen.unity
     guid: 26df0b8fdd115634bbeb5a5184d06863
