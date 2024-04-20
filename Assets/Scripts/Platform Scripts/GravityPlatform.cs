@@ -14,7 +14,7 @@ public class GravityPlatform : MonoBehaviour
     private float highHeight;
     private float lowHeight;
     
-    private float targetHeight;
+    public float targetHeight;
     private float forceFactor = 1.0f;
 
     private Vector3 accumulatedForce;
@@ -33,7 +33,7 @@ public class GravityPlatform : MonoBehaviour
 
     void Update()
     {
-        if (targetHeight - 0.1 < transform.position.y && transform.position.y < targetHeight + 0.1)
+        if (targetHeight - 0.2 < transform.position.y && transform.position.y < targetHeight + 0.2)
         {
             rest();
             setPosition(targetHeight);
@@ -105,7 +105,6 @@ public class GravityPlatform : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         forceFactor += 1.0f;
-        Debug.Log("CollisionEnter");
     }
 
     private void OnCollisionExit(Collision other)
