@@ -168,6 +168,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_SphereDrop_Normal" ID="{E94B8B0C-F5CF-4803-8DA2-D4F9C8DFF988}">
+					<ChildrenList>
+						<Action Name="" ID="{98E30C13-AE94-4ED1-A367-38BCDA2DA9FB}" ShortID="128863691">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SphereDrop_Normal" ID="{59164EDD-7682-49D1-82EA-303D980DC087}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlatformMoveUp" ID="{8801143A-BA1D-443B-9352-4795456804AF}">
+					<ChildrenList>
+						<Action Name="" ID="{024925AD-0BBE-4FA1-B676-4EEF8290BEB2}" ShortID="118912922">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlatformMoveUp" ID="{666A6A40-DA48-4B4E-A72E-3D7B4FF974C5}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SphereRoll" ID="{947940B5-39EC-4F80-8D1D-A91878BE1622}">
+					<ChildrenList>
+						<Action Name="" ID="{17EAE6C5-95E4-4E90-B260-7DD6D7CB0E9A}" ShortID="1029119312">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SphereRoll" ID="{A5BD8C32-8792-4E76-8FBF-014AC4254871}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlatformMoveDown" ID="{CF2237F8-3CB1-4D8A-B1B9-B980A54895C9}">
+					<ChildrenList>
+						<Action Name="" ID="{08AC4F5D-252F-4DCF-966F-08E909E1B566}" ShortID="1009708994">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlatformMoveDown" ID="{5B5360E7-82B3-4E87-B930-0AD443C5CC5C}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

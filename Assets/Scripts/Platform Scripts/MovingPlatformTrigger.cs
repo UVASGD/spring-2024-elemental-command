@@ -28,7 +28,7 @@ public class MovingPlatformTrigger : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
         if (!other.attachedRigidbody) return;
-        other.attachedRigidbody.MovePosition(other.attachedRigidbody.position + lastMove);
+        other.attachedRigidbody.MovePosition(other.attachedRigidbody.position + lastMove);  
     }
 
 

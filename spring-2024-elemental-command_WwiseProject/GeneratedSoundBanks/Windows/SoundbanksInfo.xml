@@ -9,10 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{9B7E7A25-01D8-1F60-ADF9-347586D7A264}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{ED9B533D-4806-8F16-0298-AEA2BEC338EF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="1990128658" Name="Room_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -21,8 +24,17 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="4091100022" Name="MediumRoomVerb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1990128658"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FBE10DD2-6EE8-A21E-AF8C-2B693AB78844}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AEA28107-F37F-6D0D-0087-C97B1ABD72DA}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -38,17 +50,33 @@
 					<ShortName>TimerButton_EndDing.wav</ShortName>
 					<CachePath>SFX/TimerButton_EndDing_818F3B66.wem</CachePath>
 				</File>
+				<File Id="140565109" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HoldingSynth3.wav</ShortName>
+					<CachePath>SFX/HoldingSynth3_C8B0A687.wem</CachePath>
+				</File>
+				<File Id="248088183" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlatformMoveDown.wav</ShortName>
+					<CachePath>SFX/PlatformMoveDown_818F3B66.wem</CachePath>
+				</File>
 				<File Id="267210196" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BoxDrop_Normal2.wav</ShortName>
-					<CachePath>SFX/BoxDrop_Normal2_818F3B66.wem</CachePath>
+					<CachePath>SFX/BoxDrop_Normal2_DF0C3F52.wem</CachePath>
 				</File>
 				<File Id="275936070" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TimerButton_StartDing.wav</ShortName>
 					<CachePath>SFX/TimerButton_StartDing_818F3B66.wem</CachePath>
 				</File>
+				<File Id="384597126" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_D09C128D.wem</CachePath>
+				</File>
 				<File Id="414895239" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TimerButton_ticking.wav</ShortName>
 					<CachePath>SFX/TimerButton_ticking_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="429787393" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_25A60121.wem</CachePath>
 				</File>
 				<File Id="452033860" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Normal02.wav</ShortName>
@@ -60,7 +88,19 @@
 				</File>
 				<File Id="481122938" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DoorOpen02.wav</ShortName>
-					<CachePath>SFX/DoorOpen02_93142D93.wem</CachePath>
+					<CachePath>SFX/DoorOpen02_ED6ECEE6.wem</CachePath>
+				</File>
+				<File Id="498629009" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SphereRoll.wav</ShortName>
+					<CachePath>SFX/SphereRoll_745E4823.wem</CachePath>
+				</File>
+				<File Id="562498308" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SphereDrop_Normal.wav</ShortName>
+					<CachePath>SFX/SphereDrop_Normal_00DB8F5E.wem</CachePath>
+				</File>
+				<File Id="592653897" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_26FCE07C.wem</CachePath>
 				</File>
 				<File Id="599626377" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Earth.wav</ShortName>
@@ -70,17 +110,21 @@
 					<ShortName>Changeto_Ice02.wav</ShortName>
 					<CachePath>SFX/Changeto_Ice02_818F3B66.wem</CachePath>
 				</File>
-				<File Id="731225410" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>BoxHold.wav</ShortName>
-					<CachePath>SFX/BoxHold_8E13EFE4.wem</CachePath>
-				</File>
 				<File Id="809239805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
 					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_5FD8226D.wem</CachePath>
 				</File>
+				<File Id="813161864" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_E243D0BA.wem</CachePath>
+				</File>
 				<File Id="849212488" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
 					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_CF892E21.wem</CachePath>
+				</File>
+				<File Id="880771273" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlatformMoveUp.wav</ShortName>
+					<CachePath>SFX/PlatformMoveUp_818F3B66.wem</CachePath>
 				</File>
 				<File Id="881000979" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
@@ -92,7 +136,7 @@
 				</File>
 				<File Id="1019028031" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>DoorClose02.wav</ShortName>
-					<CachePath>SFX/DoorClose02_EB4F9553.wem</CachePath>
+					<CachePath>SFX/DoorClose02_8C25C103.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -116,6 +160,9 @@
 					<MediaRefs>
 						<MediaRef Id="267210196"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1714443690" Name="Play_Earth_Sound">
 					<MediaRefs>
@@ -126,15 +173,25 @@
 					<MediaRefs>
 						<MediaRef Id="24095102"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2917586196" Name="Play_FloorButton_Up">
 					<MediaRefs>
 						<MediaRef Id="464221344"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="3256576449" Name="Play_Footsteps_Dirt">
 					<MediaRefs>
+						<MediaRef Id="384597126"/>
+						<MediaRef Id="429787393"/>
+						<MediaRef Id="592653897"/>
 						<MediaRef Id="809239805"/>
+						<MediaRef Id="813161864"/>
 						<MediaRef Id="849212488"/>
 						<MediaRef Id="881000979"/>
 					</MediaRefs>
@@ -143,10 +200,13 @@
 							<PluginRef Id="665920579"/>
 						</Custom>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="81622924" Name="Play_Holding_Synth">
 					<MediaRefs>
-						<MediaRef Id="731225410"/>
+						<MediaRef Id="140565109"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1784315359" Name="Play_Ice_Freeze">
@@ -159,14 +219,40 @@
 						<MediaRef Id="452033860"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3296509552" Name="Play_PlatformMoveDown">
+					<MediaRefs>
+						<MediaRef Id="248088183"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1509302931" Name="Play_PlatformMoveUp">
+					<MediaRefs>
+						<MediaRef Id="880771273"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="458327077" Name="Play_SlidingDoor_Close">
 					<MediaRefs>
 						<MediaRef Id="1019028031"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1262405167" Name="Play_SlidingDoor_Open">
 					<MediaRefs>
 						<MediaRef Id="481122938"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="793455656" Name="Play_SphereDrop_Normal">
+					<MediaRefs>
+						<MediaRef Id="562498308"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="938269540" Name="Play_SphereRoll">
+					<MediaRefs>
+						<MediaRef Id="498629009"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2210476175" Name="Play_TimerButton_End">
@@ -192,5 +278,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{51D1DF3D-4EBB-0D27-D509-EA60B11027F2}</FileHash>
+	<FileHash>{2A022F70-1BB2-276E-A8ED-B743EBA66D1D}</FileHash>
 </SoundBanksInfo>

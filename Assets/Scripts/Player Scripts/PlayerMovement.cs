@@ -124,7 +124,7 @@ public class PlayerMovement : MonoBehaviour
 
         else{
             if (moveSpeed >1){
-                if (Time.time - lastFootstepTime > 60/moveSpeed*Time.deltaTime){
+                if (Time.time - lastFootstepTime > 63/moveSpeed*Time.deltaTime){
                 footstepIsPlaying = false;
                 }
             }

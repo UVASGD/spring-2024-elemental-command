@@ -788,23 +788,24 @@
 								</Effect>
 								<Effect Name="Hall_Medium_Bright" ID="{3C3845B2-C76E-4634-9108-83FA43A5A7BC}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<PropertyList>
-										<Property Name="DecayTime" Type="Real32" Value="3.2"/>
-										<Property Name="Density" Type="Real32" Value="70"/>
-										<Property Name="Diffusion" Type="Real32" Value="76"/>
-										<Property Name="ERLevel" Type="Real32" Value="-23"/>
-										<Property Name="ERPattern" Type="int32" Value="15"/>
+										<Property Name="DecayTime" Type="Real32" Value="1.8"/>
+										<Property Name="Density" Type="Real32" Value="11"/>
+										<Property Name="Diffusion" Type="Real32" Value="31"/>
+										<Property Name="DryLevel" Type="Real32" Value="-17.3"/>
+										<Property Name="ERLevel" Type="Real32" Value="-10"/>
+										<Property Name="ERPattern" Type="int32" Value="18"/>
 										<Property Name="Filter1Freq" Type="Real32" Value="600"/>
 										<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
 										<Property Name="Filter2Freq" Type="Real32" Value="2000"/>
 										<Property Name="Filter3Freq" Type="Real32" Value="6500"/>
 										<Property Name="Filter3Gain" Type="Real32" Value="3"/>
 										<Property Name="HFDamping" Type="Real32" Value="1.8"/>
-										<Property Name="PreDelay" Type="Real32" Value="50"/>
-										<Property Name="Quality" Type="int32" Value="14"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
-										<Property Name="RoomShape" Type="Real32" Value="55"/>
-										<Property Name="RoomSize" Type="Real32" Value="28"/>
-										<Property Name="StereoWidth" Type="Real32" Value="165"/>
+										<Property Name="PreDelay" Type="Real32" Value="12"/>
+										<Property Name="Quality" Type="int32" Value="10"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-15"/>
+										<Property Name="RoomShape" Type="Real32" Value="30"/>
+										<Property Name="RoomSize" Type="Real32" Value="68"/>
+										<Property Name="StereoWidth" Type="Real32" Value="90"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Hall_Small_Bright" ID="{D8AD1955-D2BA-4C88-A806-E2D8AB47A90B}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
