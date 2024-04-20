@@ -38,8 +38,12 @@ public class GravityPlatform : MonoBehaviour
             rest();
             setPosition(targetHeight);
         }
-        rb.freezeRotation = true;
-        rb.velocity = new Vector3(0, rb.velocity.y, 0);
+        if (transform.position.y < lowHeight) {
+            rest();
+            setPosition(targetHeight);
+        } else {
+            rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotation;
+        }
     }
 
     public void ActivateAir()
@@ -91,7 +95,7 @@ public class GravityPlatform : MonoBehaviour
 
     private void rest()
     {
-        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
         accumulatedForce = rb.GetAccumulatedForce();
     }
 
