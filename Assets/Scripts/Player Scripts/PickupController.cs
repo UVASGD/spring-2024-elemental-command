@@ -130,7 +130,10 @@ public class PickupController : MonoBehaviour
 
     void DropFrozenObject()
     {
-        heldObjRB.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+        if(em.state == ElementManager.Element.Ice)
+        {
+            heldObjRB.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
+        }
     }
 
     void MoveObject()
