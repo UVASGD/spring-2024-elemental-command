@@ -72,10 +72,10 @@ public class TimerButtonLogic : MonoBehaviour
 
     public void StartIce()
     {
-        if(has_been_pressed)
-        {
+        // if(has_been_pressed)
+        // {
             AkSoundEngine.StopPlayingID(TimerTicking); // stop ticking sound
-        }
+        // }
     }
 
     public void PressButton()

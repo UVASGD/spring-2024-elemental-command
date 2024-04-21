@@ -45,8 +45,15 @@ public class NextLevelLoader : MonoBehaviour, ILogicReceiver
 
     public void LoadNextLevel()
     {
+        //stops ticking sounds
+        foreach(TimerButtonLogic timer in FindObjectsOfType<TimerButtonLogic>())
+        {
+            timer.StartIce(); //ik ice may not start but should do same thing
+        }
+        
         //Loads next level in build index
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+
 
     }
 

@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting.Dependencies.Sqlite;
+//using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
@@ -107,10 +107,11 @@ public class ElementManager : MonoBehaviour
         //     ChangeState(Element.Electricity);
         // }
         //None is Q
-        else if((Input.GetKeyDown(KeyCode.Q) && state != Element.None) ||
+        else if(((Input.GetKeyDown(KeyCode.Q) && state != Element.None) ||
                 (Input.GetKeyDown(KeyCode.Alpha3) && state == Element.Ice) ||
                 (Input.GetKeyDown(KeyCode.Alpha2) && state == Element.Earth) ||
                 (Input.GetKeyDown(KeyCode.Alpha1) && state == Element.Air)) 
+                && ableToChangeStates) 
         {
             if (elementAvailability.PlayerCanCancel){
                 ChangeState(Element.None);
