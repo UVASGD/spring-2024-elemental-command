@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6719,6 +6719,8 @@ GameObject:
   - component: {fileID: 1189896590}
   - component: {fileID: 1189896589}
   - component: {fileID: 1189896591}
+  - component: {fileID: 1189896593}
+  - component: {fileID: 1189896592}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -6791,6 +6793,57 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &1189896592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189896588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68703ac812f958b42b0c534e5e1b2d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0b0f8f6a2c2298f4daa52b0e53ec2b04, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1189896593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189896588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c62f13c13a685147ad13ddcd34ed6ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!43 &1189998597
 Mesh:
   m_ObjectHideFlags: 0
@@ -8634,6 +8687,67 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1001 &1916894088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 965866758594895058, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: startEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 52acfdb578f572f49b389724e323c194, type: 2}
+    - target: {fileID: 5964337538071911206, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_Name
+      value: MusicStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095408083666181923, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.4495046
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095408083666181923, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.46332812
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095408083666181923, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.5989277
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095408083666181923, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095408083666181923, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095408083666181923, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095408083666181923, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095408083666181923, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095408083666181923, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095408083666181923, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d76707cab328fc846af5febb2b7f9054, type: 3}
 --- !u!43 &1966205511
 Mesh:
   m_ObjectHideFlags: 0
@@ -9069,3 +9183,4 @@ SceneRoots:
   - {fileID: 474000897}
   - {fileID: 283904490}
   - {fileID: 1189896590}
+  - {fileID: 1916894088}
