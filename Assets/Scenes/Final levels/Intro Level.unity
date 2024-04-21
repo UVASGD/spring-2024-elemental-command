@@ -3579,6 +3579,10 @@ PrefabInstance:
       propertyPath: timerCooldownText
       value: 
       objectReference: {fileID: 234216638}
+    - target: {fileID: 2162893801947128182, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: backgroundTimerCooldown
+      value: 
+      objectReference: {fileID: 579268215}
     - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: Air_Available
       value: 0
@@ -3914,6 +3918,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a968a625a1cd66e47bf3c2fa789226a9, type: 3}
+--- !u!114 &579268215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3060746271316028649, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+  m_PrefabInstance: {fileID: 1288792392}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &695160473
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class ElementManager : MonoBehaviour
     private float ogTimer;
 
     public TextMeshProUGUI timerCooldownText;
+     public Image backgroundTimerCooldown;
 
     private bool ableToChangeStates;
     public AudioSource AirStateChange;
@@ -53,6 +54,7 @@ public class ElementManager : MonoBehaviour
         if (!ableToChangeStates){
             cooldownTimer -= Time.deltaTime;
             timerCooldownText.gameObject.SetActive(true);
+            backgroundTimerCooldown.gameObject.SetActive(true);
             timerCooldownText.text = cooldownTimer.ToString("0.00");
 
             if (cooldownTimer < 0){
@@ -61,6 +63,7 @@ public class ElementManager : MonoBehaviour
             }
         } else {
             timerCooldownText.gameObject.SetActive(false);
+            backgroundTimerCooldown.gameObject.SetActive(false);
         }
         
 
@@ -104,7 +107,10 @@ public class ElementManager : MonoBehaviour
         //     ChangeState(Element.Electricity);
         // }
         //None is Q
-        else if(Input.GetKeyDown(KeyCode.Q) && state != Element.None) 
+        else if((Input.GetKeyDown(KeyCode.Q) && state != Element.None) ||
+                (Input.GetKeyDown(KeyCode.Alpha3) && state == Element.Ice) ||
+                (Input.GetKeyDown(KeyCode.Alpha2) && state == Element.Earth) ||
+                (Input.GetKeyDown(KeyCode.Alpha1) && state == Element.Air)) 
         {
             if (elementAvailability.PlayerCanCancel){
                 ChangeState(Element.None);
