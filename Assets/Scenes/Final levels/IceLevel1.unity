@@ -364,6 +364,10 @@ PrefabInstance:
       propertyPath: baseObjectsRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6958861594500224674, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_text
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7361286977941176234, guid: c03694bbc793114489843e90732f80df, type: 3}
       propertyPath: m_Name
       value: FloorButton
@@ -46962,6 +46966,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.4042
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 14.4838505
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.4042
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -8.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710010651952482801, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6958861594500224674, guid: c03694bbc793114489843e90732f80df, type: 3}
+      propertyPath: m_text
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7361286977941176234, guid: c03694bbc793114489843e90732f80df, type: 3}
       propertyPath: m_Name
       value: FloorButton (1)
@@ -50364,7 +50416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285811015807653204, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: m_text
-      value: cooldown ends
+      value: cooldown
       objectReference: {fileID: 0}
     - target: {fileID: 7669823476320571520, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: m_Name
@@ -50476,6 +50528,10 @@ PrefabInstance:
       propertyPath: m_SelectedVertices.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5733638984374014321, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
+      propertyPath: m_text
+      value: 1 + 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5834485418195195674, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -50519,6 +50575,10 @@ PrefabInstance:
     - target: {fileID: 5834485418195195674, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214871702529106900, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
+      propertyPath: m_text
+      value: 1 + 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
