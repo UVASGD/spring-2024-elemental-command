@@ -28,7 +28,7 @@ public class ElementManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        UndoAir();
     }
 
     // Update is called once per frame
