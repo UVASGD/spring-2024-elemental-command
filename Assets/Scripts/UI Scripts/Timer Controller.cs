@@ -19,18 +19,18 @@ public class TimerController : MonoBehaviour
             this.gameObject.SetActive(false);
         }
 
-    if (SceneManager.GetActiveScene().buildIndex == 3){
-        currentTime *= 100;
-        int someInt = Mathf.RoundToInt(currentTime);
-        timerText.text = someInt.ToString("0");
-        TimerData.timerData = currentTime;
-    } 
+    // if (SceneManager.GetActiveScene().buildIndex == 3){
+    //     currentTime *= 100;
+    //     int someInt = Mathf.RoundToInt(currentTime);
+    //     timerText.text = someInt.ToString("0");
+    //     TimerData.timerData = currentTime;
+    // } 
     }
 
     // Update is called once per frame
     void Update()
     {
-            if (SceneManager.GetActiveScene().buildIndex != 3){
+            if (SceneManager.GetActiveScene().buildIndex != 9){
                  currentTime += Time.deltaTime;
             timerText.text = currentTime.ToString("0.00");
             TimerData.timerData = currentTime;
