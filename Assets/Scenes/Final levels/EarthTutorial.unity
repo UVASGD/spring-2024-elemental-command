@@ -1674,12 +1674,16 @@ PrefabInstance:
       objectReference: {fileID: 766907228}
     - target: {fileID: 2162893801947128182, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: cooldownTimer
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2162893801947128182, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: timerCooldownText
       value: 
       objectReference: {fileID: 1862700658}
+    - target: {fileID: 2162893801947128182, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: backgroundTimerCooldown
+      value: 
+      objectReference: {fileID: 2037980458}
     - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: Air_Available
       value: 0
@@ -6403,29 +6407,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1489314471657774437, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
-      propertyPath: buildIndex
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 4224939156197877254, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: logicElement
       value: 
       objectReference: {fileID: 233971189}
-    - target: {fileID: 5831481055370217751, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -960.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5831481055370217751, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -486.1803
-      objectReference: {fileID: 0}
     - target: {fileID: 7669823476320571520, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 7874236945208210927, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7036,6 +7024,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2037980458 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3060746271316028649, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+  m_PrefabInstance: {fileID: 1821329957}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2041071572
 PrefabInstance:
   m_ObjectHideFlags: 0

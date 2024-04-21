@@ -15,6 +15,7 @@ public class ElementManager : MonoBehaviour
     private float ogTimer;
 
     public TextMeshProUGUI timerCooldownText;
+     public Image backgroundTimerCooldown;
 
     private bool ableToChangeStates;
     public AudioSource AirStateChange;
@@ -52,6 +53,7 @@ public class ElementManager : MonoBehaviour
         if (!ableToChangeStates){
             cooldownTimer -= Time.deltaTime;
             timerCooldownText.gameObject.SetActive(true);
+            backgroundTimerCooldown.gameObject.SetActive(true);
             timerCooldownText.text = cooldownTimer.ToString("0.00");
 
             if (cooldownTimer < 0){
@@ -60,6 +62,7 @@ public class ElementManager : MonoBehaviour
             }
         } else {
             timerCooldownText.gameObject.SetActive(false);
+            backgroundTimerCooldown.gameObject.SetActive(false);
         }
         
 
