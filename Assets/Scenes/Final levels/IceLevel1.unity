@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45140058, g: 0.500893, b: 0.57231724, a: 1}
+  m_IndirectSpecularColor: {r: 0.45140052, g: 0.50089294, b: 0.5723171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -46745,7 +46745,7 @@ PrefabInstance:
     - target: {fileID: 8687928644778816347, guid: 467449b834b5fbe40817d9f927982652, type: 3}
       propertyPath: receiverGameObject
       value: 
-      objectReference: {fileID: 1886137234}
+      objectReference: {fileID: 1801936769}
     - target: {fileID: 8854068265656573677, guid: 467449b834b5fbe40817d9f927982652, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -46820,17 +46820,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03694bbc793114489843e90732f80df, type: 3}
---- !u!114 &1587401363 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8687928644778816347, guid: 467449b834b5fbe40817d9f927982652, type: 3}
-  m_PrefabInstance: {fileID: 1431517294}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61a6e8efa0cce6045b2a50a074297874, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &1615440120
 Mesh:
   m_ObjectHideFlags: 0
@@ -48975,11 +48964,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1886137234 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7874236945208210927, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
-  m_PrefabInstance: {fileID: 5075430163108766549}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1904539186
 Mesh:
   m_ObjectHideFlags: 0
@@ -49912,7 +49896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2162893801947128182, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: cooldownTimer
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2162893801947128182, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: timerCooldownText
@@ -50186,7 +50170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7669823476320571520, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7956109721307216779, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: m_IsActive
@@ -50197,17 +50181,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
---- !u!114 &5075430163108766550 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6822724458813659747, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
-  m_PrefabInstance: {fileID: 5075430163108766549}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5714646774788258867
 PrefabInstance:
   m_ObjectHideFlags: 0
