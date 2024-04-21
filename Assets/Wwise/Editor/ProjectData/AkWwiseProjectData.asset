@@ -476,7 +476,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 1827f045dfae37408291eecf3a5eecdb
     GuidInternal: 
-    m_lastTime: -8584879218859468372
+    m_lastTime: -8584879196202109190
     List:
     - name: Ball
       guid: e4eb153b2fb9664dad09552c267dae90
@@ -541,6 +541,104 @@ MonoBehaviour:
         - ElementName: Rolling
           ObjectType: 8
           guid: c05062d735ce1447bf8d0a1473a53aca
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: MusicStates
+      guid: 1bbeebfcdd4ffe4184540c323380a826
+      id: 3103015060
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1827f045dfae37408291eecf3a5eecdb
+      - ElementName: MusicStates
+        ObjectType: 9
+        guid: 1bbeebfcdd4ffe4184540c323380a826
+      Path: States\Default Work Unit\MusicStates
+      values:
+      - name: Air
+        guid: 898617c54c1fc94cb8d5599e6d46dc99
+        id: 1050421051
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1827f045dfae37408291eecf3a5eecdb
+        - ElementName: MusicStates
+          ObjectType: 9
+          guid: 1bbeebfcdd4ffe4184540c323380a826
+        - ElementName: Air
+          ObjectType: 8
+          guid: 898617c54c1fc94cb8d5599e6d46dc99
+      - name: Earth
+        guid: 5e0273f45a462349b65e5c5054286c55
+        id: 3747705955
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1827f045dfae37408291eecf3a5eecdb
+        - ElementName: MusicStates
+          ObjectType: 9
+          guid: 1bbeebfcdd4ffe4184540c323380a826
+        - ElementName: Earth
+          ObjectType: 8
+          guid: 5e0273f45a462349b65e5c5054286c55
+      - name: Ice
+        guid: 9b688ede152ad54db893b8e5c8a65b7b
+        id: 344481046
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1827f045dfae37408291eecf3a5eecdb
+        - ElementName: MusicStates
+          ObjectType: 9
+          guid: 1bbeebfcdd4ffe4184540c323380a826
+        - ElementName: Ice
+          ObjectType: 8
+          guid: 9b688ede152ad54db893b8e5c8a65b7b
+      - name: None
+        guid: fe768a41ce264447b5fe71c87954449d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1827f045dfae37408291eecf3a5eecdb
+        - ElementName: MusicStates
+          ObjectType: 9
+          guid: 1bbeebfcdd4ffe4184540c323380a826
+        - ElementName: None
+          ObjectType: 8
+          guid: fe768a41ce264447b5fe71c87954449d
+      - name: Normal
+        guid: 088244df035d7345a29434b07c5a03c3
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1827f045dfae37408291eecf3a5eecdb
+        - ElementName: MusicStates
+          ObjectType: 9
+          guid: 1bbeebfcdd4ffe4184540c323380a826
+        - ElementName: Normal
+          ObjectType: 8
+          guid: 088244df035d7345a29434b07c5a03c3
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
