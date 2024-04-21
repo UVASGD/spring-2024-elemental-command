@@ -23,12 +23,32 @@ namespace AK
         static const AkUniqueID PLAY_HOLDING_SYNTH = 81622924U;
         static const AkUniqueID PLAY_ICE_FREEZE = 1784315359U;
         static const AkUniqueID PLAY_NORMAL_SOUND = 2867775487U;
+        static const AkUniqueID PLAY_PLATFORMMOVEDOWN = 3296509552U;
+        static const AkUniqueID PLAY_PLATFORMMOVEUP = 1509302931U;
         static const AkUniqueID PLAY_SLIDINGDOOR_CLOSE = 458327077U;
         static const AkUniqueID PLAY_SLIDINGDOOR_OPEN = 1262405167U;
+        static const AkUniqueID PLAY_SPHEREDROP_NORMAL = 793455656U;
+        static const AkUniqueID PLAY_SPHEREROLL = 938269540U;
         static const AkUniqueID PLAY_TIMERBUTTON_END = 2210476175U;
         static const AkUniqueID PLAY_TIMERBUTTON_START = 3125288428U;
         static const AkUniqueID PLAY_TIMERBUTTON_TICKING = 3669692073U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace BALL
+        {
+            static const AkUniqueID GROUP = 1777984502U;
+
+            namespace STATE
+            {
+                static const AkUniqueID IDLE = 1874288895U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID ROLLING = 4227290872U;
+            } // namespace STATE
+        } // namespace BALL
+
+    } // namespace STATES
 
     namespace BANKS
     {
@@ -40,6 +60,11 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID MEDIUMROOMVERB = 4091100022U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

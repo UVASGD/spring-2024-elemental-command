@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 1419121e5bc8c04185e83b8e76be7bc2
     GuidInternal: 
-    m_lastTime: -8584880237198308800
+    m_lastTime: -8584879304055230423
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -128,8 +128,8 @@ MonoBehaviour:
         guid: 20b50c299aee354ab9ebc4c1bf1b744c
       Path: Events\Default Work Unit\Play_Air_Sound
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.4994104
+      minDuration: 2.4994104
     - name: Play_BoxDrop_Earth
       guid: becd17098068e14b92ca8a51bdadaf93
       id: 2442221123
@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: becd17098068e14b92ca8a51bdadaf93
       Path: Events\Default Work Unit\Play_BoxDrop_Earth
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.78854877
+      minDuration: 0.78854877
     - name: Play_BoxDrop_Normal
       guid: 254cc9561a678a409cc48315dc3b2d94
       id: 3111826680
@@ -161,9 +161,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 254cc9561a678a409cc48315dc3b2d94
       Path: Events\Default Work Unit\Play_BoxDrop_Normal
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 20
+      maxDuration: 0.89101297
+      minDuration: 0.7071974
     - name: Play_Earth_Sound
       guid: 301c2021c831d34ea119cc601fd5e13e
       id: 1714443690
@@ -179,8 +179,8 @@ MonoBehaviour:
         guid: 301c2021c831d34ea119cc601fd5e13e
       Path: Events\Default Work Unit\Play_Earth_Sound
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.4994104
+      minDuration: 2.4994104
     - name: Play_FloorButton_Down
       guid: 6304da0b9d2fa64e80efe8619f42cd1a
       id: 3268058259
@@ -195,9 +195,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6304da0b9d2fa64e80efe8619f42cd1a
       Path: Events\Default Work Unit\Play_FloorButton_Down
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 20
+      maxDuration: 0.25688514
+      minDuration: 0.25688514
     - name: Play_FloorButton_Up
       guid: 1fb5c626e1b89f41af78e0d9f747cdbd
       id: 2917586196
@@ -212,9 +212,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1fb5c626e1b89f41af78e0d9f747cdbd
       Path: Events\Default Work Unit\Play_FloorButton_Up
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 20
+      maxDuration: 0.16591144
+      minDuration: 0.16591144
     - name: Play_Footsteps_Dirt
       guid: 94f00cd2cd08d54a8f365b1179c4a016
       id: 3256576449
@@ -230,8 +230,8 @@ MonoBehaviour:
         guid: 94f00cd2cd08d54a8f365b1179c4a016
       Path: Events\Default Work Unit\Play_Footsteps_Dirt
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.25660613
+      minDuration: 0.10117386
     - name: Play_Holding_Synth
       guid: 22ec959721b76546849dd15470d7ba74
       id: 81622924
@@ -264,8 +264,8 @@ MonoBehaviour:
         guid: f113ce0ae512ce4893e7b212c0c9c104
       Path: Events\Default Work Unit\Play_Ice_Freeze
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.0814285
+      minDuration: 2.0814285
     - name: Play_Normal_Sound
       guid: 50e985c204288e4eba592a650168bd9e
       id: 2867775487
@@ -281,8 +281,8 @@ MonoBehaviour:
         guid: 50e985c204288e4eba592a650168bd9e
       Path: Events\Default Work Unit\Play_Normal_Sound
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.9488529
+      minDuration: 1.9488529
     - name: Play_PlatformMoveDown
       guid: f83722cfb13c8a4db1b9b980a54895c9
       id: 3296509552
@@ -297,9 +297,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: f83722cfb13c8a4db1b9b980a54895c9
       Path: Events\Default Work Unit\Play_PlatformMoveDown
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 20
+      maxDuration: 3.1615193
+      minDuration: 3.1615193
     - name: Play_PlatformMoveUp
       guid: 3a1401881dba3b4493524795456804af
       id: 1509302931
@@ -314,9 +314,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 3a1401881dba3b4493524795456804af
       Path: Events\Default Work Unit\Play_PlatformMoveUp
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 20
+      maxDuration: 3.5309525
+      minDuration: 3.5309525
     - name: Play_SlidingDoor_Close
       guid: 81154ded1359dd4e87a19cc66b378c75
       id: 458327077
@@ -331,9 +331,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 81154ded1359dd4e87a19cc66b378c75
       Path: Events\Default Work Unit\Play_SlidingDoor_Close
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 20
+      maxDuration: 1.5212382
+      minDuration: 1.5212382
     - name: Play_SlidingDoor_Open
       guid: ba35ff6f2368354d942ffa0176e75c88
       id: 1262405167
@@ -348,9 +348,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: ba35ff6f2368354d942ffa0176e75c88
       Path: Events\Default Work Unit\Play_SlidingDoor_Open
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 20
+      maxDuration: 1.4444875
+      minDuration: 1.4444875
     - name: Play_SphereDrop_Normal
       guid: 0c8b4be9cff503488da2d4f9c8dff988
       id: 793455656
@@ -365,9 +365,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0c8b4be9cff503488da2d4f9c8dff988
       Path: Events\Default Work Unit\Play_SphereDrop_Normal
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 20
+      maxDuration: 0.85638434
+      minDuration: 0.69962984
     - name: Play_SphereRoll
       guid: b5407994ec39804f8d1da91878be1622
       id: 938269540
@@ -382,7 +382,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b5407994ec39804f8d1da91878be1622
       Path: Events\Default Work Unit\Play_SphereRoll
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
     - name: Play_TimerButton_End
@@ -399,9 +399,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 56c6e296ad9c81469c19dc855263027f
       Path: Events\Default Work Unit\Play_TimerButton_End
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 20
+      maxDuration: 1.3859184
+      minDuration: 1.3859184
     - name: Play_TimerButton_Start
       guid: 039186d6330cc94aa4346e693220a33c
       id: 3125288428
@@ -416,9 +416,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 039186d6330cc94aa4346e693220a33c
       Path: Events\Default Work Unit\Play_TimerButton_Start
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 20
+      maxDuration: 1.2509071
+      minDuration: 1.2509071
     - name: Play_TimerButton_Ticking
       guid: a43deb36338e6a4e8c720dcd690598b8
       id: 3669692073
@@ -433,7 +433,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: a43deb36338e6a4e8c720dcd690598b8
       Path: Events\Default Work Unit\Play_TimerButton_Ticking
-      maxAttenuation: 0
+      maxAttenuation: 20
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
@@ -559,7 +559,7 @@ MonoBehaviour:
     m_lastTime: -8584899543511586306
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000e0000000f00000010000000140000001500000018000000190000001a0000001c0000001d000000b0000000b10000000e0100000f0100004a0100004b0100008b0100008c0100007402000075020000
+  ExpandedWaapiItemIds: 0500000006000000070000000e0000000f000000100000001100000012000000140000001500000018000000190000001a0000001c0000001d0000001e0000001f000000290000002a000000b0000000b10000000e0100000f0100004a0100004b0100008b0100008c0100007402000075020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
