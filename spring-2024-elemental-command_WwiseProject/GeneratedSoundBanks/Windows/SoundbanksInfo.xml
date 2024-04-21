@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B381BD3E-146D-A499-94E4-E9840765A2F0}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3339A5A0-BAE2-28DE-C182-F56519D669A3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -33,6 +33,9 @@
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
+			<GameParameters>
+				<GameParameter Id="3991942870" Name="Music"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1777984502" Name="Ball">
 					<States>
@@ -41,9 +44,18 @@
 						<State Id="4227290872" Name="Rolling"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="3991942870" Name="Music">
+					<States>
+						<State Id="344481046" Name="Ice"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1050421051" Name="Air"/>
+						<State Id="1160234136" Name="Normal"/>
+						<State Id="3747705955" Name="Earth"/>
+					</States>
+				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{D9DB7CE2-FE15-3E57-E18D-6F62ABA8D957}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FBBF085F-561F-CA02-D553-089069BB8DE0}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -59,9 +71,17 @@
 					<ShortName>TimerButton_EndDing.wav</ShortName>
 					<CachePath>SFX/TimerButton_EndDing_818F3B66.wem</CachePath>
 				</File>
+				<File Id="111176120" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>IceMusic.wav</ShortName>
+					<CachePath>SFX/IceMusic_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="140565109" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>HoldingSynth3.wav</ShortName>
 					<CachePath>SFX/HoldingSynth3_277F9B81.wem</CachePath>
+				</File>
+				<File Id="164188961" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>EarthMusic.wav</ShortName>
+					<CachePath>SFX/EarthMusic_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="248088183" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlatformMoveDown.wav</ShortName>
@@ -74,6 +94,10 @@
 				<File Id="275936070" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TimerButton_StartDing.wav</ShortName>
 					<CachePath>SFX/TimerButton_StartDing_818F3B66.wem</CachePath>
+				</File>
+				<File Id="366381632" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NormalMusic.wav</ShortName>
+					<CachePath>SFX/NormalMusic_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="384597126" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
@@ -118,6 +142,10 @@
 				<File Id="685939598" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Ice02.wav</ShortName>
 					<CachePath>SFX/Changeto_Ice02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="775236746" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AirMusic.wav</ShortName>
+					<CachePath>SFX/AirMusic_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="809239805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
@@ -223,6 +251,14 @@
 						<MediaRef Id="685939598"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="669847504" Name="Play_MusicBlend">
+					<MediaRefs>
+						<MediaRef Id="111176120"/>
+						<MediaRef Id="164188961"/>
+						<MediaRef Id="366381632"/>
+						<MediaRef Id="775236746"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2867775487" Name="Play_Normal_Sound">
 					<MediaRefs>
 						<MediaRef Id="452033860"/>
@@ -288,7 +324,10 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3991942870" Name="Music"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{58B4FDEC-FAA4-5EB8-2CB4-5649978A01F2}</FileHash>
+	<FileHash>{9E48261F-5553-E82F-F77B-0ECE6E6EBF33}</FileHash>
 </SoundBanksInfo>
