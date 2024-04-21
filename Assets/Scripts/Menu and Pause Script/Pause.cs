@@ -1,3 +1,4 @@
+using System.Reflection;
 using UnityEditor.SearchService;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class Pause : MonoBehaviour
 
 public GameObject pauseMenu;
 public GameObject crosshair; //to turn off crosshair when paused
+public GameObject timer;
 public static bool isPaused = false;
 
 public SceneReloader sceneReloader;
@@ -41,6 +43,7 @@ public SceneReloader sceneReloader;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        timer.SetActive(false);
         crosshair.SetActive(false);
 
 
@@ -52,6 +55,9 @@ public SceneReloader sceneReloader;
         Cursor.visible = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+        if (MainMenu.speedrunMode == true){
+            timer.SetActive(true);
+        }
         isPaused = false;
         crosshair.SetActive(true);
 
