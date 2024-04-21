@@ -1,10 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class ElementManager : MonoBehaviour
 {
+
+    [SerializeField] float cooldownTimer = 3f;
+
+    private float ogTimer;
+
+    public TextMeshProUGUI timerCooldownText;
+
+    private bool ableToChangeStates;
     public AudioSource AirStateChange;
     public AudioSource EarthStateChange;
     public AudioSource IceStateChange;
@@ -28,29 +40,49 @@ public class ElementManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ogTimer = cooldownTimer;
+        ableToChangeStates = true;
         UndoAir();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (!ableToChangeStates){
+            cooldownTimer -= Time.deltaTime;
+            timerCooldownText.gameObject.SetActive(true);
+            timerCooldownText.text = cooldownTimer.ToString("0.00");
+
+            if (cooldownTimer < 0){
+                cooldownTimer = ogTimer;
+                ableToChangeStates = true;
+            }
+        } else {
+            timerCooldownText.gameObject.SetActive(false);
+        }
+        
+
+
+
+
         ElementAvailability elementAvailability = GetComponent<ElementAvailability>();
         //Air is 1
-        if(Input.GetKeyDown(KeyCode.Alpha1) && state != Element.Air)
+        if(Input.GetKeyDown(KeyCode.Alpha1) && state != Element.Air && ableToChangeStates)
         {
             if(elementAvailability.Air_Available){
                 ChangeState(Element.Air);
             }
         }
         //Earth is 2
-        else if(Input.GetKeyDown(KeyCode.Alpha2) && state != Element.Earth)
+        else if(Input.GetKeyDown(KeyCode.Alpha2) && state != Element.Earth && ableToChangeStates)
         {
             if (elementAvailability.Earth_Available){
                 ChangeState(Element.Earth);
             }
         }
         //Ice is 3
-        else if(Input.GetKeyDown(KeyCode.Alpha3) && state != Element.Ice)
+        else if(Input.GetKeyDown(KeyCode.Alpha3) && state != Element.Ice && ableToChangeStates)
         {
             if (elementAvailability.Ice_Available){
                 ChangeState(Element.Ice);
@@ -72,6 +104,7 @@ public class ElementManager : MonoBehaviour
 
     public void ChangeState(Element newState)
     {
+        ableToChangeStates = false;
         //Undo the current state
         switch(state)
         {
