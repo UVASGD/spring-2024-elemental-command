@@ -8,11 +8,11 @@ public class TimerButtonLogic : MonoBehaviour
 
 {
     [SerializeField] private LogicElement logic;
-    [SerializeField] private float timerDuration = 5.0f;
+    [SerializeField] private float timerDuration;
     [SerializeField] private Animator anim;
     private bool timer_is_pressable = true;
     private bool has_been_pressed = false;
-    private float timer = 5.0f;
+    private float timer;
     [SerializeField] private Transform playerTransform;
 
     // wwise uint variable
@@ -24,7 +24,7 @@ public class TimerButtonLogic : MonoBehaviour
     {
 
         em = FindObjectOfType<ElementManager>();
-        
+        timer = timerDuration;
     }
 
     // Update is called once per frame
