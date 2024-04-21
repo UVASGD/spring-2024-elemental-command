@@ -38,6 +38,7 @@ public class TimerButtonLogic : MonoBehaviour
                 if (em.state == ElementManager.Element.Ice)
                 {   //timer stays the same if button pressed and in ice
                     //Debug.Log("timer = " + timer);
+
                     return;
                 }
 
@@ -59,6 +60,22 @@ public class TimerButtonLogic : MonoBehaviour
         }
 
 
+    }
+
+    public void EndIce()
+    {
+        if(has_been_pressed)
+        {
+            TimerTicking = AkSoundEngine.PostEvent("Play_TimerButton_Ticking", gameObject);
+        }
+    }
+
+    public void StartIce()
+    {
+        if(has_been_pressed)
+        {
+            AkSoundEngine.StopPlayingID(TimerTicking); // stop ticking sound
+        }
     }
 
     public void PressButton()

@@ -246,6 +246,10 @@ public class ElementManager : MonoBehaviour
                 platform.EndIce();
             }
         }
+        foreach(TimerButtonLogic timer in FindObjectsOfType<TimerButtonLogic>())
+        {
+            timer.EndIce();
+        }
     }
 
     private void StartIce()
@@ -262,6 +266,11 @@ public class ElementManager : MonoBehaviour
         foreach (AlternatingPowerLogicElement alt in FindObjectsOfType<AlternatingPowerLogicElement>())
         {
             alt.ActivateIce();
+        }
+
+        foreach(TimerButtonLogic timer in FindObjectsOfType<TimerButtonLogic>())
+        {
+            timer.StartIce();
         }
     }
 
