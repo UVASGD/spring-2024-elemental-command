@@ -468,6 +468,7 @@ MonoBehaviour:
   normalHeight: {fileID: 2572215759086221760}
   airHeight: {fileID: 2499946450025378671}
   earthHeight: {fileID: 2529972197189388565}
+  targetHeight: 0
 --- !u!65 &6144194570504213593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -475,7 +476,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5534965829814116454}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: bf9193289b753814ab94745291e214c3, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
