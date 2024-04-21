@@ -40,6 +40,11 @@ public class GravityPlatform : MonoBehaviour
         }
         rb.freezeRotation = true;
         rb.velocity = new Vector3(0, rb.velocity.y, 0);
+        
+        if(transform.position.y <= targetHeight -0.2)
+        {
+            rise(Time.deltaTime);
+        }
     }
 
     public void ActivateAir()
