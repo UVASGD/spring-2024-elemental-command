@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -494,7 +494,6 @@ GameObject:
   - component: {fileID: 517547871}
   - component: {fileID: 517547870}
   - component: {fileID: 517547869}
-  - component: {fileID: 517547873}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -595,20 +594,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &517547873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517547868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ed6ab8efc0fc1349957e6367f355761, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelLoader: {fileID: 1094139763}
-  levelSelector: {fileID: 0}
 --- !u!1 &545485064
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,7 +722,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 465}
+  m_AnchoredPosition: {x: 0, y: 430.0911}
   m_SizeDelta: {x: 1000, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &591137614
@@ -934,7 +919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 123}
+  m_AnchoredPosition: {x: 0, y: 88.77816}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &715031230
@@ -1012,8 +997,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1294,17 +1279,6 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
---- !u!114 &1094139763 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4949148069941681425, guid: f20fafbe0fe4de54da4d2805d5ac4768, type: 3}
-  m_PrefabInstance: {fileID: 6433415176132616884}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec45e80ecb5df34f82303df1f577570, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1427625195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,7 +1788,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 517547873}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIScript, Assembly-CSharp
         m_MethodName: QuitApp
         m_Mode: 1
@@ -2118,7 +2092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1389906932509921016, guid: f20fafbe0fe4de54da4d2805d5ac4768, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3378417882424422912, guid: f20fafbe0fe4de54da4d2805d5ac4768, type: 3}
       propertyPath: m_LocalPosition.x
