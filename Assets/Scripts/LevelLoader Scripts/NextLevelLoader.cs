@@ -27,7 +27,7 @@ public class NextLevelLoader : MonoBehaviour, ILogicReceiver
 
         if(readyForNextLevel)
         {
-            LoadNextLevel();
+            LoadNextLevel(); 
         }
 
         
