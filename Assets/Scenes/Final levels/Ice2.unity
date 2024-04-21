@@ -756,6 +756,14 @@ PrefabInstance:
       propertyPath: filter
       value: 
       objectReference: {fileID: 1011354191}
+    - target: {fileID: 2162893801947128182, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: cooldownTimer
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162893801947128182, guid: 764c33b33553fb04a83c262db54975de, type: 3}
+      propertyPath: timerCooldownText
+      value: 
+      objectReference: {fileID: 1812259434}
     - target: {fileID: 3353924668467194677, guid: 764c33b33553fb04a83c262db54975de, type: 3}
       propertyPath: Air_Available
       value: 1
@@ -3558,6 +3566,10 @@ PrefabInstance:
       propertyPath: receiverGameObject
       value: 
       objectReference: {fileID: 1448777239}
+    - target: {fileID: 2571841361229525986, guid: 14e8748083f2a9a4fa9136f14d882a5d, type: 3}
+      propertyPath: timerDuration
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4960754565457017944, guid: 14e8748083f2a9a4fa9136f14d882a5d, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4789,6 +4801,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+--- !u!114 &1812259434 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6822724458813659747, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+  m_PrefabInstance: {fileID: 1812259433}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1866798518
 GameObject:
   m_ObjectHideFlags: 0
