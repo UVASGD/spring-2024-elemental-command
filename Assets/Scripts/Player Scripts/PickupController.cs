@@ -8,6 +8,9 @@ using UnityEngine;
 
 public class PickupController : MonoBehaviour
 {
+    //wwise variable
+    public uint BoxHold;
+
     [Header("Pickup Settings")]
     [SerializeField] Transform holdArea;
     private GameObject heldObj;
@@ -43,6 +46,8 @@ public class PickupController : MonoBehaviour
                 }
             }else{
                 DropObject();
+                // stop sound here 
+                AkSoundEngine.StopPlayingID(BoxHold);
             }
         }
         if(heldObj != null)
@@ -69,6 +74,22 @@ public class PickupController : MonoBehaviour
 
                 heldObjRB.transform.parent = holdArea;
                 heldObj = pickObj;
+
+                // wwise start looping synth sound (for both box and sphere) 
+                InteractableBox Box = pickObj.GetComponent<InteractableBox>();
+                if (Box != null)
+                {
+                    Box.SetBeingHeld(true);
+                }
+                
+                interactablesphere Sphere = pickObj.GetComponent<interactablesphere>();
+                if (Sphere != null)
+                {
+                    Sphere.SetBeingHeld(true);
+                }
+
+                BoxHold = AkSoundEngine.PostEvent("Play_Holding_Synth", gameObject);
+
             }
         }
 
@@ -77,7 +98,21 @@ public class PickupController : MonoBehaviour
 
     void DropObject()
     {
+
         //Resets rb to "Defaults"
+
+        // wwise stuff
+        InteractableBox Box = heldObj.GetComponent<InteractableBox>();
+        if (heldObj != null && Box != null)
+    {
+        Box.SetBeingHeld(false);
+    }
+
+        interactablesphere Sphere = heldObj.GetComponent<interactablesphere>();
+        if (heldObj != null && Sphere != null){
+            Sphere.SetBeingHeld(false);
+        }
+
 
         heldObjRB.useGravity = true;
         heldObjRB.drag = 0;

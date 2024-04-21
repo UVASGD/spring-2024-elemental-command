@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -37169,6 +37169,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1714074117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -49.803}
+--- !u!1 &1434760440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1434760442}
+  - component: {fileID: 1434760441}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1434760441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434760440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9f6ca84e96d2a34bb05fe3b4755a7fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 33f147b4b345e774ca8ac170da3c405e, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1434760442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434760440}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1508245697
 GameObject:
   m_ObjectHideFlags: 0
@@ -37511,11 +37568,59 @@ PrefabInstance:
       propertyPath: orientation
       value: 
       objectReference: {fileID: 774525059}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7878645854349676962, guid: 113aab9faa404d1418deb97a499811c8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6523645242191530217, guid: 113aab9faa404d1418deb97a499811c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 533222787383755970}
+    - targetCorrespondingSourceObject: {fileID: 6523645242191530217, guid: 113aab9faa404d1418deb97a499811c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 533222787383755969}
   m_SourcePrefab: {fileID: 100100000, guid: 113aab9faa404d1418deb97a499811c8, type: 3}
+--- !u!1 &533222787383755968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6523645242191530217, guid: 113aab9faa404d1418deb97a499811c8, type: 3}
+  m_PrefabInstance: {fileID: 533222787383755967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &533222787383755969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533222787383755968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7f66d0c86720b4591bcffd1c8bfc55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
+--- !u!114 &533222787383755970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533222787383755968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c62f13c13a685147ad13ddcd34ed6ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &2731839156575740276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38071,3 +38176,4 @@ SceneRoots:
   - {fileID: 3122073822412779262}
   - {fileID: 9211284819825770732}
   - {fileID: 243130119}
+  - {fileID: 1434760442}

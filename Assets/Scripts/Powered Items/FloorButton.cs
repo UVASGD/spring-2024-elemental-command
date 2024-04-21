@@ -30,10 +30,16 @@ public class FloorButton : MonoBehaviour
 
     private void OnCollisionEnter(Collision other) {
         objectsOn += 1;
+        // wwise play button sound event (OLD)
+       
         UpdateLogic();
     }
     private void OnCollisionExit(Collision other) {
         objectsOn -= 1;
+        
+        // wwise play button sound event (OLD)
+        
+
         //Idk how this could happen but just in case
         if(objectsOn < 0)
         {
@@ -64,6 +70,8 @@ public class FloorButton : MonoBehaviour
                 logic.SetActive();
                 anim.Play("ButtonPressed", 0, 0.0f);
                 CancelInvoke();
+                // move sound here
+                 AkSoundEngine.PostEvent("Play_FloorButton_Down", gameObject);
             }
         }
         
@@ -78,6 +86,8 @@ public class FloorButton : MonoBehaviour
                 logic.SetInactive();
                 anim.Play("ButtonDepressed", 0, 0.0f);
                 CancelInvoke();
+                // move sound here 
+                AkSoundEngine.PostEvent("Play_FloorButton_Up", gameObject);
             }
         }
         

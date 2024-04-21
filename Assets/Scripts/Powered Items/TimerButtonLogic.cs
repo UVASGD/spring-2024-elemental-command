@@ -15,6 +15,9 @@ public class TimerButtonLogic : MonoBehaviour
     private float timer = 5.0f;
     [SerializeField] private Transform playerTransform;
 
+    // wwise uint variable
+    public uint TimerTicking;
+
     ElementManager em;
     // Start is called before the first frame update
     void Start()
@@ -49,6 +52,9 @@ public class TimerButtonLogic : MonoBehaviour
             timer = timerDuration;
             has_been_pressed = false;
             anim.Play("TimerButtonRelease", 0, 0.0f);
+            // wwise play timer button sound (end)
+            AkSoundEngine.PostEvent("Play_TimerButton_End", gameObject);
+            AkSoundEngine.StopPlayingID(TimerTicking); // stop ticking sound
             logic.SetInactive();
         }
 
@@ -63,6 +69,11 @@ public class TimerButtonLogic : MonoBehaviour
             logic.SetActive();
             timer -= Time.deltaTime;
             anim.Play("TimerButtonPress", 0, 0.0f);
+            
+            // wwise play timer button sound (start and ticking)
+            AkSoundEngine.PostEvent("Play_TimerButton_Start", gameObject);
+            // TimerTicking = AkSoundEngine.PostEvent("Play_TimerButton_Ticking", gameObject);
+
         }
 
     } 

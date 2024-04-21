@@ -32,6 +32,8 @@ public class MovingPlatformPowered : MonoBehaviour, ILogicReceiver
         {
             timer += Time.deltaTime;
             platform.position = Vector3.Lerp(pointA.position, pointB.position, (Mathf.Sin(timer + (3 * Mathf.PI/2)) + 1) / 2);
+            // wwise start event
+            // AkSoundEngine.PostEvent("Play_PlatformMoveUp", gameObject);
         }
         
     }

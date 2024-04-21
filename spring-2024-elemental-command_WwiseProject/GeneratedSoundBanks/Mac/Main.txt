@@ -1,0 +1,60 @@
+Event	ID	Name			Wwise Object Path	Notes
+	81622924	Play_Holding_Synth			\Default Work Unit\Play_Holding_Synth	
+	458327077	Play_SlidingDoor_Close			\Default Work Unit\Play_SlidingDoor_Close	
+	793455656	Play_SphereDrop_Normal			\Default Work Unit\Play_SphereDrop_Normal	
+	938269540	Play_SphereRoll			\Default Work Unit\Play_SphereRoll	
+	1262405167	Play_SlidingDoor_Open			\Default Work Unit\Play_SlidingDoor_Open	
+	1509302931	Play_PlatformMoveUp			\Default Work Unit\Play_PlatformMoveUp	
+	1714443690	Play_Earth_Sound			\Default Work Unit\Play_Earth_Sound	
+	1784315359	Play_Ice_Freeze			\Default Work Unit\Play_Ice_Freeze	
+	2210476175	Play_TimerButton_End			\Default Work Unit\Play_TimerButton_End	
+	2442221123	Play_BoxDrop_Earth			\Default Work Unit\Play_BoxDrop_Earth	
+	2867775487	Play_Normal_Sound			\Default Work Unit\Play_Normal_Sound	
+	2894287546	Play_Air_Sound			\Default Work Unit\Play_Air_Sound	
+	2917586196	Play_FloorButton_Up			\Default Work Unit\Play_FloorButton_Up	
+	3111826680	Play_BoxDrop_Normal			\Default Work Unit\Play_BoxDrop_Normal	
+	3125288428	Play_TimerButton_Start			\Default Work Unit\Play_TimerButton_Start	
+	3256576449	Play_Footsteps_Dirt			\Default Work Unit\Play_Footsteps_Dirt	
+	3268058259	Play_FloorButton_Down			\Default Work Unit\Play_FloorButton_Down	
+	3296509552	Play_PlatformMoveDown			\Default Work Unit\Play_PlatformMoveDown	
+	3669692073	Play_TimerButton_Ticking			\Default Work Unit\Play_TimerButton_Ticking	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1777984502	Ball			\Default Work Unit\Ball	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Ball			
+	1874288895	Idle	Ball			
+	4227290872	Rolling	Ball			
+
+Effect plug-ins	ID	Name	Type				Notes
+	6325304	Parametric EQ (Custom)	Wwise Parametric EQ			
+	665920579	Parametric EQ (Custom)	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	4601092	BoxDrop_Earth	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\BoxDrop_Earth_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\BoxDrop_Earth		139196
+	24095102	FloorButton_Down	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\FloorButton_Down_8373F5B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\FloorButton_Down		45408
+	75412017	TimerButton_End	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\TimerButton_EndDing_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TimerButton_End		244572
+	140565109	Holding_Synth	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\HoldingSynth3_277F9B81.wem		\Actor-Mixer Hierarchy\Default Work Unit\Holding_Synth		1101604
+	248088183	PlatformMoveDown	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\PlatformMoveDown_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlatformMoveDown		557788
+	267210196	BoxDrop_Normal	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\BoxDrop_Normal2_DF0C3F52.wem		\Actor-Mixer Hierarchy\Default Work Unit\BoxDrop_Normal		132264
+	275936070	TimerButton_Start	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\TimerButton_StartDing_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\TimerButton_Start		220756
+	384597126	5	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\170503__splicesound__footsteps-tile-male-sneakers-medium-pace_5B53B998.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Dirt\5		11646
+	414895239	TimerButton_Ticking	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\TimerButton_ticking_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\TimerButton_Ticking		882096
+	429787393	6	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\170503__splicesound__footsteps-tile-male-sneakers-medium-pace_09D0AE3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Dirt\6		16004
+	452033860	Normal_Sound	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\Changeto_Normal02_9BF02A19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Normal_Sound		343872
+	464221344	FloorButton_Up	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\FloorButton_Up_9E7BFC65.wem		\Actor-Mixer Hierarchy\Default Work Unit\FloorButton_Up		29364
+	481122938	SlidingDoor_Open	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\DoorOpen02_ED6ECEE6.wem		\Actor-Mixer Hierarchy\Default Work Unit\SlidingDoor_Open		254904
+	498629009	SphereRoll	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\SphereRoll_745E4823.wem		\Actor-Mixer Hierarchy\Default Work Unit\SphereRoll		1178508
+	562498308	SphereDrop_Normal	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\SphereDrop_Normal_00DB8F5E.wem		\Actor-Mixer Hierarchy\Default Work Unit\SphereDrop_Normal		127128
+	592653897	2	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\170503__splicesound__footsteps-tile-male-sneakers-medium-pace_9677E2D3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Dirt\2		15592
+	599626377	Earth_Sound	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\Changeto_Earth_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Earth_Sound		440992
+	685939598	Ice_Freeze	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\Changeto_Ice02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ice_Freeze		367260
+	809239805	4	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\170503__splicesound__footsteps-tile-male-sneakers-medium-pace_5FD8226D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Dirt\4		18636
+	813161864	7	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\170503__splicesound__footsteps-tile-male-sneakers-medium-pace_5DFEACF2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Dirt\7		15636
+	849212488	3	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\170503__splicesound__footsteps-tile-male-sneakers-medium-pace_CF892E21.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Dirt\3		21418
+	880771273	PlatformMoveUp	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\PlatformMoveUp_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlatformMoveUp		622956
+	881000979	1	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\170503__splicesound__footsteps-tile-male-sneakers-medium-pace_315767F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Dirt\1		21134
+	934714878	Air_Sound	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\Changeto_Air_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Air_Sound		440992
+	1019028031	SlidingDoor_Close	C:\Users\Abby\Documents\GitHub\spring-2024-elemental-command\spring-2024-elemental-command_WwiseProject\.cache\Mac\SFX\DoorClose02_8C25C103.wem		\Actor-Mixer Hierarchy\Default Work Unit\SlidingDoor_Close		268444
+
