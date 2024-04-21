@@ -54,6 +54,7 @@ public class ElementPowerer : MonoBehaviour, ILogicReceiver
         else if(!conditionsMet && powered)
         {
             em.ChangeState(ElementManager.Element.None);
+            AkSoundEngine.PostEvent("Play_Normal_Sound", gameObject);
             powered = false;
         }
     }
