@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{ED9B533D-4806-8F16-0298-AEA2BEC338EF}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B377A4A1-7FAA-B038-558E-78BCC8560536}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -33,8 +33,17 @@
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
+			<StateGroups>
+				<StateGroup Id="1777984502" Name="Ball">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1874288895" Name="Idle"/>
+						<State Id="4227290872" Name="Rolling"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{AEA28107-F37F-6D0D-0087-C97B1ABD72DA}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{10DACFE1-D624-0763-0862-A81BB700F866}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -52,7 +61,7 @@
 				</File>
 				<File Id="140565109" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>HoldingSynth3.wav</ShortName>
-					<CachePath>SFX/HoldingSynth3_C8B0A687.wem</CachePath>
+					<CachePath>SFX/HoldingSynth3_277F9B81.wem</CachePath>
 				</File>
 				<File Id="248088183" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlatformMoveDown.wav</ShortName>
@@ -68,7 +77,7 @@
 				</File>
 				<File Id="384597126" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
-					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_D09C128D.wem</CachePath>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_5B53B998.wem</CachePath>
 				</File>
 				<File Id="414895239" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TimerButton_ticking.wav</ShortName>
@@ -76,7 +85,7 @@
 				</File>
 				<File Id="429787393" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
-					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_25A60121.wem</CachePath>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_09D0AE3E.wem</CachePath>
 				</File>
 				<File Id="452033860" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Normal02.wav</ShortName>
@@ -100,7 +109,7 @@
 				</File>
 				<File Id="592653897" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
-					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_26FCE07C.wem</CachePath>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_9677E2D3.wem</CachePath>
 				</File>
 				<File Id="599626377" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Earth.wav</ShortName>
@@ -116,7 +125,7 @@
 				</File>
 				<File Id="813161864" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
-					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_E243D0BA.wem</CachePath>
+					<CachePath>SFX/170503__splicesound__footsteps-tile-male-sneakers-medium-pace_5DFEACF2.wem</CachePath>
 				</File>
 				<File Id="849212488" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
@@ -254,6 +263,9 @@
 					<MediaRefs>
 						<MediaRef Id="498629009"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2210476175" Name="Play_TimerButton_End">
 					<MediaRefs>
@@ -278,5 +290,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2A022F70-1BB2-276E-A8ED-B743EBA66D1D}</FileHash>
+	<FileHash>{FE30B784-581B-F81E-1DAB-558BC14D1EF7}</FileHash>
 </SoundBanksInfo>

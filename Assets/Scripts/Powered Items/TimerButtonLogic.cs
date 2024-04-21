@@ -72,7 +72,7 @@ public class TimerButtonLogic : MonoBehaviour
             
             // wwise play timer button sound (start and ticking)
             AkSoundEngine.PostEvent("Play_TimerButton_Start", gameObject);
-            // TimerTicking = AkSoundEngine.PostEvent("Play_TimerButton_Ticking", gameObject);
+            TimerTicking = AkSoundEngine.PostEvent("Play_TimerButton_Ticking", gameObject);
 
         }
 

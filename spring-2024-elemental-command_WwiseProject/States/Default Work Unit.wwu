@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{45F02718-AEDF-4037-8291-EECF3A5EECDB}" SchemaVersion="119">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{45F02718-AEDF-4037-8291-EECF3A5EECDB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{45F02718-AEDF-4037-8291-EECF3A5EECDB}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Ball" ID="{3B15EBE4-B92F-4D66-AD09-552C267DAE90}">
+					<ChildrenList>
+						<State Name="None" ID="{B8DF7869-53EE-41C7-AA65-560B5F39A685}"/>
+						<State Name="Rolling" ID="{D76250C0-CE35-4714-BF8D-0A1473A53ACA}"/>
+						<State Name="Idle" ID="{5CDEF72C-C391-4437-964F-902803690348}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Idle" ID="{5CDEF72C-C391-4437-964F-902803690348}"/>
+							<EndState Name="Rolling" ID="{D76250C0-CE35-4714-BF8D-0A1473A53ACA}"/>
+							<Time>0.2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Rolling" ID="{D76250C0-CE35-4714-BF8D-0A1473A53ACA}"/>
+							<EndState Name="Idle" ID="{5CDEF72C-C391-4437-964F-902803690348}"/>
+							<Time>0.2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
