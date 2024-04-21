@@ -1684,9 +1684,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 8687928644778816347}
-  timerDuration: 5
+  timerDuration: 0.5
   anim: {fileID: 6516422474112482679}
   playerTransform: {fileID: 0}
+  TimerTicking: 0
 --- !u!136 &5937337182865097867
 CapsuleCollider:
   m_ObjectHideFlags: 0
