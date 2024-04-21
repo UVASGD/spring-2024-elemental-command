@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Final levels/Ice2.unity
     guid: f089c4d514b277a44a64b6972a5862f3
   - enabled: 1
-    path: Assets/Scenes/WholeSchebang.unity
+    path: Assets/Scenes/Final levels/WholeSchebang.unity
     guid: a4c2b60dab7bd7b498b6b1dfd6c0c3cb
   - enabled: 1
     path: Assets/Scenes/Menus/End Screen.unity

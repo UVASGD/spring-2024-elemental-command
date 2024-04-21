@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3339A5A0-BAE2-28DE-C182-F56519D669A3}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E5629DD9-6B8A-81D1-FA32-ADD5D17AB6EC}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -44,7 +44,7 @@
 						<State Id="4227290872" Name="Rolling"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="3991942870" Name="Music">
+				<StateGroup Id="3103015060" Name="MusicStates">
 					<States>
 						<State Id="344481046" Name="Ice"/>
 						<State Id="748895195" Name="None"/>
@@ -55,7 +55,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{FBBF085F-561F-CA02-D553-089069BB8DE0}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{943F0636-434C-A767-208C-B1D5F1608600}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -71,17 +71,17 @@
 					<ShortName>TimerButton_EndDing.wav</ShortName>
 					<CachePath>SFX/TimerButton_EndDing_818F3B66.wem</CachePath>
 				</File>
-				<File Id="111176120" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>IceMusic.wav</ShortName>
-					<CachePath>SFX/IceMusic_FBC78EF0.wem</CachePath>
+				<File Id="98250545" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Air2.wav</ShortName>
+					<CachePath>SFX/Air2_5B5B4520.wem</CachePath>
+				</File>
+				<File Id="125693263" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>4_Main.wav</ShortName>
+					<CachePath>SFX/4_Main_66B93D96.wem</CachePath>
 				</File>
 				<File Id="140565109" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>HoldingSynth3.wav</ShortName>
 					<CachePath>SFX/HoldingSynth3_277F9B81.wem</CachePath>
-				</File>
-				<File Id="164188961" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>EarthMusic.wav</ShortName>
-					<CachePath>SFX/EarthMusic_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="248088183" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlatformMoveDown.wav</ShortName>
@@ -94,10 +94,6 @@
 				<File Id="275936070" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>TimerButton_StartDing.wav</ShortName>
 					<CachePath>SFX/TimerButton_StartDing_818F3B66.wem</CachePath>
-				</File>
-				<File Id="366381632" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>NormalMusic.wav</ShortName>
-					<CachePath>SFX/NormalMusic_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="384597126" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
@@ -139,13 +135,21 @@
 					<ShortName>Changeto_Earth.wav</ShortName>
 					<CachePath>SFX/Changeto_Earth_818F3B66.wem</CachePath>
 				</File>
+				<File Id="643845785" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>1_Ice.wav</ShortName>
+					<CachePath>SFX/1_Ice_11A93380.wem</CachePath>
+				</File>
+				<File Id="670211929" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Xylophone Flam C 02.wav</ShortName>
+					<CachePath>SFX/Xylophone Flam C 02_818F3B66.wem</CachePath>
+				</File>
 				<File Id="685939598" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Changeto_Ice02.wav</ShortName>
 					<CachePath>SFX/Changeto_Ice02_818F3B66.wem</CachePath>
 				</File>
-				<File Id="775236746" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AirMusic.wav</ShortName>
-					<CachePath>SFX/AirMusic_FBC78EF0.wem</CachePath>
+				<File Id="729488115" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>3_Earth.wav</ShortName>
+					<CachePath>SFX/3_Earth_28F752CE.wem</CachePath>
 				</File>
 				<File Id="809239805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>170503__splicesound__footsteps-tile-male-sneakers-medium-pace.wav</ShortName>
@@ -183,6 +187,35 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="1345263351" Name="Play_1_Ice">
+					<MediaRefs>
+						<MediaRef Id="643845785"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="3216076241" Name="Play_2_Air">
+					<MediaRefs>
+						<MediaRef Id="98250545"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="717337964" Name="Play_3_Earth">
+					<MediaRefs>
+						<MediaRef Id="729488115"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
+				</Event>
+				<Event Id="1355744286" Name="Play_4_Main">
+					<MediaRefs>
+						<MediaRef Id="125693263"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2894287546" Name="Play_Air_Sound">
 					<MediaRefs>
 						<MediaRef Id="934714878"/>
@@ -251,13 +284,13 @@
 						<MediaRef Id="685939598"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="669847504" Name="Play_MusicBlend">
+				<Event Id="2569580911" Name="Play_MenuButton">
 					<MediaRefs>
-						<MediaRef Id="111176120"/>
-						<MediaRef Id="164188961"/>
-						<MediaRef Id="366381632"/>
-						<MediaRef Id="775236746"/>
+						<MediaRef Id="670211929"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="4091100022" Name="MediumRoomVerb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="2867775487" Name="Play_Normal_Sound">
 					<MediaRefs>
@@ -324,10 +357,7 @@
 					</MediaRefs>
 				</Event>
 			</Events>
-			<GameParameters>
-				<GameParameter Id="3991942870" Name="Music"/>
-			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9E48261F-5553-E82F-F77B-0ECE6E6EBF33}</FileHash>
+	<FileHash>{A1E1E70B-B90B-1B22-B5DC-FABD86684C4C}</FileHash>
 </SoundBanksInfo>

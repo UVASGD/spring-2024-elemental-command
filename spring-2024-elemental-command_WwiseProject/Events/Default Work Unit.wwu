@@ -212,6 +212,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_1_Ice" ID="{D5DB401B-D67A-4A75-8DBD-A77C1D968399}">
+					<ChildrenList>
+						<Action Name="" ID="{6806C035-F07E-408A-90EA-10FC40F6B386}" ShortID="988960783">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="1_Ice" ID="{C2784D7E-3C12-42BC-9F03-909F04762B6E}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_2_Air" ID="{028C6CC0-C63F-4D46-A08C-F4A9F3578CA4}">
+					<ChildrenList>
+						<Action Name="" ID="{D61E2F83-1DFD-40A5-8317-3C379092EA7C}" ShortID="903644429">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="2_Air" ID="{53095704-26DF-4633-89A6-59281E7D90CD}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_3_Earth" ID="{AFC2BB52-9D85-4BB0-B712-7F0A76398DA9}">
+					<ChildrenList>
+						<Action Name="" ID="{54EA56A9-12C4-4835-9A22-1DFA66546A09}" ShortID="155926593">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="3_Earth" ID="{B6B0B6A5-A2FA-4EFF-BC4C-5AC4570C3985}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_4_Main" ID="{4088F64E-B832-4D2D-88FD-B83B2820B2F8}">
+					<ChildrenList>
+						<Action Name="" ID="{65E058BC-BD53-4107-9391-01ED2E7114E3}" ShortID="71570165">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="4_Main" ID="{F55A6022-57A6-4808-AD9D-89B400478F16}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MenuButton" ID="{15AEF931-DD5B-477D-97AD-963E3BC75C59}">
+					<ChildrenList>
+						<Action Name="" ID="{71A6B8DB-F491-4BDC-9190-C8C1A0B08182}" ShortID="757119033">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuButton" ID="{79C821D8-CD3B-4350-976E-C79861160F5C}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

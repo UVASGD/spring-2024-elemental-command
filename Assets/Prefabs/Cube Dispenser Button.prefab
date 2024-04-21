@@ -2005,9 +2005,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logic: {fileID: 8955299400633395717}
-  timerDuration: 5
+  timerDuration: 1
   anim: {fileID: 3218598112745290662}
   playerTransform: {fileID: 0}
+  TimerTicking: 0
 --- !u!136 &2249469560793157934
 CapsuleCollider:
   m_ObjectHideFlags: 0
