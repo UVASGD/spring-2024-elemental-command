@@ -42,6 +42,7 @@ public class ElementManager : MonoBehaviour
     {
         ogTimer = cooldownTimer;
         ableToChangeStates = true;
+        UndoAir();
     }
 
     // Update is called once per frame
