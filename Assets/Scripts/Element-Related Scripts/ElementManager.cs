@@ -40,6 +40,7 @@ public class ElementManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // AkSoundEngine.SetState(" Music", "Normal"); //wwise set state to normal
         ogTimer = cooldownTimer;
         ableToChangeStates = true;
         UndoAir();
@@ -74,6 +75,7 @@ public class ElementManager : MonoBehaviour
                 ChangeState(Element.Air);
                 // WWise air sound
                 AkSoundEngine.PostEvent("Play_Air_Sound", gameObject);
+                //AkSoundEngine.SetState(" Music", "Air"); 
             }
         }
         //Earth is 2
@@ -83,6 +85,7 @@ public class ElementManager : MonoBehaviour
                 ChangeState(Element.Earth);
                 // WWise earth sound
                 AkSoundEngine.PostEvent("Play_Earth_Sound", gameObject);
+                //AkSoundEngine.SetState(" Music", "Earth"); 
             }
         }
         //Ice is 3
@@ -92,6 +95,7 @@ public class ElementManager : MonoBehaviour
                 ChangeState(Element.Ice);
                 // WWise ice sound
                 AkSoundEngine.PostEvent("Play_Ice_Freeze", gameObject);
+                //AkSoundEngine.SetState(" Music", "Ice"); 
             }
         }
         //Electricity is 4 (and not active)
@@ -131,19 +135,30 @@ public class ElementManager : MonoBehaviour
         }
 
         //call the relevant newState
-        switch(newState)
+        switch (newState)
         {
             case Element.Air:
                 StartAir();
+                //AkSoundEngine.SetSwitch("MusicSwitch", "Air", gameObject); // Set Wwise switch to Air
+                //AkSoundEngine.SetState("Music", "Air"); // Set Wwise state to Air
+                //AkSoundEngine.PostEvent("Play_MusicBlend", gameObject); // Trigger Wwise Event
                 break;
             case Element.Earth:
                 StartEarth();
+                //AkSoundEngine.SetSwitch("MusicSwitch", "Earth", gameObject); // Set Wwise switch to Earth
+                //AkSoundEngine.SetState("Music", "Earth"); // Set Wwise state to Earth
+                //AkSoundEngine.PostEvent("Play_MusicBlend", gameObject); // Trigger Wwise Event
                 break;
             case Element.Ice:
                 StartIce();
+                //AkSoundEngine.SetSwitch("MusicSwitch", "Ice", gameObject); // Set Wwise switch to Ice
+                //AkSoundEngine.SetState("Music", "Ice"); // Set Wwise state to Ice
+                //AkSoundEngine.PostEvent("Play_MusicBlend", gameObject); // Trigger Wwise Event
                 break;
             case Element.None:
                 StartNone();
+                //AkSoundEngine.SetState("Music", "Normal"); // Set Wwise state to None
+                //AkSoundEngine.PostEvent("Music_Change", gameObject); // Trigger Wwise Event
                 break;
         }
         state = newState;

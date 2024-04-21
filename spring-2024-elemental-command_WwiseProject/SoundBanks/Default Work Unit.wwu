@@ -11,6 +11,7 @@
 						<ObjectRef Name="Play_Holding_Synth" ID="{9795EC22-B721-4665-849D-D15470D7BA74}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TimerButton_End" ID="{96E2C656-9CAD-4681-9C19-DC855263027F}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ice_Freeze" ID="{0ACE13F1-12E5-48CE-93E7-B212C0C9C104}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MusicBlend" ID="{31E6DB21-D51D-48ED-828E-5B02DFF18802}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SphereDrop_Normal" ID="{59164EDD-7682-49D1-82EA-303D980DC087}" WorkUnitID="{6776B531-3EAB-4ACF-A245-A86CC41AD267}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Air_Sound" ID="{290CB520-EE9A-4A35-B9EB-C4C1BF1B744C}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TimerButton_Start" ID="{D6869103-0C33-4AC9-A434-6E693220A33C}" WorkUnitID="{AA4A062B-0089-4D8F-B8C8-8554933AB30C}" Origin="Manual" Filter="7"/>

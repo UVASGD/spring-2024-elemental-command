@@ -2685,6 +2685,622 @@
 						<ActiveSource Name="PlatformMoveDown" ID="{15322445-31BA-4FC0-88CA-CABAAB63392A}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<SwitchContainer Name="MusicSwitch" ID="{49FE46E2-367D-4BFA-9F8F-9E2BC9933EC7}" ShortID="857577994">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="AirMusic" ID="{6BCE916F-49B1-40CB-861F-23C05CF8C21D}" ShortID="733861132">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AirMusic" ID="{6D88653C-2B73-45F9-B5D6-09CA0C082A3D}">
+									<Language>SFX</Language>
+									<AudioFile>AirMusic.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="5022135"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music" ID="{D9DBE35B-1F1F-4CCE-BE95-59EDD8D742C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Earth" ID="{C8A18B15-9D0A-4519-8A01-7ACFFA939290}"/>
+										<CustomState Name="" ID="{1C9B0E49-F61B-4E0F-A1BA-0A613569B99C}" ShortID="204777869">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{E6986FBE-4D48-4B9B-AB9E-A6CC3D69FDAF}"/>
+										<CustomState Name="" ID="{3403BBAF-4C27-40DB-ABE9-9729EE4E8D90}" ShortID="1007730802">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Air" ID="{26AC7C84-A072-4D02-9F21-F608BF810FDA}"/>
+										<CustomState Name="" ID="{E585F747-2F9A-4292-A632-1343F0D26593}" ShortID="952024240"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Ice" ID="{4C703242-1D8B-4F9B-8ABB-5E11FCF9B3E5}"/>
+										<CustomState Name="" ID="{64605E1D-1675-499F-8309-C11781771DD9}" ShortID="476381536">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="AirMusic" ID="{6D88653C-2B73-45F9-B5D6-09CA0C082A3D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="EarthMusic" ID="{BEC5B930-9653-49F9-BA00-687D4B3BA9E9}" ShortID="913632231">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EarthMusic" ID="{9EEED327-A265-43D7-A442-13D4AE31CDC8}">
+									<Language>SFX</Language>
+									<AudioFile>EarthMusic.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="281960397"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music" ID="{D9DBE35B-1F1F-4CCE-BE95-59EDD8D742C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Earth" ID="{C8A18B15-9D0A-4519-8A01-7ACFFA939290}"/>
+										<CustomState Name="" ID="{E285204D-9742-40E0-A0B6-F4DE65B77217}" ShortID="805322458"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{E6986FBE-4D48-4B9B-AB9E-A6CC3D69FDAF}"/>
+										<CustomState Name="" ID="{728FD7C7-52BE-487D-AB87-A5B4D8ABE6A8}" ShortID="945674008">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Air" ID="{26AC7C84-A072-4D02-9F21-F608BF810FDA}"/>
+										<CustomState Name="" ID="{9B24CFC0-CD82-4CA1-A045-A1EBE701A5F4}" ShortID="132155889">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Ice" ID="{4C703242-1D8B-4F9B-8ABB-5E11FCF9B3E5}"/>
+										<CustomState Name="" ID="{FED5D0ED-21A6-486C-B363-D93264CD016D}" ShortID="104900151">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="EarthMusic" ID="{9EEED327-A265-43D7-A442-13D4AE31CDC8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="IceMusic" ID="{A8794F5F-3824-4F37-B206-6AE27329E883}" ShortID="91633794">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IceMusic" ID="{FF01F680-E66D-49C1-B1C7-6B2ED56EB640}">
+									<Language>SFX</Language>
+									<AudioFile>IceMusic.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1063491016"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music" ID="{D9DBE35B-1F1F-4CCE-BE95-59EDD8D742C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Earth" ID="{C8A18B15-9D0A-4519-8A01-7ACFFA939290}"/>
+										<CustomState Name="" ID="{77883566-47AE-453F-940E-0B226A3FF3C9}" ShortID="977959611">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{E6986FBE-4D48-4B9B-AB9E-A6CC3D69FDAF}"/>
+										<CustomState Name="" ID="{4B165EDC-E7CB-4717-91F3-1E38A853137D}" ShortID="88289725">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Air" ID="{26AC7C84-A072-4D02-9F21-F608BF810FDA}"/>
+										<CustomState Name="" ID="{F0F4D6B4-C21E-4CF1-964D-C745DAC92A93}" ShortID="222072372">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Ice" ID="{4C703242-1D8B-4F9B-8ABB-5E11FCF9B3E5}"/>
+										<CustomState Name="" ID="{9A0C8C06-C542-467D-8DF9-DD9C451B97A2}" ShortID="282391344"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="IceMusic" ID="{FF01F680-E66D-49C1-B1C7-6B2ED56EB640}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="NormalMusic" ID="{30BBF310-CD66-4621-84E1-B386CE1B3E5A}" ShortID="663675393">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="NormalMusic" ID="{3E6E156B-9719-4982-9716-5D1DBF0329E4}">
+									<Language>SFX</Language>
+									<AudioFile>NormalMusic.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="183153236"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music" ID="{D9DBE35B-1F1F-4CCE-BE95-59EDD8D742C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Earth" ID="{C8A18B15-9D0A-4519-8A01-7ACFFA939290}"/>
+										<CustomState Name="" ID="{9D26847F-C980-440B-A31F-46F2A3F7D8A8}" ShortID="390704865">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{E6986FBE-4D48-4B9B-AB9E-A6CC3D69FDAF}"/>
+										<CustomState Name="" ID="{1AAB23F1-857A-4A43-B4C2-8126412FE965}" ShortID="349825203"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Air" ID="{26AC7C84-A072-4D02-9F21-F608BF810FDA}"/>
+										<CustomState Name="" ID="{554449BA-0EDD-40D0-B742-45912112D553}" ShortID="878724127">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Ice" ID="{4C703242-1D8B-4F9B-8ABB-5E11FCF9B3E5}"/>
+										<CustomState Name="" ID="{0A33062C-F46A-4181-A9B0-52E8C3F700EE}" ShortID="9701341">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="NormalMusic" ID="{3E6E156B-9719-4982-9716-5D1DBF0329E4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="NormalMusic" ID="{30BBF310-CD66-4621-84E1-B386CE1B3E5A}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="EarthMusic" ID="{BEC5B930-9653-49F9-BA00-687D4B3BA9E9}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="IceMusic" ID="{A8794F5F-3824-4F37-B206-6AE27329E883}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="AirMusic" ID="{6BCE916F-49B1-40CB-861F-23C05CF8C21D}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+					</GroupingInfo>
+				</SwitchContainer>
+				<BlendContainer Name="MusicBlend" ID="{C438F6F2-D666-4C71-98ED-95F18BD84BEA}" ShortID="13550261">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="NormalMusic" ID="{A30E813D-B943-4797-AECA-B5704B5B309A}" ShortID="981147409">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="NormalMusic" ID="{D2B6665E-3344-4D31-8A63-041CE5F746FB}">
+									<Language>SFX</Language>
+									<AudioFile>NormalMusic.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="366381632"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music" ID="{D9DBE35B-1F1F-4CCE-BE95-59EDD8D742C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Earth" ID="{C8A18B15-9D0A-4519-8A01-7ACFFA939290}"/>
+										<CustomState Name="" ID="{C1CD7F58-CBF8-4491-8F2B-BD4AC7DE89B6}" ShortID="458041683">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{E6986FBE-4D48-4B9B-AB9E-A6CC3D69FDAF}"/>
+										<CustomState Name="" ID="{DE512ACD-5E57-4B7E-A37D-25EBBD7E57D4}" ShortID="304100915"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Air" ID="{26AC7C84-A072-4D02-9F21-F608BF810FDA}"/>
+										<CustomState Name="" ID="{E4A20179-583D-4988-89DC-086EC596796E}" ShortID="733418846">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Ice" ID="{4C703242-1D8B-4F9B-8ABB-5E11FCF9B3E5}"/>
+										<CustomState Name="" ID="{B6020EE9-C2C5-404A-A831-BB18E539ABDB}" ShortID="535083921">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="NormalMusic" ID="{D2B6665E-3344-4D31-8A63-041CE5F746FB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="IceMusic" ID="{E6B350B4-9864-4B91-83A0-B4A080B1795A}" ShortID="516235906">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="IceMusic" ID="{F3D06CF9-7D60-47BB-A872-EDD24D4ECDBA}">
+									<Language>SFX</Language>
+									<AudioFile>IceMusic.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="111176120"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music" ID="{D9DBE35B-1F1F-4CCE-BE95-59EDD8D742C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Earth" ID="{C8A18B15-9D0A-4519-8A01-7ACFFA939290}"/>
+										<CustomState Name="" ID="{976C7742-618D-41D1-8A40-0F9C2B3EAE81}" ShortID="506989497">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{E6986FBE-4D48-4B9B-AB9E-A6CC3D69FDAF}"/>
+										<CustomState Name="" ID="{669D364C-38AC-4474-BD79-B30E6CC5716F}" ShortID="262366038">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Air" ID="{26AC7C84-A072-4D02-9F21-F608BF810FDA}"/>
+										<CustomState Name="" ID="{57E93B4E-6519-486A-B0D9-DB72B111D422}" ShortID="1001878852">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Ice" ID="{4C703242-1D8B-4F9B-8ABB-5E11FCF9B3E5}"/>
+										<CustomState Name="" ID="{B6C54207-5C17-4FFB-8D1F-6E3FA18ACA3B}" ShortID="297863292"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="IceMusic" ID="{F3D06CF9-7D60-47BB-A872-EDD24D4ECDBA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="EarthMusic" ID="{2676C81A-31D9-4CC5-AD66-D6ABF8120E0D}" ShortID="14862436">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EarthMusic" ID="{7F4F78EF-822F-4B12-B3C5-745561474C2D}">
+									<Language>SFX</Language>
+									<AudioFile>EarthMusic.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="164188961"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music" ID="{D9DBE35B-1F1F-4CCE-BE95-59EDD8D742C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Earth" ID="{C8A18B15-9D0A-4519-8A01-7ACFFA939290}"/>
+										<CustomState Name="" ID="{C30B495F-F836-4208-BAEB-BC8247687ACE}" ShortID="307232290"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{E6986FBE-4D48-4B9B-AB9E-A6CC3D69FDAF}"/>
+										<CustomState Name="" ID="{399C500B-7D48-461A-8628-75ECA60EB3AC}" ShortID="291694557">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Air" ID="{26AC7C84-A072-4D02-9F21-F608BF810FDA}"/>
+										<CustomState Name="" ID="{535BD00B-1BC0-4638-985B-D0193BCB1AE1}" ShortID="807943546">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Ice" ID="{4C703242-1D8B-4F9B-8ABB-5E11FCF9B3E5}"/>
+										<CustomState Name="" ID="{22915A70-43A2-4823-AE6C-4E5F752597E0}" ShortID="542539552">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="EarthMusic" ID="{7F4F78EF-822F-4B12-B3C5-745561474C2D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="AirMusic" ID="{8385ED75-94E5-439D-9790-C1FE90C9073D}" ShortID="30490829">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E104B4FC-DDFF-494F-834C-8C5FA38ECE4A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1E121914-C85B-41C0-85E8-3B8E76BE7BC2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="AirMusic" ID="{43A329E9-B1B5-4CD1-AA4C-A0999A76B4BF}">
+									<Language>SFX</Language>
+									<AudioFile>AirMusic.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="775236746"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music" ID="{D9DBE35B-1F1F-4CCE-BE95-59EDD8D742C0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Earth" ID="{C8A18B15-9D0A-4519-8A01-7ACFFA939290}"/>
+										<CustomState Name="" ID="{338E44DC-C273-4F74-B2DE-78FCA017C160}" ShortID="515949112">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Normal" ID="{E6986FBE-4D48-4B9B-AB9E-A6CC3D69FDAF}"/>
+										<CustomState Name="" ID="{AB27ED4D-EB82-4A6D-B975-705C8F7ECE30}" ShortID="110073158">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Air" ID="{26AC7C84-A072-4D02-9F21-F608BF810FDA}"/>
+										<CustomState Name="" ID="{36B1BA6E-B259-49F2-83F9-D0EF319CFC98}" ShortID="513238863"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Ice" ID="{4C703242-1D8B-4F9B-8ABB-5E11FCF9B3E5}"/>
+										<CustomState Name="" ID="{2F1C62CD-533E-48DF-BFD4-CF2F425C9E78}" ShortID="523487131">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="AirMusic" ID="{43A329E9-B1B5-4CD1-AA4C-A0999A76B4BF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="Music" ID="{EB3458BC-B177-4D2E-86A1-5263275ABB5D}" ShortID="392054732">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="Music" ID="{1AE35DFE-A105-4591-AC86-66EE8993C1AF}" WorkUnitID="{BD70D05E-27E2-421D-A7E4-52CD6B19CAD1}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{234CD4C9-BCE6-44BE-90C5-F1F7E3790089}" ShortID="926777450">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList/>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="NormalMusic" ID="{A30E813D-B943-4797-AECA-B5704B5B309A}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>25</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="AirMusic" ID="{8385ED75-94E5-439D-9790-C1FE90C9073D}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>24.2890995260664</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>49.2890995260664</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="EarthMusic" ID="{2676C81A-31D9-4CC5-AD66-D6ABF8120E0D}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>47.9857819905213</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>75</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="IceMusic" ID="{E6B350B4-9864-4B91-83A0-B4A080B1795A}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>73.8151658767773</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>100</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
