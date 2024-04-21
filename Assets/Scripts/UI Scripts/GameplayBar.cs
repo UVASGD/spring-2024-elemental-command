@@ -174,7 +174,7 @@ public class GameplayBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //Debug.Log(em.state);
         if (em.state == ElementManager.Element.Earth && !Earth_Highlighted){
 
             Earth_Highlighted = true;
