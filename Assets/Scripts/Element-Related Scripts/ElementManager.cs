@@ -72,6 +72,8 @@ public class ElementManager : MonoBehaviour
         {
             if (elementAvailability.PlayerCanCancel){
                 ChangeState(Element.None);
+                // wwise normal sound
+                AkSoundEngine.PostEvent("Play_Normal_Sound", gameObject);
             }
         }
     }
