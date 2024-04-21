@@ -1676,6 +1676,10 @@ PrefabInstance:
       propertyPath: logicElement
       value: 
       objectReference: {fileID: 172885987}
+    - target: {fileID: 7285811015807653204, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
+      propertyPath: m_text
+      value: cooldown
+      objectReference: {fileID: 0}
     - target: {fileID: 7669823476320571520, guid: 6605793fb8750f04e9fd57e95a353762, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1885,6 +1889,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 361825047}
+    - target: {fileID: 5733638984374014321, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
+      propertyPath: m_text
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5834485418195195674, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.269
@@ -1933,6 +1941,12 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 361825047}
+    - target: {fileID: 9214871702529106900, guid: f43d530fe6aa3764f90f22e220222e78, type: 3}
+      propertyPath: m_text
+      value: '2
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5312,6 +5326,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoofButton
       objectReference: {fileID: 0}
+    - target: {fileID: 7666454402838534482, guid: 111b368196f63604197057dffa6fa95c, type: 3}
+      propertyPath: m_text
+      value: '2
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 8551690065278337196, guid: 111b368196f63604197057dffa6fa95c, type: 3}
       propertyPath: receiverGameObject
       value: 
@@ -5334,7 +5354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 111b368196f63604197057dffa6fa95c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 111b368196f63604197057dffa6fa95c, type: 3}
       propertyPath: m_LocalRotation.y
@@ -5342,7 +5362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 111b368196f63604197057dffa6fa95c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 111b368196f63604197057dffa6fa95c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5350,7 +5370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 111b368196f63604197057dffa6fa95c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 111b368196f63604197057dffa6fa95c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -5402,7 +5422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 211bbb3bfcaa5254ab8dc61cc5e96929, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 211bbb3bfcaa5254ab8dc61cc5e96929, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5410,7 +5430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 211bbb3bfcaa5254ab8dc61cc5e96929, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 211bbb3bfcaa5254ab8dc61cc5e96929, type: 3}
       propertyPath: m_LocalRotation.z
@@ -5422,7 +5442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 211bbb3bfcaa5254ab8dc61cc5e96929, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 8618859506129212222, guid: 211bbb3bfcaa5254ab8dc61cc5e96929, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
