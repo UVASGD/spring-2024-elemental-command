@@ -24,6 +24,15 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="MusicStates" ID="{FCEBBE1B-4FDD-41FE-8454-0C323380A826}">
+					<ChildrenList>
+						<State Name="None" ID="{418A76FE-26CE-4744-B5FE-71C87954449D}"/>
+						<State Name="Normal" ID="{DF448208-5D03-4573-A294-34B07C5A03C3}"/>
+						<State Name="Air" ID="{C5178689-1F4C-4CC9-B8D5-599E6D46DC99}"/>
+						<State Name="Earth" ID="{F473025E-465A-4923-B65E-5C5054286C55}"/>
+						<State Name="Ice" ID="{DE8E689B-2A15-4DD5-B893-B8E5C8A65B7B}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

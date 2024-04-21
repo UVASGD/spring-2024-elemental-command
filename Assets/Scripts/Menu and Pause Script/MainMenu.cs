@@ -24,22 +24,30 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Went to next level");
         speedrunMode = false;
         levelLoader.LoadNextLevel();
+        // wwise
+        //AkSoundEngine.PostEvent("Play_MenuButton", gameObject);
     }
 
         public void GoToNextSceneSpeedrun(){
         Debug.Log("Went to next level");
         speedrunMode = true;
         levelLoader.LoadNextLevel();
+        // wwise
+        //AkSoundEngine.PostEvent("Play_MenuButton", gameObject);
     }
 
     public void QuitApp(){
         Debug.Log("Game Quit");
         Application.Quit();
+        // wwise
+        //AkSoundEngine.PostEvent("Play_MenuButton", gameObject);
     }
 
     public void GoToLevelSelect()
     {
         levelSelector.LoadSelectedLevel(3);
+        // wwise
+        //AkSoundEngine.PostEvent("Play_MenuButton", gameObject);
     }
 
 }
